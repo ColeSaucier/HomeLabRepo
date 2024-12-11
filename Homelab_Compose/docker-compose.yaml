@@ -65,9 +65,9 @@ services:
     restart: always
     network_mode: host #
     environment:
-      MYSQL_ROOT_PASSWORD: colecar17
+      MYSQL_ROOT_PASSWORD: aaa1aaa
       MYSQL_DATABASE: hass_db
-      MYSQL_USER: cole
+      MYSQL_USER: user
       MYSQL_PASSWORD: aaa1aaa
     volumes:
       - ./mariadb_data:/var/lib/mysql
