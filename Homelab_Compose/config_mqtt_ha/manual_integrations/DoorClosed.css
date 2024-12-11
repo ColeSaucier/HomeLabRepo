@@ -1,0 +1,9 @@
+.entitystate-closed {
+    opacity: 1;
+    visibility: visible;
+}
+
+.entitystate-open {
+    opacity: 0;
+    visibility: hidden;
+}

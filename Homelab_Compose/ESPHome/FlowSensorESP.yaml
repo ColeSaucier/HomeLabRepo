@@ -1,0 +1,55 @@
+esphome:
+  name: esp32
+  friendly_name: esp32
+
+esp32:
+  board: esp32-c6-devkitc-1
+  flash_size: 8MB
+  variant: esp32c6
+  framework:
+    type: esp-idf
+    version: 5.3.1
+    platform_version: 6.8.1
+    sdkconfig_options: 
+      CONFIG_ESPTOOLPY_FLASHSIZE_8MB: y
+
+wifi:
+  ssid: "homelab"
+  password: "1aaaaaaa"
+
+ota:
+  - platform: esphome
+    password: "042bddd18084c904b09c0e0fdd3026c5"
+
+logger:
+
+api:
+  encryption:
+    key: "+AppceDQtXGQXPHC6JFpBPp4Gj1aqSUPYk1jllrVbQY="
+
+
+# Use pulse_counter for flow measurement which inherently handles debounce
+sensor:
+ - platform: pulse_counter
+   pin: GPIO04
+   id: flow_sensor
+   update_interval: 0.04s  # Adjust based on your needs
+  
+ - platform: template
+   name: "Water Flow Rate"
+   unit_of_measurement: "L/min"
+   accuracy_decimals: 1
+   lambda: |-
+     static bool last_state = false;  // Tracks the last state
+     bool current_state = id(flow_sensor).state > 0;  // Assume a pulse means the switch is closed
+     float flow_rate = 0.0;
+
+
+     if (!last_state && current_state) {  // If switch was open last time but now it's closed
+       flow_rate = 1.0;  // Register a pulse
+     }
+    
+     last_state = current_state;  // Update the last state for next check
+     return flow_rate;
+   update_interval: 0.04s
+

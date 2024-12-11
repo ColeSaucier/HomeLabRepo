@@ -1,0 +1,164 @@
+{
+	"manufacturer": "Eurotronics",
+	"manufacturerId": "0x0148",
+	"label": "Spirit",
+	"description": "Thermostatic Valve",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0001"
+		},
+		{
+			"productType": "0x0003",
+			"productId": "0x0003"
+		},
+		{
+			"productType": "0x0003",
+			"productId": "0x0004"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Invert LCD",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal",
+					"value": 0
+				},
+				{
+					"label": "Inverted (UK edition)",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "LCD Timeout",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 30,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "3",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Backlight",
+			"defaultValue": 1
+		},
+		{
+			"#": "4",
+			"label": "Battery Report",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "System notification",
+					"value": 0
+				},
+				{
+					"label": "Send battery status unsolicited once a day",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "Temperature Report Threshold",
+			"valueSize": 1,
+			"unit": "0.1 °C",
+			"minValue": 0,
+			"maxValue": 50,
+			"defaultValue": 5
+		},
+		{
+			"#": "6",
+			"label": "Valve Opening Percentage Report",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 0
+		},
+		{
+			"#": "7",
+			"label": "Window Open Detection",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Sensitivity low",
+					"value": 1
+				},
+				{
+					"label": "Sensitivity medium",
+					"value": 2
+				},
+				{
+					"label": "Sensitivity high",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "8",
+			"label": "Temperature Offset",
+			"valueSize": 1,
+			"unit": "0.1 °C",
+			"minValue": -128,
+			"maxValue": 50,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Ext temp sensor be used for regul",
+					"value": -128
+				}
+			]
+		}
+	],
+	"compat": {
+		"overrideQueries": {
+			// The device does not report "Manufacturer specific" as a supported thermostat mode
+			"Thermostat Mode": [
+				{
+					"method": "getSupportedModes",
+					"result": [0, 1, 11, 15, 31], // Off / Heat / Energy heat / Full power / Manufacturer specific
+					"persistValues": {
+						"supportedModes": [0, 1, 11, 15, 31]
+					},
+					"extendMetadata": {
+						"thermostatMode": {
+							"states": {
+								"0": "Off",
+								"1": "Heat",
+								"11": "Energy heat",
+								"15": "Full power",
+								"31": "Manufacturer specific"
+							}
+						}
+					}
+				}
+			]
+		}
+	}
+}

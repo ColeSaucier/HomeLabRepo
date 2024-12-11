@@ -1,0 +1,112 @@
+{
+	"manufacturer": "Aeotec Ltd.",
+	"manufacturerId": "0x0371",
+	"label": "ZWA002",
+	"description": "Bulb 6 Multi-Color",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0002"
+		},
+		{
+			"productType": "0x0103",
+			"productId": "0x0002"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Use Custom Mode for LED Animations",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				},
+				{
+					"label": "Blink colors in order mode",
+					"value": 1
+				},
+				{
+					"label": "Randomized blink color mode",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Strobe Over Custom Color"
+		},
+		{
+			"#": "3",
+			"label": "Rate of Change to Next Color in Custom Mode",
+			"valueSize": 4,
+			"unit": "ms",
+			"minValue": 5,
+			"maxValue": 8640000,
+			"defaultValue": 50
+		},
+		{
+			"#": "4",
+			"label": "Set Color That LED Bulb Blinks in (Blink Mode)",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true,
+			"writeOnly": true
+		},
+		{
+			"#": "16",
+			"label": "Ramp Rate When Dimming Using Multilevel Switch",
+			"valueSize": 1,
+			"unit": "100ms",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 20
+		},
+		{
+			"#": "80",
+			"label": "Enable Notifications",
+			"description": "Enable notifications to associated devices (Group 1) when the state is changed",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Nothing",
+					"value": 0
+				},
+				{
+					"label": "Basic CC Report",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "81",
+			"label": "Adjust Color Component of Warm White",
+			"valueSize": 2,
+			"unit": "k",
+			"minValue": 2700,
+			"maxValue": 4999,
+			"defaultValue": 2700
+		},
+		{
+			"#": "82",
+			"label": "Adjust Color Component of Cold White",
+			"valueSize": 2,
+			"unit": "k",
+			"minValue": 5000,
+			"maxValue": 6500,
+			"defaultValue": 6500
+		}
+	]
+}

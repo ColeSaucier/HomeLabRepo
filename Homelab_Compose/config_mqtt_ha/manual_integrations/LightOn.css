@@ -1,0 +1,7 @@
+.entitystate-on {
+    opacity: 1;
+}
+
+.entitystate-off {
+    opacity: 0.1;
+}

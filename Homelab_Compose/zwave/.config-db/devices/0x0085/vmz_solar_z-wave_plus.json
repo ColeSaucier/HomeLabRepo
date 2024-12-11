@@ -1,0 +1,174 @@
+{
+	"manufacturer": "Fakro",
+	"manufacturerId": "0x0085",
+	"label": "VMZ Solar z-wave plus",
+	"description": "Awning Blind Z-Wave Plus Version",
+	"devices": [
+		{
+			"productType": "0x0006",
+			"productId": "0x0112"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Operating Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Manual",
+					"value": 0
+				},
+				{
+					"label": "Semiauto",
+					"value": 1
+				},
+				{
+					"label": "Auto",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Summer / Winter Mode",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Summer mode only",
+					"value": 1
+				},
+				{
+					"label": "Winter mode",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Delay Time",
+			"description": "delay to auto shade",
+			"valueSize": 1,
+			"unit": "minutes",
+			"minValue": 0,
+			"maxValue": 30,
+			"defaultValue": 0
+		},
+		{
+			"#": "4",
+			"label": "Level of Sensitivity for Day",
+			"description": "Level of insolation to open/close the shades",
+			"valueSize": 1,
+			"unit": "mA",
+			"minValue": 3,
+			"maxValue": 100,
+			"defaultValue": 3
+		},
+		{
+			"#": "5",
+			"label": "Temperature",
+			"valueSize": 1,
+			"unit": "C",
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"readOnly": true
+		},
+		{
+			"#": "6",
+			"label": "STM Active",
+			"description": "STM AutoShade active",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "No",
+					"value": 0
+				},
+				{
+					"label": "Yes",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "13",
+			"$import": "templates/fakro_template.json#shutter_response_to_basic_set_0xff"
+		},
+		{
+			"#": "17",
+			"label": "Insolation Level",
+			"description": "Current on autoshade solar panel",
+			"valueSize": 1,
+			"unit": "mA",
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true,
+			"readOnly": true
+		},
+		{
+			"#": "21",
+			"label": "Motor Current",
+			"valueSize": 1,
+			"unit": "mA",
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"readOnly": true
+		},
+		{
+			"#": "77",
+			"label": "CLOSE Current",
+			"valueSize": 1,
+			"unit": "mA",
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "78",
+			"label": "OPEN Current",
+			"valueSize": 1,
+			"unit": "mA",
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "79",
+			"label": "CLOSE Overload Current",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "80",
+			"label": "OPEN Overload Current",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "99",
+			"$import": "templates/fakro_template.json#factory_reset"
+		},
+		{
+			"#": "100",
+			"$import": "templates/fakro_template.json#autoexclude"
+		}
+	]
+}

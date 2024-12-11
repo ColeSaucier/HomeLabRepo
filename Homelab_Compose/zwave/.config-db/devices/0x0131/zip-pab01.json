@@ -1,0 +1,47 @@
+{
+	"manufacturer": "Zipato",
+	"manufacturerId": "0x0131",
+	"label": "ZIP-PAB01",
+	"description": "Micro Module Energy Meter",
+	"devices": [
+		{
+			"productType": "0x0006",
+			"productId": "0x001a"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Power Meter Report Period",
+			"description": "Power meter report period, in 5 seconds unit. 720 -> 1 hour",
+			"valueSize": 2,
+			"unit": "5sec",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 720
+		},
+		{
+			"#": "2",
+			"label": "Energy Meter Report Period",
+			"description": "The accumulated power consumption report period",
+			"valueSize": 2,
+			"unit": "5sec",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 720
+		},
+		{
+			"#": "3",
+			"label": "Selected Default Endpoint",
+			"description": "1 => CT1 and CT2, 2 => CT1, 3 => CT2",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 3,
+			"defaultValue": 1
+		}
+	]
+}

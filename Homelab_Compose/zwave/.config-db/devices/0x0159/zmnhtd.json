@@ -1,0 +1,251 @@
+{
+	"manufacturer": "Qubino",
+	"manufacturerId": "0x0159",
+	"label": "ZMNHTD",
+	"description": "Smart Meter",
+	"devices": [
+		{
+			"productType": "0x0007",
+			"productId": "0x0052"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "7",
+			"label": "Input 1 Switch Function Selection",
+			"description": "IR external relay or External Relay control mode",
+			"valueSize": 1,
+			"defaultValue": 4,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "IR external control – mono stable push button",
+					"value": 2
+				},
+				{
+					"label": "IR external relay control - Bi stable switch",
+					"value": 3
+				},
+				{
+					"label": "External relay control – mono stable push button",
+					"value": 4
+				},
+				{
+					"label": "External relay control – bi stable switch",
+					"value": 5
+				}
+			]
+		},
+		{
+			"#": "10",
+			"label": "All On / All Off Function",
+			"valueSize": 2,
+			"defaultValue": 255,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disable both",
+					"value": 0
+				},
+				{
+					"label": "Disable all on, enable all off",
+					"value": 1
+				},
+				{
+					"label": "Enable all on, disable all off",
+					"value": 2
+				},
+				{
+					"label": "Enable both",
+					"value": 255
+				}
+			]
+		},
+		{
+			"#": "11",
+			"label": "Timer Turning Off IR External Relay",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32535,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "12",
+			"label": "Timer Turning on IR External Relay Output",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32535,
+			"defaultValue": 0
+		},
+		{
+			"#": "13",
+			"label": "Timer Turning Off External Relay Output",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32535,
+			"defaultValue": 0
+		},
+		{
+			"#": "14",
+			"label": "Timer Turning on External Relay After Output",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32535,
+			"defaultValue": 0
+		},
+		{
+			"#": "40",
+			"label": "Power Reporting (Watts) on Power Change",
+			"valueSize": 2,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 10
+		},
+		{
+			"#": "42",
+			"label": "Power (W) Reporting Internal",
+			"description": "Allowable range: 60-32535",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32535,
+			"defaultValue": 600,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "45",
+			"label": "Reset Power Counters",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "No function",
+					"value": 0
+				},
+				{
+					"label": "Reset counter 1 – kWh",
+					"value": 1
+				},
+				{
+					"label": "Reset counter 2 – kVarh",
+					"value": 2
+				},
+				{
+					"label": "Reset counter 3 – kVAh",
+					"value": 4
+				},
+				{
+					"label": "Reset all counters",
+					"value": 15
+				}
+			]
+		},
+		{
+			"#": "100",
+			"label": "Configure External Relay Endpoints",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			/* eslint-disable @zwave-js/consistent-config-string-case */
+			"options": [
+				{
+					"label": "IR (BICOM) and TRIAC (IKA) disabled",
+					"value": 0
+				},
+				{
+					"label": "IR (BICOM) enabled, TRIAC (IKA) disabled",
+					"value": 1
+				},
+				{
+					"label": "IR (BICOM) disabled, TRIAC (IKA) enabled",
+					"value": 2
+				},
+				{
+					"label": "IR (BICOM) and TRIAC (IKA) enabled",
+					"value": 3
+				}
+			]
+			/* eslint-enable @zwave-js/consistent-config-string-case */
+		},
+		{
+			"#": "110",
+			"label": "Maximum Power Auto Off",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 15000,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "No function",
+					"value": 0
+				},
+				{
+					"label": "Maximum power consumption",
+					"value": 15000
+				}
+			]
+		},
+		{
+			"#": "111",
+			"label": "Delay Overpower Off",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32525,
+			"defaultValue": 30
+		},
+		{
+			"#": "112",
+			"label": "Relay to Power Off",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Switch between the 2 relays",
+					"value": 0
+				},
+				{
+					"label": "Always power off relay 1 (IR external relay)",
+					"value": 1
+				},
+				{
+					"label": "Always power off relay 2 (External relay)",
+					"value": 2
+				},
+				{
+					"label": "Always power off both relays (Relay 1 and relay 2)",
+					"value": 3
+				}
+			]
+		}
+	],
+	"compat": {
+		// This device has additional external relays, which the driver thinks are unnecessary
+		"preserveEndpoints": "*"
+	}
+}

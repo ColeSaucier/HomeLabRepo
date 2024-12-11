@@ -1,0 +1,132 @@
+{
+	"manufacturer": "EcoDim",
+	"manufacturerId": "0x0431",
+	"label": "ECO-DIM",
+	"description": "ECO-DIM Z-Wave LED Dimmer",
+	"devices": [
+		{
+			"productType": "0x0202",
+			"productId": "0x0001"
+		},
+		{
+			"productType": "0x0202",
+			"productId": "0x0002"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "LifeLine",
+			"maxNodes": 5,
+			"isLifeline": true
+		},
+		"2": {
+			"label": "Basic Set",
+			"maxNodes": 5
+		},
+		"3": {
+			"label": "Multilevel Switch",
+			"maxNodes": 5
+		},
+		"4": {
+			"label": "External Button",
+			"maxNodes": 5
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"$import": "~/templates/master_template.json#state_after_power_failure_off_on_prev",
+			"defaultValue": 0
+		},
+		{
+			"#": "2",
+			"label": "Notification When Load Status Change",
+			"description": "The Dimmer will send notification to associated device (Group Lifeline) when the status of Dimmer load is changed.",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "The function is disabled",
+					"value": 0
+				},
+				{
+					"label": "Send Multilevel Switch Report",
+					"value": 1
+				},
+				{
+					"label": "Send Multilevel Switch Report only when load status is not changed by Z-Wave command",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Default Dimming Speed",
+			"description": "Configure the default dimming speed: 0 = Instantly, 1 = Fast, 100 = Slow",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 5
+		},
+		{
+			"#": "5",
+			"label": "Enable or Disable External Switch to Pair Network",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				},
+				{
+					"label": "Enable",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "6",
+			"label": "Dimming Algorithm",
+			"description": "Setting dimming way.",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Linear dimming",
+					"value": 0
+				},
+				{
+					"label": "Logarithmic dimming",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "7",
+			"label": "Default Brightness",
+			"description": "Setting default brightness when turn on the dimmer from off status. 0 means that the dimmer will use parameter 1.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 99,
+			"defaultValue": 0
+		},
+		{
+			"#": "8",
+			"label": "Turn Off Delay",
+			"description": "Setting delay time when turn off",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 60,
+			"defaultValue": 0
+		}
+	]
+}

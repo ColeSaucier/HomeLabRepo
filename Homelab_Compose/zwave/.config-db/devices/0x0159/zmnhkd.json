@@ -1,0 +1,486 @@
+{
+	"manufacturer": "Qubino",
+	"manufacturerId": "0x0159",
+	"label": "ZMNHKD",
+	"description": "Flush Heat & Cool Thermostat",
+	"devices": [
+		{
+			"productType": "0x0005",
+			"productId": "0x0052"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Input I1 Switch Type",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Mono-Stable switch type",
+					"value": 0
+				},
+				{
+					"label": "Bi-Stable switch type",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Input I2 Switch Type",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Mono-Stable switch type",
+					"value": 0
+				},
+				{
+					"label": "Bi-Stable switch type",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "4",
+			"label": "Input 1 Contact Type",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normally open",
+					"value": 0
+				},
+				{
+					"label": "Normally closed",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "Input 2 Contact Type",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normally open",
+					"value": 0
+				},
+				{
+					"label": "Normally closed",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "10",
+			"label": "Activate / Deactivate ALL ON/ALL OFF",
+			"valueSize": 2,
+			"defaultValue": 255,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "All on is not active / All off is not active",
+					"value": 0
+				},
+				{
+					"label": "All on is not active / All off is active",
+					"value": 1
+				},
+				{
+					"label": "All on is active / All off is not active",
+					"value": 2
+				},
+				{
+					"label": "All on is active / All off is active",
+					"value": 255
+				}
+			]
+		},
+		{
+			"#": "11",
+			"label": "I1 Functionality Selection",
+			"valueSize": 2,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Input I1 changes between off and heat/cool",
+					"value": 1
+				},
+				{
+					"label": "Input I1 influences the heating/cooling valves",
+					"value": 2
+				},
+				{
+					"label": "Input I1 doesn't influence the process",
+					"value": 32767
+				}
+			]
+		},
+		{
+			"#": "12",
+			"label": "I2 Functionality Selection",
+			"valueSize": 2,
+			"defaultValue": 32767,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Input I2 influences cooling with condense sensor",
+					"value": 2000
+				},
+				{
+					"label": "Input I2 doesn't influence on the heat/cool process",
+					"value": 32767
+				}
+			]
+		},
+		{
+			"#": "40",
+			"label": "Watt Power Consumption Threshold for Q⬆",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Power consumption reporting disabled",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "42",
+			"label": "Watt Power Time Threshold for Q⬆",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 0
+		},
+		{
+			"#": "43",
+			"label": "Hysteresis Heating On",
+			"valueSize": 2,
+			"unit": "°C",
+			"defaultValue": 1010,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Mono-Stable switch type",
+					"value": 0
+				},
+				{
+					"label": "Bi-Stable switch type",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "44",
+			"label": "Hysteresis Heating Off",
+			"valueSize": 2,
+			"unit": "°C",
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normally open",
+					"value": 0
+				},
+				{
+					"label": "Normally closed",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "45",
+			"label": "Hysteresis Cooling On",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 1255,
+			"defaultValue": 5
+		},
+		{
+			"#": "46",
+			"label": "Hysteresis Cooling Off",
+			"valueSize": 2,
+			"unit": "°C",
+			"minValue": 0,
+			"maxValue": 1255,
+			"defaultValue": 1002
+		},
+		{
+			"#": "47",
+			"label": "Antifreeze",
+			"valueSize": 2,
+			"unit": "°C",
+			"minValue": 0,
+			"maxValue": 1127,
+			"defaultValue": 50
+		},
+		{
+			"#": "60",
+			"label": "Too Low Temperature Limit",
+			"valueSize": 2,
+			"unit": "°C",
+			"minValue": 1,
+			"maxValue": 1150,
+			"defaultValue": 50
+		},
+		{
+			"#": "61",
+			"label": "Too High Temperature Limit",
+			"valueSize": 2,
+			"unit": "°C",
+			"minValue": 1,
+			"maxValue": 1000,
+			"defaultValue": 700
+		},
+		{
+			"#": "64",
+			"label": "Output Switch Selection Q1",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "When the device is turned off the output is 0V",
+					"value": 0
+				},
+				{
+					"label": "When the system is turned off the output is 230V",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "65",
+			"label": "Output Switch Selection Q2",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "When system is off the output is 0V(NC)",
+					"value": 0
+				},
+				{
+					"label": "When system is off the output is 230V or 24V(NO)",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "70",
+			"label": "Input I1 Status on Delay",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32000,
+			"defaultValue": 0
+		},
+		{
+			"#": "71",
+			"label": "Input I1 Status Off Delay",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32000,
+			"defaultValue": 0
+		},
+		{
+			"#": "72",
+			"label": "Input I2 Status on Delay",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32000,
+			"defaultValue": 0
+		},
+		{
+			"#": "73",
+			"label": "Input I2 Status Off Delay",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32000,
+			"defaultValue": 0
+		},
+		{
+			"#": "76",
+			"label": "Group 2, 10 - Reporting on Time Interval",
+			"valueSize": 1,
+			"unit": "minutes",
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 30
+		},
+		{
+			"#": "77",
+			"label": "Group 10 Delay Before Sending Basic Set ON",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 3
+		},
+		{
+			"#": "78",
+			"$import": "~/templates/master_template.json#temperature_scale_celsius_fahrenheit"
+		},
+		{
+			"#": "100",
+			"label": "Endpoint I1 Enable/Disable or Type and Event",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Home security, motion detection",
+					"value": 1
+				},
+				{
+					"label": "CO - Carbon monoxid detected",
+					"value": 2
+				},
+				{
+					"label": "CO2 - Carbon dioxid detected",
+					"value": 3
+				},
+				{
+					"label": "Water alarm",
+					"value": 4
+				},
+				{
+					"label": "Heat alarm",
+					"value": 5
+				},
+				{
+					"label": "Smoke alarm",
+					"value": 6
+				},
+				{
+					"label": "Binary Sensor",
+					"value": 9
+				}
+			]
+		},
+		{
+			"#": "101",
+			"label": "Enable/Disable Endpoint I2 or Select Type",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Home security, motion detection",
+					"value": 1
+				},
+				{
+					"label": "CO - Carbon monoxid detected",
+					"value": 2
+				},
+				{
+					"label": "CO2 - Carbon dioxid detected",
+					"value": 3
+				},
+				{
+					"label": "Water alarm",
+					"value": 4
+				},
+				{
+					"label": "Heat alarm",
+					"value": 5
+				},
+				{
+					"label": "Smoke alarm",
+					"value": 6
+				},
+				{
+					"label": "Binary Sensor",
+					"value": 9
+				}
+			]
+		},
+		{
+			"#": "110",
+			"label": "Temperature Sensor Offset Settings",
+			"valueSize": 2,
+			"unit": "°C",
+			"minValue": 0,
+			"maxValue": 32536,
+			"defaultValue": 32536
+		},
+		{
+			"#": "120",
+			"label": "Digital Temperature Sensor Reporting",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 5
+		},
+		{
+			"#": "121",
+			"label": "Digital Temperature Sensor / Setpoint Selector",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Internal sensor is mounted",
+					"value": 0
+				},
+				{
+					"label": "Temperature is grabbed by sensor with assoc 3",
+					"value": 1
+				},
+				{
+					"label": "Temperature is grabbed from ext battery sensor",
+					"value": 2
+				},
+				{
+					"label": "Setpoint is grabbed by sensor with assoc 5",
+					"value": 4
+				},
+				{
+					"label": "Setpoint is grabbed from ext battery sensor",
+					"value": 8
+				},
+				{
+					"label": "Temperature & setpoint from ext batt sensor",
+					"value": 10
+				}
+			]
+		},
+		{
+			"#": "122",
+			"label": "Node Id of External Battery Powered Sensor",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 254,
+			"defaultValue": 0,
+			"unsigned": true
+		}
+	]
+}

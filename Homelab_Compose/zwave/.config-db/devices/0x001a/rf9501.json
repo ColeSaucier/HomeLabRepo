@@ -1,0 +1,115 @@
+{
+	"manufacturer": "Eaton",
+	"manufacturerId": "0x001a",
+	"label": "RF9501",
+	"description": "15A Light Switch",
+	"devices": [
+		{
+			"productType": "0x534c",
+			"productId": "0x0000",
+			"zwaveAllianceId": 740
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Group 1",
+			"maxNodes": 5,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Delayed OFF Time",
+			"description": "The time in seconds the switch will delay when trigger the delayed off feature",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "2",
+			"label": "Panic ON Time",
+			"description": "The time in seconds the switch will turn on for when panic mode is triggered",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "Panic OFF Time",
+			"description": "The time in seconds the switch will turn off for when panic mode is triggered",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "4",
+			"label": "Basic Set Value",
+			"description": "Value to be transmitted to devices in association group",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "5",
+			"label": "Power Up State",
+			"description": "Power Up State of the switch",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 1
+				},
+				{
+					"label": "On",
+					"value": 2
+				},
+				{
+					"label": "Last state",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "6",
+			"label": "Panic Mode Enable",
+			"description": "Enables this switch to participate in panic mode",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 1
+				},
+				{
+					"label": "On",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "10",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Forward Z-Wave Commands",
+			"description": "Keep associated accessory switches in sync"
+		}
+	],
+	"compat": {
+		"mapBasicSet": "auto"
+	}
+}

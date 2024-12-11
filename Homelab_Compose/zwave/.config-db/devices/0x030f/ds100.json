@@ -1,0 +1,131 @@
+{
+	"manufacturer": "Vemmio",
+	"manufacturerId": "0x030f",
+	"label": "DS100",
+	"description": "Double Switch in A Dual Relay In-Wall Module.",
+	"devices": [
+		{
+			"productType": "0x0001",
+			"productId": "0x0001"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "0",
+			"label": "Watt Meter Report Period",
+			"description": "720*5s=3600s=1hour",
+			"valueSize": 2,
+			"unit": "5s",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 720
+		},
+		{
+			"#": "2",
+			"label": "KWH Meter Report Period",
+			"description": "6*10 min = 1 hour",
+			"valueSize": 2,
+			"unit": "10 minutes",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 6
+		},
+		{
+			"#": "3",
+			"label": "Selected Relay",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Relay 1",
+					"value": 1
+				},
+				{
+					"label": "Relay 2",
+					"value": 2
+				},
+				{
+					"label": "Relay 1 & 2",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "4",
+			"label": "Edge or Pulse Mode or Edge-Toggle Mode",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Edge mode",
+					"value": 1
+				},
+				{
+					"label": "Pulse mode",
+					"value": 2
+				},
+				{
+					"label": "Edge-Toggle mode",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "Threshold of Current for Load Caution",
+			"description": "750*0.01A=7.5A",
+			"valueSize": 2,
+			"unit": "0.01A",
+			"minValue": 10,
+			"maxValue": 750,
+			"defaultValue": 750
+		},
+		{
+			"#": "6",
+			"label": "Threshold of kWh for Load Caution",
+			"valueSize": 2,
+			"unit": "1KWh",
+			"minValue": 1,
+			"maxValue": 10000,
+			"defaultValue": 10000
+		},
+		{
+			"#": "7",
+			"$import": "~/templates/master_template.json#state_after_power_failure_off_prev_on"
+		},
+		{
+			"#": "8",
+			"label": "Auto Off Timer",
+			"description": "0: Disable auto off function, 1: 0x0-0x7FFF 1s-32767s",
+			"valueSize": 2,
+			"unit": "1s",
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 0
+		},
+		{
+			"#": "9",
+			"label": "RF Off Command Mode",
+			"description": "0: Switch off, 1: Ignore, 2: Switch toggle, 3: Switch on",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 3,
+			"defaultValue": 0
+		},
+		{
+			"#": "10",
+			"label": "Existence of Endpoint 3",
+			"description": "1: endpoint 3 exists, 2: No endpoint 3",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 2,
+			"defaultValue": 1
+		}
+	]
+}

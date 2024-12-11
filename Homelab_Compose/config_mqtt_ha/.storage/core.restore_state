@@ -1,0 +1,692 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"person.cole","state":"unknown","attributes":{"editable":true,"id":"cole","device_trackers":[],"user_id":"b46b12979d4b410abd9903216fe48ef9","friendly_name":"Cole"},"last_changed":"2024-12-11T18:13:29.088480+00:00","last_reported":"2024-12-11T18:13:34.360297+00:00","last_updated":"2024-12-11T18:13:34.360297+00:00","context":{"id":"01JEVET8GR1QPAYDNZ1SJMGKNR","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"2024-10-28T22:55:17.667500+00:00","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-11T18:13:31.441487+00:00","last_reported":"2024-12-11T18:13:31.441487+00:00","last_updated":"2024-12-11T18:13:31.441487+00:00","context":{"id":"01JEVET5NHWXNC6J04MYGK78VN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.aqaraoff","state":"on","attributes":{"id":"1733759370366","last_triggered":"2024-12-11T18:38:39.113108+00:00","mode":"single","current":0,"friendly_name":"AqaraOFF"},"last_changed":"2024-12-11T18:13:31.967249+00:00","last_reported":"2024-12-11T18:38:39.113250+00:00","last_updated":"2024-12-11T18:38:39.113250+00:00","context":{"id":"01JEVG86081J4642EC7ZCBZ0E4","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.tuyarecurringvibrationtrue","state":"on","attributes":{"id":"1733759438590","last_triggered":"2024-12-11T18:33:35.822628+00:00","mode":"single","current":0,"friendly_name":"TuyaRecurringVibrationTRUE"},"last_changed":"2024-12-11T18:13:31.967752+00:00","last_reported":"2024-12-11T18:33:35.822803+00:00","last_updated":"2024-12-11T18:33:35.822803+00:00","context":{"id":"01JEVFYXTE4CWF7150767SNFR2","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-11T18:13:32.619446+00:00","last_reported":"2024-12-11T18:13:32.619446+00:00","last_updated":"2024-12-11T18:13:32.619446+00:00","context":{"id":"01JEVET6TBRRNRZWNH189GDHBT","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.zigbee2mqtt_bridge_permit_join","state":"on","attributes":{"icon":"mdi:human-greeting-proximity","friendly_name":"Zigbee2MQTT Bridge Permit join"},"last_changed":"2024-12-11T18:13:36.645567+00:00","last_reported":"2024-12-11T18:13:36.645567+00:00","last_updated":"2024-12-11T18:13:36.645567+00:00","context":{"id":"01JEVETAR5WNSPAB2BWW7XJ9Y4","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.zigbee_smart_plug","state":"on","attributes":{"ac_frequency":60,"current":0,"energy":0.37,"linkquality":255,"power":0,"power_factor":0,"power_on_behavior":"on","update":{"installed_version":268513368,"latest_version":268513368,"state":"idle"},"update_available":false,"voltage":118.2,"friendly_name":"Zigbee Smart Plug"},"last_changed":"2024-12-11T18:14:11.734802+00:00","last_reported":"2024-12-11T18:26:38.200411+00:00","last_updated":"2024-12-11T18:26:38.200411+00:00","context":{"id":"01JEVFJ5ZR7V1XG9VT1ASQS3M5","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.0x54ef441000c7f016_trigger_indicator","state":"off","attributes":{"battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"icon":"mdi:led-on","friendly_name":"Aqara Motion Trigger indicator"},"last_changed":"2024-12-11T18:14:11.786736+00:00","last_reported":"2024-12-11T18:14:11.786736+00:00","last_updated":"2024-12-11T18:14:11.786736+00:00","context":{"id":"01JEVEVD2AFCJ72N4K2N6S5ZAN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee2mqtt_bridge_version","state":"1.40.1","attributes":{"icon":"mdi:zigbee","friendly_name":"Zigbee2MQTT Bridge Version"},"last_changed":"2024-12-11T18:13:36.645469+00:00","last_reported":"2024-12-11T18:13:36.645469+00:00","last_updated":"2024-12-11T18:13:36.645469+00:00","context":{"id":"01JEVETAR5TKM9YBZD2YS781TY","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1.40.1",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee2mqtt_bridge_permit_join_timeout","state":"unknown","attributes":{"unit_of_measurement":"s","device_class":"duration","friendly_name":"Zigbee2MQTT Bridge Permit join timeout"},"last_changed":"2024-12-11T18:13:36.638125+00:00","last_reported":"2024-12-11T18:13:36.638125+00:00","last_updated":"2024-12-11T18:13:36.638125+00:00","context":{"id":"01JEVETAQYX54T4FFK1NFJ3210","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "s"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.tuya_oval_vibration_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"battery_low":false,"linkquality":252,"sensitivity":0,"tamper":false,"vibration":false,"voltage":null,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Tuya_Vibe Battery"},"last_changed":"2024-12-11T18:14:11.646163+00:00","last_reported":"2024-12-11T18:33:36.815405+00:00","last_updated":"2024-12-11T18:33:36.815405+00:00","context":{"id":"01JEVFYYSF7A23ADR64606M9DT","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_battery","state":"100","attributes":{"state_class":"measurement","action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Aqara vibration Battery"},"last_changed":"2024-12-11T18:13:55.013191+00:00","last_reported":"2024-12-11T18:38:39.102513+00:00","last_updated":"2024-12-11T18:38:39.102513+00:00","context":{"id":"01JEVG85ZYDYZ4SC637CB8RPJZ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_device_temperature","state":"75","attributes":{"state_class":"measurement","action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aqara vibration Temperature"},"last_changed":"2024-12-11T18:29:54.472875+00:00","last_reported":"2024-12-11T18:38:39.102360+00:00","last_updated":"2024-12-11T18:38:39.102360+00:00","context":{"id":"01JEVG85ZYH4KZBMR5D7B9VW0G","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "24",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_strength","state":"30","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"friendly_name":"Aqara vibration Strength"},"last_changed":"2024-12-11T18:34:23.850235+00:00","last_reported":"2024-12-11T18:38:39.102612+00:00","last_updated":"2024-12-11T18:38:39.102612+00:00","context":{"id":"01JEVG85ZYY8MWS3A3F0S8GQCJ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "30",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_angle_x","state":"5","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"unit_of_measurement":"°","friendly_name":"Aqara vibration Angle x"},"last_changed":"2024-12-11T18:13:55.012436+00:00","last_reported":"2024-12-11T18:38:39.102104+00:00","last_updated":"2024-12-11T18:38:39.102104+00:00","context":{"id":"01JEVG85ZYR5E4EAN9P57YVFTA","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "5",
+        "native_unit_of_measurement": "°"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_angle_y","state":"1","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"unit_of_measurement":"°","friendly_name":"Aqara vibration Angle y"},"last_changed":"2024-12-11T18:13:55.013056+00:00","last_reported":"2024-12-11T18:38:39.101907+00:00","last_updated":"2024-12-11T18:38:39.101907+00:00","context":{"id":"01JEVG85ZXCK22WV107ZBJ5FJZ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1",
+        "native_unit_of_measurement": "°"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_angle_z","state":"85","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"unit_of_measurement":"°","friendly_name":"Aqara vibration Angle z"},"last_changed":"2024-12-11T18:13:55.013767+00:00","last_reported":"2024-12-11T18:38:39.102242+00:00","last_updated":"2024-12-11T18:38:39.102242+00:00","context":{"id":"01JEVG85ZYSSJP9S3TDPWNC309","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "85",
+        "native_unit_of_measurement": "°"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_x_axis","state":"101","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"icon":"mdi:axis-x-arrow","friendly_name":"Aqara vibration X axis"},"last_changed":"2024-12-11T18:13:55.012184+00:00","last_reported":"2024-12-11T18:38:39.102032+00:00","last_updated":"2024-12-11T18:38:39.102032+00:00","context":{"id":"01JEVG85ZYT6H9XHHK6MBVHF6A","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "101",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_y_axis","state":"15","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"icon":"mdi:axis-y-arrow","friendly_name":"Aqara vibration Y axis"},"last_changed":"2024-12-11T18:13:55.013335+00:00","last_reported":"2024-12-11T18:38:39.102568+00:00","last_updated":"2024-12-11T18:38:39.102568+00:00","context":{"id":"01JEVG85ZYAK6WF0Q2YADW9T07","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "15",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_z_axis","state":"1105","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"icon":"mdi:axis-z-arrow","friendly_name":"Aqara vibration Z axis"},"last_changed":"2024-12-11T18:13:55.012935+00:00","last_reported":"2024-12-11T18:38:39.102425+00:00","last_updated":"2024-12-11T18:38:39.102425+00:00","context":{"id":"01JEVG85ZYTK2QMB35M2W3WEMX","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1105",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aqara_vibration_action","state":"unknown","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"icon":"mdi:gesture-double-tap","friendly_name":"Aqara vibration Action"},"last_changed":"2024-12-11T18:38:39.102726+00:00","last_reported":"2024-12-11T18:38:39.102726+00:00","last_updated":"2024-12-11T18:38:39.102726+00:00","context":{"id":"01JEVG85ZY0T4JC8W86159E0HC","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x0ceff6fffe6b79ff_illumination","state":"unavailable","attributes":{"friendly_name":"0x0ceff6fffe6b79ff Illumination"},"last_changed":"2024-12-11T18:13:34.356960+00:00","last_reported":"2024-12-11T18:14:11.722041+00:00","last_updated":"2024-12-11T18:13:35.345592+00:00","context":{"id":"01JEVET9FHNSDPB4HKWN0WD440","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "bright",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aeotec_motion_sensor_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aeotec Motion Sensor Temperature"},"last_changed":"2024-12-11T18:13:34.356784+00:00","last_reported":"2024-12-11T18:14:11.725640+00:00","last_updated":"2024-12-11T18:13:35.355714+00:00","context":{"id":"01JEVET9FV36FE1FZSPZGKG6RZ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "23.75",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.aeotec_motion_sensor_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Aeotec Motion Sensor Battery"},"last_changed":"2024-12-11T18:13:34.356848+00:00","last_reported":"2024-12-11T18:14:11.725569+00:00","last_updated":"2024-12-11T18:13:35.360914+00:00","context":{"id":"01JEVET9G0195NHCMVTQ2QCA0M","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "80",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.liptech_mmwave_target_distance","state":"unavailable","attributes":{"unit_of_measurement":"cm","friendly_name":"liptech mmwave Target distance"},"last_changed":"2024-12-11T18:13:34.356481+00:00","last_reported":"2024-12-11T18:14:11.727857+00:00","last_updated":"2024-12-11T18:13:35.390890+00:00","context":{"id":"01JEVET9GYEVGDAZJHW8421GBK","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "301",
+        "native_unit_of_measurement": "cm"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.liptech_mmwave_presence_keep_time","state":"unavailable","attributes":{"unit_of_measurement":"min","friendly_name":"liptech mmwave Presence keep time"},"last_changed":"2024-12-11T18:13:34.356503+00:00","last_reported":"2024-12-11T18:14:11.727712+00:00","last_updated":"2024-12-11T18:13:35.419526+00:00","context":{"id":"01JEVET9HVJE39P2ZT8BMMMX3Y","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "131",
+        "native_unit_of_measurement": "min"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.3_vibration_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"3 vibration Battery"},"last_changed":"2024-12-11T18:13:34.357318+00:00","last_reported":"2024-12-11T18:14:11.732372+00:00","last_updated":"2024-12-11T18:13:35.520344+00:00","context":{"id":"01JEVET9N0HR4XWBGSMY7HWRDS","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "85",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.3_vibration_x_axis","state":"unavailable","attributes":{"icon":"mdi:axis-x-arrow","friendly_name":"3 vibration X axis"},"last_changed":"2024-12-11T18:13:34.357337+00:00","last_reported":"2024-12-11T18:14:11.732220+00:00","last_updated":"2024-12-11T18:13:35.563643+00:00","context":{"id":"01JEVET9PBSWMGV0988WY4RWZJ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "171",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.3_vibration_y_axis","state":"unavailable","attributes":{"icon":"mdi:axis-y-arrow","friendly_name":"3 vibration Y axis"},"last_changed":"2024-12-11T18:13:34.357353+00:00","last_reported":"2024-12-11T18:14:11.732339+00:00","last_updated":"2024-12-11T18:13:35.565996+00:00","context":{"id":"01JEVET9PDRN290SXH7KR7F3C0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "-234",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.3_vibration_z_axis","state":"unavailable","attributes":{"icon":"mdi:axis-z-arrow","friendly_name":"3 vibration Z axis"},"last_changed":"2024-12-11T18:13:34.357368+00:00","last_reported":"2024-12-11T18:14:11.732477+00:00","last_updated":"2024-12-11T18:13:35.568771+00:00","context":{"id":"01JEVET9PG1FGTVKTA3WZJ6M57","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1734",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee_smart_plug_power","state":"0","attributes":{"state_class":"measurement","ac_frequency":60,"current":0,"energy":0.37,"linkquality":255,"power":0,"power_factor":0,"power_on_behavior":"on","update":{"installed_version":268513368,"latest_version":268513368,"state":"idle"},"update_available":false,"voltage":118.2,"unit_of_measurement":"W","device_class":"power","friendly_name":"Zigbee Smart Plug Power"},"last_changed":"2024-12-11T18:14:11.735248+00:00","last_reported":"2024-12-11T18:26:38.200742+00:00","last_updated":"2024-12-11T18:26:38.200742+00:00","context":{"id":"01JEVFJ5ZRKFQHVEVVXW3KMY6Z","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "0",
+        "native_unit_of_measurement": "W"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee_smart_plug_energy","state":"0.37","attributes":{"state_class":"total_increasing","ac_frequency":60,"current":0,"energy":0.37,"linkquality":255,"power":0,"power_factor":0,"power_on_behavior":"on","update":{"installed_version":268513368,"latest_version":268513368,"state":"idle"},"update_available":false,"voltage":118.2,"unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Zigbee Smart Plug Energy"},"last_changed":"2024-12-11T18:14:11.735115+00:00","last_reported":"2024-12-11T18:26:38.200656+00:00","last_updated":"2024-12-11T18:26:38.200656+00:00","context":{"id":"01JEVFJ5ZRA6FM4Y30DC6E7WZ4","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "0.37",
+        "native_unit_of_measurement": "kWh"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x282c02bfffe6798d_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"battery_low":false,"contact":false,"linkquality":255,"tamper":false,"update":{"installed_version":63,"latest_version":63,"state":"idle"},"update_available":false,"voltage":3100,"unit_of_measurement":"%","device_class":"battery","friendly_name":"3rdReality Door Sensor Battery"},"last_changed":"2024-12-11T18:14:11.769178+00:00","last_reported":"2024-12-11T18:38:35.788649+00:00","last_updated":"2024-12-11T18:38:35.788649+00:00","context":{"id":"01JEVG82RCS1XGRWD0Y3PTPSNJ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d008b112dea_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"contact":false,"device_temperature":30,"linkquality":168,"power_outage_count":7,"trigger_count":0,"voltage":3035,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Aqara_Door Battery"},"last_changed":"2024-12-11T18:14:11.771276+00:00","last_reported":"2024-12-11T18:38:43.663063+00:00","last_updated":"2024-12-11T18:38:43.663063+00:00","context":{"id":"01JEVG8AEFZDATDE053YDHY0PM","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d008b112dea_device_temperature","state":"86","attributes":{"state_class":"measurement","battery":100,"contact":false,"device_temperature":30,"linkquality":168,"power_outage_count":7,"trigger_count":0,"voltage":3035,"unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aqara_Door Temperature"},"last_changed":"2024-12-11T18:38:43.663188+00:00","last_reported":"2024-12-11T18:38:43.663188+00:00","last_updated":"2024-12-11T18:38:43.663188+00:00","context":{"id":"01JEVG8AEFJ22NK8EQX8Y7Y1F2","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "30",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d000af04862_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"contact":true,"device_temperature":29,"linkquality":252,"power_outage_count":8,"trigger_count":0,"voltage":3085,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Aqara Door3 Battery"},"last_changed":"2024-12-11T18:14:11.775826+00:00","last_reported":"2024-12-11T18:17:52.371903+00:00","last_updated":"2024-12-11T18:17:52.371903+00:00","context":{"id":"01JEVF24FKXCD930CF3DM1J3B4","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d000af04862_device_temperature","state":"84","attributes":{"state_class":"measurement","battery":100,"contact":true,"device_temperature":29,"linkquality":252,"power_outage_count":8,"trigger_count":0,"voltage":3085,"unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aqara Door3 Temperature"},"last_changed":"2024-12-11T18:14:11.775610+00:00","last_reported":"2024-12-11T18:17:52.371671+00:00","last_updated":"2024-12-11T18:17:52.371671+00:00","context":{"id":"01JEVF24FKZ2VSD6472K6MBBWJ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "29",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d000af0c736_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"contact":false,"device_temperature":25,"linkquality":236,"power_outage_count":6,"trigger_count":0,"voltage":3125,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Aqara Door2 Battery"},"last_changed":"2024-12-11T18:14:11.779251+00:00","last_reported":"2024-12-11T18:31:03.812857+00:00","last_updated":"2024-12-11T18:31:03.812857+00:00","context":{"id":"01JEVFT9C4J79FBCXF4K1PJBY2","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d000af0c736_device_temperature","state":"77","attributes":{"state_class":"measurement","battery":100,"contact":false,"device_temperature":25,"linkquality":236,"power_outage_count":6,"trigger_count":0,"voltage":3125,"unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aqara Door2 Temperature"},"last_changed":"2024-12-11T18:31:03.813023+00:00","last_reported":"2024-12-11T18:31:03.813023+00:00","last_updated":"2024-12-11T18:31:03.813023+00:00","context":{"id":"01JEVFT9C54RJSD34T1A067ATG","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "25",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d000af0c32e_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"contact":true,"device_temperature":26,"linkquality":255,"power_outage_count":56,"trigger_count":0,"voltage":3095,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Aqara Door4 Battery"},"last_changed":"2024-12-11T18:14:11.781214+00:00","last_reported":"2024-12-11T18:14:11.781214+00:00","last_updated":"2024-12-11T18:14:11.781214+00:00","context":{"id":"01JEVEVD25BPEJCDQCCJNXCCSP","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x00158d000af0c32e_device_temperature","state":"79","attributes":{"state_class":"measurement","battery":100,"contact":true,"device_temperature":26,"linkquality":255,"power_outage_count":56,"trigger_count":0,"voltage":3095,"unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aqara Door4 Temperature"},"last_changed":"2024-12-11T18:14:11.781421+00:00","last_reported":"2024-12-11T18:14:11.781421+00:00","last_updated":"2024-12-11T18:14:11.781421+00:00","context":{"id":"01JEVEVD253YG5ZMBNN2S7AHNV","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "26",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x404ccafffe579a94_flow","state":"0","attributes":{"flow":0,"linkquality":255,"unit_of_measurement":"m³/h","friendly_name":"0x404ccafffe579a94 Flow"},"last_changed":"2024-12-11T18:14:11.783503+00:00","last_reported":"2024-12-11T18:14:11.783503+00:00","last_updated":"2024-12-11T18:14:11.783503+00:00","context":{"id":"01JEVEVD27DBTKE7V1Q0PMXE56","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "0",
+        "native_unit_of_measurement": "m³/h"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x54ef441000c7f016_illuminance_lux","state":"21","attributes":{"state_class":"measurement","battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Aqara Motion Illuminance"},"last_changed":"2024-12-11T18:14:11.787749+00:00","last_reported":"2024-12-11T18:14:11.787749+00:00","last_updated":"2024-12-11T18:14:11.787749+00:00","context":{"id":"01JEVEVD2BCY889V4CEFFYW0NJ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "21",
+        "native_unit_of_measurement": "lx"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x54ef441000c7f016_device_temperature","state":"79","attributes":{"state_class":"measurement","battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"unit_of_measurement":"°F","device_class":"temperature","friendly_name":"Aqara Motion Temperature"},"last_changed":"2024-12-11T18:14:11.787271+00:00","last_reported":"2024-12-11T18:14:11.787271+00:00","last_updated":"2024-12-11T18:14:11.787271+00:00","context":{"id":"01JEVEVD2BRZET083ZWZ79XMZ2","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "26",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.0x54ef441000c7f016_battery","state":"100","attributes":{"state_class":"measurement","battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Aqara Motion Battery"},"last_changed":"2024-12-11T18:14:11.787534+00:00","last_reported":"2024-12-11T18:14:11.787534+00:00","last_updated":"2024-12-11T18:14:11.787534+00:00","context":{"id":"01JEVEVD2BRDZAMRE99FV8VYAT","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "100",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"update.0x0ceff6fffe6b79ff","state":"unavailable","attributes":{"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"0x0ceff6fffe6b79ff","supported_features":1},"last_changed":"2024-12-11T18:13:34.356982+00:00","last_reported":"2024-12-11T18:14:11.722283+00:00","last_updated":"2024-12-11T18:13:35.833719+00:00","context":{"id":"01JEVET9YS4PHR95BA9NDG9JVX","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"update.3_vibration","state":"unavailable","attributes":{"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"3 vibration","supported_features":1},"last_changed":"2024-12-11T18:13:34.357291+00:00","last_reported":"2024-12-11T18:14:11.732447+00:00","last_updated":"2024-12-11T18:13:35.835639+00:00","context":{"id":"01JEVET9YVD1941MHC6M2GVK95","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"update.zigbee_smart_plug","state":"off","attributes":{"auto_update":false,"installed_version":"268513368","in_progress":false,"latest_version":"268513368","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"Zigbee Smart Plug","supported_features":1},"last_changed":"2024-12-11T18:14:11.734611+00:00","last_reported":"2024-12-11T18:14:11.734611+00:00","last_updated":"2024-12-11T18:14:11.734611+00:00","context":{"id":"01JEVEVD0PXNKMWX699814GPXY","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"update.0x282c02bfffe6798d","state":"off","attributes":{"auto_update":false,"installed_version":"63","in_progress":false,"latest_version":"63","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"3rdReality Door Sensor","supported_features":1},"last_changed":"2024-12-11T18:14:11.768780+00:00","last_reported":"2024-12-11T18:14:11.768780+00:00","last_updated":"2024-12-11T18:14:11.768780+00:00","context":{"id":"01JEVEVD1RAVDJX69JDD9H403C","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"update.phillips1100","state":"unavailable","attributes":{"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"Phillips1100","supported_features":1},"last_changed":"2024-12-11T18:13:34.357242+00:00","last_reported":"2024-12-11T18:14:11.773234+00:00","last_updated":"2024-12-11T18:13:35.843908+00:00","context":{"id":"01JEVET9Z33ENQW67X0TD4Q1TY","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"update.0x54ef441000c7f016","state":"off","attributes":{"auto_update":false,"installed_version":"-1","in_progress":false,"latest_version":"-1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"device_class":"firmware","entity_picture":"https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png","friendly_name":"Aqara Motion","supported_features":1},"last_changed":"2024-12-11T18:14:11.787102+00:00","last_reported":"2024-12-11T18:14:11.787102+00:00","last_updated":"2024-12-11T18:14:11.787102+00:00","context":{"id":"01JEVEVD2BPZVX9BACM2A27GPK","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"light.phillips1100","state":"unavailable","attributes":{"min_color_temp_kelvin":2000,"max_color_temp_kelvin":6535,"min_mireds":153,"max_mireds":500,"effect_list":["blink","breathe","okay","channel_change","candle","fireplace","colorloop","finish_effect","stop_effect","stop_hue_effect"],"supported_color_modes":["color_temp","xy"],"friendly_name":"Phillips1100","supported_features":44},"last_changed":"2024-12-11T18:13:34.357198+00:00","last_reported":"2024-12-11T18:14:11.773357+00:00","last_updated":"2024-12-11T18:13:35.875147+00:00","context":{"id":"01JEVETA03M8045GWSNH1218H6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.tuya_oval_vibration_sensor_sensitivity","state":"0","attributes":{"min":0.0,"max":50.0,"step":1.0,"mode":"auto","battery":100,"battery_low":false,"linkquality":252,"sensitivity":0,"tamper":false,"vibration":false,"voltage":null,"friendly_name":"Tuya_Vibe Sensitivity"},"last_changed":"2024-12-11T18:14:11.645886+00:00","last_reported":"2024-12-11T18:33:36.815271+00:00","last_updated":"2024-12-11T18:33:36.815271+00:00","context":{"id":"01JEVFYYSFNNTC5A594RMM5W0C","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 50.0,
+        "native_min_value": 0.0,
+        "native_step": 1.0,
+        "native_unit_of_measurement": null,
+        "native_value": 0
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.0x0ceff6fffe6b79ff_occupancy_timeout","state":"unavailable","attributes":{"min":15.0,"max":65535.0,"step":1.0,"mode":"auto","icon":"mdi:timer","friendly_name":"0x0ceff6fffe6b79ff Occupancy timeout"},"last_changed":"2024-12-11T18:13:34.356922+00:00","last_reported":"2024-12-11T18:14:11.722173+00:00","last_updated":"2024-12-11T18:13:35.928848+00:00","context":{"id":"01JEVETA1R7KGSX3RY5T84MT4Y","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 65535.0,
+        "native_min_value": 15.0,
+        "native_step": 1.0,
+        "native_unit_of_measurement": null,
+        "native_value": 15
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.liptech_mmwave_motion_detection_distance","state":"unavailable","attributes":{"min":0.0,"max":600.0,"step":75.0,"mode":"auto","unit_of_measurement":"cm","friendly_name":"liptech mmwave Motion detection distance"},"last_changed":"2024-12-11T18:13:34.356360+00:00","last_reported":"2024-12-11T18:14:11.727822+00:00","last_updated":"2024-12-11T18:13:35.933559+00:00","context":{"id":"01JEVETA1X21EAJN6CBNR4XVQS","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 600.0,
+        "native_min_value": 0.0,
+        "native_step": 75.0,
+        "native_unit_of_measurement": "cm",
+        "native_value": 525
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.liptech_mmwave_motion_detection_sensitivity","state":"unavailable","attributes":{"min":0.0,"max":5.0,"step":1.0,"mode":"auto","friendly_name":"liptech mmwave Motion detection sensitivity"},"last_changed":"2024-12-11T18:13:34.356397+00:00","last_reported":"2024-12-11T18:14:11.727946+00:00","last_updated":"2024-12-11T18:13:35.937016+00:00","context":{"id":"01JEVETA21W93Z635JV87GSP4M","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 5.0,
+        "native_min_value": 0.0,
+        "native_step": 1.0,
+        "native_unit_of_measurement": null,
+        "native_value": 4
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.liptech_mmwave_static_detection_sensitivity","state":"unavailable","attributes":{"min":0.0,"max":5.0,"step":1.0,"mode":"auto","friendly_name":"liptech mmwave Static detection sensitivity"},"last_changed":"2024-12-11T18:13:34.356418+00:00","last_reported":"2024-12-11T18:14:11.727888+00:00","last_updated":"2024-12-11T18:13:35.942297+00:00","context":{"id":"01JEVETA26TJTQCCT7JY23G0PS","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 5.0,
+        "native_min_value": 0.0,
+        "native_step": 1.0,
+        "native_unit_of_measurement": null,
+        "native_value": 4
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.liptech_mmwave_fading_time","state":"unavailable","attributes":{"min":0.0,"max":10000.0,"step":1.0,"mode":"auto","unit_of_measurement":"s","friendly_name":"liptech mmwave Fading time"},"last_changed":"2024-12-11T18:13:34.356438+00:00","last_reported":"2024-12-11T18:14:11.727918+00:00","last_updated":"2024-12-11T18:13:35.946110+00:00","context":{"id":"01JEVETA2A57GJ29DPGMZ5X7KE","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 10000.0,
+        "native_min_value": 0.0,
+        "native_step": 1.0,
+        "native_unit_of_measurement": "s",
+        "native_value": 2
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"number.0x54ef441000c7f016_detection_interval","state":"2","attributes":{"min":2.0,"max":65535.0,"step":1.0,"mode":"auto","battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"unit_of_measurement":"s","icon":"mdi:timer","friendly_name":"Aqara Motion Detection interval"},"last_changed":"2024-12-11T18:14:11.786920+00:00","last_reported":"2024-12-11T18:14:11.786920+00:00","last_updated":"2024-12-11T18:14:11.786920+00:00","context":{"id":"01JEVEVD2A2DF2G19A0K9HHG31","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_max_value": 65535.0,
+        "native_min_value": 2.0,
+        "native_step": 1.0,
+        "native_unit_of_measurement": "s",
+        "native_value": 2
+      },
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"button.zigbee2mqtt_bridge_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"Zigbee2MQTT Bridge Restart"},"last_changed":"2024-12-11T18:13:36.637900+00:00","last_reported":"2024-12-11T18:13:36.637900+00:00","last_updated":"2024-12-11T18:13:36.637900+00:00","context":{"id":"01JEVETAQXX9ZPT436JRBH6HXQ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"select.zigbee2mqtt_bridge_log_level","state":"info","attributes":{"options":["error","warning","info","debug"],"friendly_name":"Zigbee2MQTT Bridge Log level"},"last_changed":"2024-12-11T18:13:36.645327+00:00","last_reported":"2024-12-11T18:13:36.645327+00:00","last_updated":"2024-12-11T18:13:36.645327+00:00","context":{"id":"01JEVETAR5XR6B1GQWKQEQ78DZ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"select.aqara_vibration_sensitivity","state":"high","attributes":{"options":["low","medium","high"],"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"icon":"mdi:tune","friendly_name":"Aqara vibration Sensitivity"},"last_changed":"2024-12-11T18:13:55.013565+00:00","last_reported":"2024-12-11T18:38:39.102671+00:00","last_updated":"2024-12-11T18:38:39.102671+00:00","context":{"id":"01JEVG85ZYQKPPA5DYJHEE5BKE","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"select.0x0ceff6fffe6b79ff_occupancy_sensitivity","state":"unavailable","attributes":{"options":["low","medium","high"],"friendly_name":"0x0ceff6fffe6b79ff Occupancy sensitivity"},"last_changed":"2024-12-11T18:13:34.356940+00:00","last_reported":"2024-12-11T18:14:11.721956+00:00","last_updated":"2024-12-11T18:13:36.019686+00:00","context":{"id":"01JEVETA4KQPXXYZZ4V659B6RS","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"select.zigbee_smart_plug_power_on_behavior","state":"on","attributes":{"options":["off","previous","on"],"ac_frequency":60,"current":0,"energy":0.37,"linkquality":255,"power":0,"power_factor":0,"power_on_behavior":"on","update":{"installed_version":268513368,"latest_version":268513368,"state":"idle"},"update_available":false,"voltage":118.2,"icon":"mdi:power-settings","friendly_name":"Zigbee Smart Plug Power-on behavior"},"last_changed":"2024-12-11T18:14:11.734942+00:00","last_reported":"2024-12-11T18:26:38.200541+00:00","last_updated":"2024-12-11T18:26:38.200541+00:00","context":{"id":"01JEVFJ5ZRGE791XSTH4ZTRD8H","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"select.phillips1100_power_on_behavior","state":"unavailable","attributes":{"options":["off","on","toggle","previous"],"icon":"mdi:power-settings","friendly_name":"Phillips1100 Power-on behavior"},"last_changed":"2024-12-11T18:13:34.357219+00:00","last_reported":"2024-12-11T18:14:11.773160+00:00","last_updated":"2024-12-11T18:13:36.026642+00:00","context":{"id":"01JEVETA4TKFTW09GXENDWJEW0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"select.0x54ef441000c7f016_motion_sensitivity","state":"medium","attributes":{"options":["low","medium","high"],"battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"icon":"mdi:tune","friendly_name":"Aqara Motion Motion sensitivity"},"last_changed":"2024-12-11T18:14:11.787413+00:00","last_reported":"2024-12-11T18:14:11.787413+00:00","last_updated":"2024-12-11T18:14:11.787413+00:00","context":{"id":"01JEVEVD2BGNV5EFSSZQ56ZBHM","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.zigbee2mqtt_bridge_connection_state","state":"on","attributes":{"device_class":"connectivity","friendly_name":"Zigbee2MQTT Bridge Connection state"},"last_changed":"2024-12-11T18:13:36.638324+00:00","last_reported":"2024-12-11T18:13:36.638324+00:00","last_updated":"2024-12-11T18:13:36.638324+00:00","context":{"id":"01JEVETAQYD0QE7EBN1Y2JK7A9","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.tuya_oval_vibration_sensor_vibration","state":"off","attributes":{"battery":100,"battery_low":false,"linkquality":252,"sensitivity":0,"tamper":false,"vibration":false,"voltage":null,"device_class":"vibration","friendly_name":"Tuya_Vibe Vibration"},"last_changed":"2024-12-11T18:33:36.815133+00:00","last_reported":"2024-12-11T18:33:36.815133+00:00","last_updated":"2024-12-11T18:33:36.815133+00:00","context":{"id":"01JEVFYYSFYZS21VX842FK6RWP","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.aqara_vibration_vibration","state":"off","attributes":{"action":null,"angle":5,"angle_x":5,"angle_x_absolute":85,"angle_y":1,"angle_y_absolute":89,"angle_z":85,"battery":100,"device_temperature":24,"linkquality":172,"power_outage_count":160,"sensitivity":"high","strength":30,"vibration":false,"voltage":3025,"x_axis":101,"y_axis":15,"z_axis":1105,"device_class":"vibration","friendly_name":"Aqara vibration Vibration"},"last_changed":"2024-12-11T18:38:39.102176+00:00","last_reported":"2024-12-11T18:38:39.102176+00:00","last_updated":"2024-12-11T18:38:39.102176+00:00","context":{"id":"01JEVG85ZY3Q99MRB30A1FWJ4K","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x0ceff6fffe6b79ff_occupancy","state":"unavailable","attributes":{"device_class":"occupancy","friendly_name":"0x0ceff6fffe6b79ff Occupancy"},"last_changed":"2024-12-11T18:13:34.356905+00:00","last_reported":"2024-12-11T18:14:11.722103+00:00","last_updated":"2024-12-11T18:13:36.066846+00:00","context":{"id":"01JEVETA6228SBZN6193176MM5","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.aeotec_motion_sensor_occupancy","state":"unavailable","attributes":{"device_class":"occupancy","friendly_name":"Aeotec Motion Sensor Occupancy"},"last_changed":"2024-12-11T18:13:34.356802+00:00","last_reported":"2024-12-11T18:14:11.725601+00:00","last_updated":"2024-12-11T18:13:36.073096+00:00","context":{"id":"01JEVETA697J6PW7C6FVS4TNJS","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.aeotec_motion_sensor_battery_low","state":"unavailable","attributes":{"device_class":"battery","friendly_name":"Aeotec Motion Sensor Battery"},"last_changed":"2024-12-11T18:13:34.356817+00:00","last_reported":"2024-12-11T18:14:11.725513+00:00","last_updated":"2024-12-11T18:13:36.078030+00:00","context":{"id":"01JEVETA6EM6EZA4YYQ0E9H214","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.aeotec_motion_sensor_tamper","state":"unavailable","attributes":{"device_class":"tamper","friendly_name":"Aeotec Motion Sensor Tamper"},"last_changed":"2024-12-11T18:13:34.356832+00:00","last_reported":"2024-12-11T18:14:11.725461+00:00","last_updated":"2024-12-11T18:13:36.081887+00:00","context":{"id":"01JEVETA6HEN2GDPVHV55R0X4P","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.liptech_mmwave_occupancy","state":"unavailable","attributes":{"device_class":"occupancy","friendly_name":"liptech mmwave Occupancy"},"last_changed":"2024-12-11T18:13:34.356674+00:00","last_reported":"2024-12-11T18:14:11.727773+00:00","last_updated":"2024-12-11T18:13:36.084770+00:00","context":{"id":"01JEVETA6MSJJP7KQ4VGKZDSVG","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.3_vibration_vibration","state":"unavailable","attributes":{"device_class":"vibration","friendly_name":"3 vibration Vibration"},"last_changed":"2024-12-11T18:13:34.357259+00:00","last_reported":"2024-12-11T18:14:11.732280+00:00","last_updated":"2024-12-11T18:13:36.087807+00:00","context":{"id":"01JEVETA6Q0Z0FDT4X53J5K76N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.3_vibration_battery_low","state":"unavailable","attributes":{"device_class":"battery","friendly_name":"3 vibration Battery"},"last_changed":"2024-12-11T18:13:34.357274+00:00","last_reported":"2024-12-11T18:14:11.732400+00:00","last_updated":"2024-12-11T18:13:36.090113+00:00","context":{"id":"01JEVETA6T1VYW5CYKGYV6MGZF","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x282c02bfffe6798d_contact","state":"on","attributes":{"battery":100,"battery_low":false,"contact":false,"linkquality":255,"tamper":false,"update":{"installed_version":63,"latest_version":63,"state":"idle"},"update_available":false,"voltage":3100,"device_class":"door","friendly_name":"3rdReality Door Sensor Door"},"last_changed":"2024-12-11T18:14:11.768995+00:00","last_reported":"2024-12-11T18:38:35.788485+00:00","last_updated":"2024-12-11T18:38:35.788485+00:00","context":{"id":"01JEVG82RCW347FG1ECJGMZ26Y","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x282c02bfffe6798d_battery_low","state":"off","attributes":{"battery":100,"battery_low":false,"contact":false,"linkquality":255,"tamper":false,"update":{"installed_version":63,"latest_version":63,"state":"idle"},"update_available":false,"voltage":3100,"device_class":"battery","friendly_name":"3rdReality Door Sensor Battery"},"last_changed":"2024-12-11T18:14:11.769325+00:00","last_reported":"2024-12-11T18:38:35.788726+00:00","last_updated":"2024-12-11T18:38:35.788726+00:00","context":{"id":"01JEVG82RC2TYZEK7FDBJMAXWD","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x00158d008b112dea_contact","state":"on","attributes":{"battery":100,"contact":false,"device_temperature":30,"linkquality":168,"power_outage_count":7,"trigger_count":0,"voltage":3035,"device_class":"door","friendly_name":"Aqara_Door Door"},"last_changed":"2024-12-11T18:14:11.771447+00:00","last_reported":"2024-12-11T18:38:43.662884+00:00","last_updated":"2024-12-11T18:38:43.662884+00:00","context":{"id":"01JEVG8AEE4Q3X0ZM1B43ZVV9Z","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x00158d000af04862_contact","state":"off","attributes":{"battery":100,"contact":true,"device_temperature":29,"linkquality":252,"power_outage_count":8,"trigger_count":0,"voltage":3085,"device_class":"door","friendly_name":"Aqara Door3 Door"},"last_changed":"2024-12-11T18:14:11.775983+00:00","last_reported":"2024-12-11T18:17:52.372031+00:00","last_updated":"2024-12-11T18:17:52.372031+00:00","context":{"id":"01JEVF24FM1CK576GMS0MX24W6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x00158d000af0c736_contact","state":"on","attributes":{"battery":100,"contact":false,"device_temperature":25,"linkquality":236,"power_outage_count":6,"trigger_count":0,"voltage":3125,"device_class":"door","friendly_name":"Aqara Door2 Door"},"last_changed":"2024-12-11T18:14:11.779118+00:00","last_reported":"2024-12-11T18:31:03.813107+00:00","last_updated":"2024-12-11T18:31:03.813107+00:00","context":{"id":"01JEVFT9C50FVCWN5EJ03FXC81","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x00158d000af0c32e_contact","state":"off","attributes":{"battery":100,"contact":true,"device_temperature":26,"linkquality":255,"power_outage_count":56,"trigger_count":0,"voltage":3095,"device_class":"door","friendly_name":"Aqara Door4 Door"},"last_changed":"2024-12-11T18:14:11.781546+00:00","last_reported":"2024-12-11T18:14:11.781546+00:00","last_updated":"2024-12-11T18:14:11.781546+00:00","context":{"id":"01JEVEVD25JVP7E8YPXGZ4Y9DB","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.0x54ef441000c7f016_occupancy","state":"off","attributes":{"battery":100,"detection_interval":2,"device_temperature":26,"illuminance":21,"linkquality":248,"motion_sensitivity":"medium","occupancy":false,"power_outage_count":0,"trigger_indicator":false,"update":{"installed_version":-1,"latest_version":-1,"state":null},"update_available":null,"voltage":3165,"device_class":"occupancy","friendly_name":"Aqara Motion Occupancy"},"last_changed":"2024-12-11T18:14:11.787639+00:00","last_reported":"2024-12-11T18:14:11.787639+00:00","last_updated":"2024-12-11T18:14:11.787639+00:00","context":{"id":"01JEVEVD2BNC1D3HJP04ZHGARX","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.213271+00:00"
+    },
+    {
+      "state": {"entity_id":"button.q_ping","state":"2024-11-21T20:13:24.245074+00:00","attributes":{"friendly_name":"Q Ping"},"last_changed":"2024-12-11T18:13:34.159880+00:00","last_reported":"2024-12-11T18:13:34.159880+00:00","last_updated":"2024-12-11T18:13:34.159880+00:00","context":{"id":"01JEVET8AFR4XZEBKTHCJXV6F9","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206387+00:00"
+    },
+    {
+      "state": {"entity_id":"button.outlet67_ping","state":"unknown","attributes":{"friendly_name":"OUTLET67 Ping"},"last_changed":"2024-12-11T18:13:34.178065+00:00","last_reported":"2024-12-11T18:13:34.178065+00:00","last_updated":"2024-12-11T18:13:34.178065+00:00","context":{"id":"01JEVET8B25JRA8PMA0Y6DSNJT","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206481+00:00"
+    },
+    {
+      "state": {"entity_id":"button.q_idle_home_security_motion_sensor_status","state":"unknown","attributes":{"friendly_name":"Q Idle Home Security Motion sensor status"},"last_changed":"2024-12-11T18:13:34.304295+00:00","last_reported":"2024-12-11T18:13:34.304295+00:00","last_updated":"2024-12-11T18:13:34.304295+00:00","context":{"id":"01JEVET8F05XMF3YSR0BYSNFA0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206641+00:00"
+    },
+    {
+      "state": {"entity_id":"button.q_idle_power_management_battery_maintenance_status","state":"unknown","attributes":{"friendly_name":"Q Idle Power Management Battery maintenance status"},"last_changed":"2024-12-11T18:13:34.305208+00:00","last_reported":"2024-12-11T18:13:34.305208+00:00","last_updated":"2024-12-11T18:13:34.305208+00:00","context":{"id":"01JEVET8F1EZYMXKHBGFAQQA72","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206720+00:00"
+    },
+    {
+      "state": {"entity_id":"button.q_identify","state":"unknown","attributes":{"friendly_name":"Q Identify"},"last_changed":"2024-12-11T18:13:34.306901+00:00","last_reported":"2024-12-11T18:13:34.306901+00:00","last_updated":"2024-12-11T18:13:34.306901+00:00","context":{"id":"01JEVET8F212XV05MKXPRQ32N0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206803+00:00"
+    },
+    {
+      "state": {"entity_id":"button.outlet67_identify","state":"unknown","attributes":{"friendly_name":"OUTLET67 Identify"},"last_changed":"2024-12-11T18:13:34.308977+00:00","last_reported":"2024-12-11T18:13:34.308977+00:00","last_updated":"2024-12-11T18:13:34.308977+00:00","context":{"id":"01JEVET8F4ESZTDYE09FR2V740","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206879+00:00"
+    },
+    {
+      "state": {"entity_id":"button.outlet67_reset_accumulated_values_3","state":"unknown","attributes":{"friendly_name":"OUTLET67 Reset accumulated values"},"last_changed":"2024-12-11T18:13:34.310792+00:00","last_reported":"2024-12-11T18:13:34.310792+00:00","last_updated":"2024-12-11T18:13:34.310792+00:00","context":{"id":"01JEVET8F6QB7N37TPJ8R6N7M8","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206954+00:00"
+    },
+    {
+      "state": {"entity_id":"button.outlet67_idle_heat_alarm_heat_sensor_status_2","state":"unknown","attributes":{"friendly_name":"OUTLET67 Idle Heat Alarm Heat sensor status"},"last_changed":"2024-12-11T18:13:34.311060+00:00","last_reported":"2024-12-11T18:13:34.311060+00:00","last_updated":"2024-12-11T18:13:34.311060+00:00","context":{"id":"01JEVET8F7X75XZ292Y3XP5S35","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.207028+00:00"
+    },
+    {
+      "state": {"entity_id":"button.outlet67_idle_home_security_motion_sensor_status_2","state":"unknown","attributes":{"friendly_name":"OUTLET67 Idle Home Security Motion sensor status"},"last_changed":"2024-12-11T18:13:34.311943+00:00","last_reported":"2024-12-11T18:13:34.311943+00:00","last_updated":"2024-12-11T18:13:34.311943+00:00","context":{"id":"01JEVET8F7Q5QW3PB53KVXSEK3","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.207099+00:00"
+    },
+    {
+      "state": {"entity_id":"button.outlet67_reset_accumulated_values_2","state":"unknown","attributes":{"friendly_name":"OUTLET67 Reset accumulated values (2)"},"last_changed":"2024-12-11T18:13:34.313667+00:00","last_reported":"2024-12-11T18:13:34.313667+00:00","last_updated":"2024-12-11T18:13:34.313667+00:00","context":{"id":"01JEVET8F900TVBT5K8RB4269V","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.207170+00:00"
+    },
+    {
+      "state": {"entity_id":"update.q_firmware","state":"off","attributes":{"auto_update":false,"installed_version":"2.0.2","in_progress":false,"latest_version":"2.0.2","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Q Firmware","supported_features":21},"last_changed":"2024-12-11T18:13:34.350690+00:00","last_reported":"2024-12-11T18:13:34.350690+00:00","last_updated":"2024-12-11T18:13:34.350690+00:00","context":{"id":"01JEVET8GEACH6Q03KPH7XDP68","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "latest_version_firmware": null
+      },
+      "last_seen": "2024-12-11T18:38:44.208396+00:00"
+    },
+    {
+      "state": {"entity_id":"update.outlet67_firmware","state":"off","attributes":{"auto_update":false,"installed_version":"1.7.0","in_progress":false,"latest_version":"1.7.0","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"OUTLET67 Firmware","supported_features":21},"last_changed":"2024-12-11T18:13:34.351100+00:00","last_reported":"2024-12-11T18:13:34.351100+00:00","last_updated":"2024-12-11T18:13:34.351100+00:00","context":{"id":"01JEVET8GF5PENMMM349A9WYZ9","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "latest_version_firmware": null
+      },
+      "last_seen": "2024-12-11T18:38:44.208515+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.mqtt_test","state":"on","attributes":{"id":"mqtt_tuya_vibe_test","last_triggered":"2024-12-06T19:31:40.564325+00:00","mode":"single","current":0,"friendly_name":"Tuya Vibration MQTT Notification"},"last_changed":"2024-12-06T19:29:37.764121+00:00","last_reported":"2024-12-06T19:31:40.564588+00:00","last_updated":"2024-12-06T19:31:40.564588+00:00","context":{"id":"01JEEQ9NWMFSJWDB90TP1RDMKN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-06T19:32:14.452241+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.espchip_flow","state":"0","attributes":{"flow":0,"linkquality":255,"unit_of_measurement":"m³/h","friendly_name":"0x404ccafffe579a94 Flow"},"last_changed":"2024-12-05T20:29:35.469919+00:00","last_reported":"2024-12-05T20:29:35.469919+00:00","last_updated":"2024-12-05T20:29:35.469919+00:00","context":{"id":"01JEC870BDVME3KT80TCRXCFQF","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "0",
+        "native_unit_of_measurement": "m³/h"
+      },
+      "last_seen": "2024-12-05T21:47:23.221952+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.tuya_vibration_on","state":"on","attributes":{"id":"mqtt_tuya_vibe_test","last_triggered":"2024-12-06T19:32:43.268749+00:00","mode":"single","current":0,"icon":"mdi:vibrate","friendly_name":"Tuya Vibration MQTT Notification"},"last_changed":"2024-12-06T19:32:14.453117+00:00","last_reported":"2024-12-06T19:32:43.268977+00:00","last_updated":"2024-12-06T19:32:43.268977+00:00","context":{"id":"01JEEQBK44FCE3EGDN5Y6190ZM","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-06T19:40:35.786634+00:00"
+    },
+    {
+      "state": {"entity_id":"button.smartplug_ping","state":"unknown","attributes":{"friendly_name":"SmartPLug Ping"},"last_changed":"2024-12-11T18:13:34.223712+00:00","last_reported":"2024-12-11T18:13:34.223712+00:00","last_updated":"2024-12-11T18:13:34.223712+00:00","context":{"id":"01JEVET8CFNHQECQKWJBT6S75P","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.206558+00:00"
+    },
+    {
+      "state": {"entity_id":"button.smartplug_reset_accumulated_values","state":"unknown","attributes":{"friendly_name":"SmartPLug Reset accumulated values"},"last_changed":"2024-12-11T18:13:34.315535+00:00","last_reported":"2024-12-11T18:13:34.315535+00:00","last_updated":"2024-12-11T18:13:34.315535+00:00","context":{"id":"01JEVET8FBENSCR7B5MAJN3AK6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.207241+00:00"
+    },
+    {
+      "state": {"entity_id":"button.smartplug_idle_power_management_over_current_status","state":"unknown","attributes":{"friendly_name":"SmartPLug Idle Power Management Over-current status"},"last_changed":"2024-12-11T18:13:34.316037+00:00","last_reported":"2024-12-11T18:13:34.316037+00:00","last_updated":"2024-12-11T18:13:34.316037+00:00","context":{"id":"01JEVET8FCJNEQBV0F7AQJH3HE","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.207319+00:00"
+    },
+    {
+      "state": {"entity_id":"button.smartplug_identify","state":"unknown","attributes":{"friendly_name":"SmartPLug Identify"},"last_changed":"2024-12-11T18:13:34.317046+00:00","last_reported":"2024-12-11T18:13:34.317046+00:00","last_updated":"2024-12-11T18:13:34.317046+00:00","context":{"id":"01JEVET8FD6TBPVPFXTMR88HFS","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-11T18:38:44.207393+00:00"
+    },
+    {
+      "state": {"entity_id":"update.smartplug_firmware","state":"off","attributes":{"auto_update":false,"installed_version":"2.10.0","in_progress":false,"latest_version":"2.10.0","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"SmartPLug Firmware","supported_features":21},"last_changed":"2024-12-11T18:13:34.351460+00:00","last_reported":"2024-12-11T18:13:34.351460+00:00","last_updated":"2024-12-11T18:13:34.351460+00:00","context":{"id":"01JEVET8GFD3CRFPCTK4Z5TCSA","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "latest_version_firmware": null
+      },
+      "last_seen": "2024-12-11T18:38:44.208616+00:00"
+    },
+    {
+      "state": {"entity_id":"event.smartplug_scene_id","state":"unknown","attributes":{"event_types":["Scene activation scene id"],"event_type":null,"friendly_name":"SmartPLug Scene ID"},"last_changed":"2024-12-11T18:13:34.347577+00:00","last_reported":"2024-12-11T18:13:34.347577+00:00","last_updated":"2024-12-11T18:13:34.347577+00:00","context":{"id":"01JEVET8GBFG4STE1GA89E0ENY","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "last_event_type": null,
+        "last_event_attributes": null
+      },
+      "last_seen": "2024-12-11T18:38:44.208250+00:00"
+    }
+  ]
+}

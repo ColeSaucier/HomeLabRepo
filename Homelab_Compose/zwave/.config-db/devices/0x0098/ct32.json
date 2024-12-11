@@ -1,0 +1,179 @@
+{
+	"manufacturer": "Radio Thermostat Company of America (RTC)",
+	"manufacturerId": "0x0098",
+	"label": "CT32",
+	"description": "Z-Wave Thermostat",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x0100"
+		},
+		{
+			"productType": "0x2002",
+			"productId": "0x0100",
+			"zwaveAllianceId": [1046, 1330]
+		},
+		{
+			"productType": "0x2002",
+			"productId": "0x0102"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Temperature Reporting Threshold",
+			"description": "Sets the reporting threshold for changes in ambient temperature.",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "0.5 °F",
+					"value": 1
+				},
+				{
+					"label": "1.0 °F",
+					"value": 2
+				},
+				{
+					"label": "1.5 °F",
+					"value": 3
+				},
+				{
+					"label": "2.0 °F",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "3",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Utility Lock",
+			"description": "Enables or Disables the Utility Lock."
+		},
+		{
+			"#": "5",
+			"label": "Humidity Reporting Threshold",
+			"description": "Sets the reporting threshold for changes in humidity.",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "3 %rH",
+					"value": 1
+				},
+				{
+					"label": "5 %rH",
+					"value": 2
+				},
+				{
+					"label": "10 %rH",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "6",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Auxiliary/Emergency Heat",
+			"description": "Enables or Disables the Aux / Emergency Heat."
+		},
+		{
+			"#": "7",
+			"label": "Swing Temperature",
+			"description": "Sets the swing threshold before turning on / off HVAC.",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "0.0 °F",
+					"value": 1
+				},
+				{
+					"label": "1.0 °F",
+					"value": 2
+				},
+				{
+					"label": "1.5 °F",
+					"value": 3
+				},
+				{
+					"label": "2.0 °F",
+					"value": 4
+				},
+				{
+					"label": "2.5 °F",
+					"value": 5
+				},
+				{
+					"label": "3.0 °F",
+					"value": 6
+				},
+				{
+					"label": "3.5 °F",
+					"value": 7
+				},
+				{
+					"label": "4.0 °F",
+					"value": 8
+				}
+			]
+		},
+		{
+			"#": "8",
+			"label": "Thermostat Diff Temperature",
+			"description": "Set's the differential temperature for multi-stage HVAC systems.",
+			"valueSize": 2,
+			"minValue": 4,
+			"maxValue": 3084,
+			"defaultValue": 4
+		},
+		{
+			"#": "9",
+			"label": "Thermostat Recovery Mode",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Fast",
+					"value": 1
+				},
+				{
+					"label": "Economy",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "11",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Simple UI Mode",
+			"defaultValue": 1
+		},
+		{
+			"#": "12",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Multicast"
+		}
+	],
+	"compat": {
+		// The device has two endpoints, but all reports are received via the root.
+		"preserveRootApplicationCCValueIDs": true,
+		"removeEndpoints": "*"
+	}
+}

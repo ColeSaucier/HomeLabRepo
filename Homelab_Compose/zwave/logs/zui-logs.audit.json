@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/usr/src/app/store/logs/zui-logs.audit.json",
+    "files": [
+        {
+            "date": 1733430274076,
+            "name": "/usr/src/app/store/logs/z-ui_2024-12-05.log",
+            "hash": "3ab9bbc2470e511329e88262d1c14e4158f8cfdc48e36c76b22f8509c078a12b"
+        },
+        {
+            "date": 1733511916335,
+            "name": "/usr/src/app/store/logs/z-ui_2024-12-06.log",
+            "hash": "fde2d36f4cac32a67ab0be5286695e7916ac15006cc7c50e31b7b93034546bca"
+        },
+        {
+            "date": 1733782033338,
+            "name": "/usr/src/app/store/logs/z-ui_2024-12-09.log",
+            "hash": "a52ac8c1dcb1b7ca882aad16e05257d14f8b293e291a5822c5b9e45b607f07ef"
+        },
+        {
+            "date": 1733854210608,
+            "name": "/usr/src/app/store/logs/z-ui_2024-12-10.log",
+            "hash": "187ff2ab475dd0028666b1a3d0305d8dc01fc4d926ef6b791c0db8436e9bb4e2"
+        },
+        {
+            "date": 1733940569422,
+            "name": "/usr/src/app/store/logs/z-ui_2024-12-11.log",
+            "hash": "e428fff5614d3218952efbcfd9d49c9e379a4ef528bd5fbe751857a4eb6334b2"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,213 @@
+{
+	"manufacturer": "Philio Technology Corp",
+	"manufacturerId": "0x013c",
+	"label": "PST02C",
+	"description": "Slim Multi-Sensor (Door/Temperature/Illumination)",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x000e"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Lifeline",
+			"maxNodes": 8,
+			"isLifeline": true
+		},
+		"2": {
+			"label": "Light Control",
+			"maxNodes": 8
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "2",
+			"label": "Basic Set Level",
+			"description": "Setting the BASIC command value to turn on the light",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "4",
+			"label": "Light Threshold",
+			"description": "Setting the illumination threshold to turn on the light",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 99
+		},
+		{
+			"#": "5[0x02]",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Test Mode"
+		},
+		{
+			"#": "5[0x04]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Door Window Function",
+			"defaultValue": 0
+		},
+		{
+			"#": "5[0x08]",
+			"label": "Temperature Scale",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Fahrenheit",
+					"value": 0
+				},
+				{
+					"label": "Celsius",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "5[0x10]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Illumination Report On Trigger"
+		},
+		{
+			"#": "5[0x20]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Temperature Report On Trigger"
+		},
+		{
+			"#": "5[0x80]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Back Key Release in Test Mode"
+		},
+		{
+			"#": "6[0x02]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Magnetic Illumination"
+		},
+		{
+			"#": "6[0x10]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "5 Second Delay Light Off"
+		},
+		{
+			"#": "6[0x20]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Auto Turn Off Light"
+		},
+		{
+			"#": "7[0x08]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Send Basic CC Off After Door Close"
+		},
+		{
+			"#": "7[0x10]",
+			"label": "Notification Type",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Notification Report",
+					"value": 0
+				},
+				{
+					"label": "Binary Sensor Report",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "7[0x20]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Multi Command Encapsulated Auto Reports"
+		},
+		{
+			"#": "7[0x40]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Report Battery State When Triggered"
+		},
+		{
+			"#": "8",
+			"label": "PIR Re-Detect Interval Time",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 127,
+			"defaultValue": 3
+		},
+		{
+			"#": "9",
+			"label": "Turn Off Light Time",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 4
+		},
+		{
+			"#": "10",
+			"label": "Auto Report Battery Time",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 12
+		},
+		{
+			"#": "11",
+			"label": "Auto Report Door/Window State Time",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 12
+		},
+		{
+			"#": "12",
+			"label": "Auto Report Illumination Interval Time",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 127,
+			"defaultValue": 12
+		},
+		{
+			"#": "13",
+			"label": "Auto Report Temperature Time",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 127,
+			"defaultValue": 12
+		},
+		{
+			"#": "20",
+			"label": "Auto Report Tick Interval",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 30,
+			"unsigned": true
+		},
+		{
+			"#": "21",
+			"label": "Temperature Differential Report",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 1
+		},
+		{
+			"#": "22",
+			"label": "Illumination Differential Report",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 99,
+			"defaultValue": 1
+		}
+	]
+}

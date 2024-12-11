@@ -1,0 +1,354 @@
+{
+	"manufacturer": "Fantem",
+	"manufacturerId": "0x016a",
+	"label": "FT096",
+	"description": "Plug-In Switch",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0060"
+		},
+		{
+			"productType": "0x0103",
+			"productId": "0x0060"
+		},
+		{
+			"productType": "0x0203",
+			"productId": "0x0060"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "3",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Current Overload Protection"
+		},
+		{
+			"#": "20",
+			"$import": "~/templates/master_template.json#state_after_power_failure_prev_on_off"
+		},
+		{
+			"#": "33",
+			"label": "RGB LED Color Testing",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"writeOnly": true
+		},
+		{
+			"#": "80",
+			"label": "Enable Send to Associated Devices",
+			"description": "Enable to send notifications to Group 1",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Nothing",
+					"value": 0
+				},
+				{
+					"label": "Hail CC",
+					"value": 1
+				},
+				{
+					"label": "Basic CC Report",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "81",
+			"label": "Configure LED State",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "LED follows load",
+					"value": 0
+				},
+				{
+					"label": "LED follows load for 5 seconds",
+					"value": 1
+				},
+				{
+					"label": "Night light mode",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "90",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Enable Parameters 91 and 92",
+			"defaultValue": 1
+		},
+		{
+			"#": "91",
+			"label": "Wattage Threshold",
+			"description": "minimum change in wattage to trigger",
+			"valueSize": 2,
+			"unit": "W",
+			"minValue": 0,
+			"maxValue": 60000,
+			"defaultValue": 25,
+			"unsigned": true
+		},
+		{
+			"#": "92",
+			"label": "Wattage Percent Change",
+			"description": "minimum change in wattage percent",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 5
+		},
+		{
+			"#": "100",
+			"label": "Reset Parameters 101-103 to Default",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"writeOnly": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "False",
+					"value": 0
+				},
+				{
+					"label": "True",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "101",
+			"label": "Values to Send to Group 1",
+			"description": "Which reports need to send in Report group 1",
+			"valueSize": 4,
+			"defaultValue": 4,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Nothing",
+					"value": 0
+				},
+				{
+					"label": "Voltage",
+					"value": 1
+				},
+				{
+					"label": "Current",
+					"value": 2
+				},
+				{
+					"label": "Wattage",
+					"value": 4
+				},
+				{
+					"label": "kWh",
+					"value": 8
+				},
+				{
+					"label": "All values",
+					"value": 15
+				}
+			]
+		},
+		{
+			"#": "102",
+			"label": "Values to Send to Group 2",
+			"description": "Which reports need to send in Report group 2",
+			"valueSize": 4,
+			"defaultValue": 8,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Nothing",
+					"value": 0
+				},
+				{
+					"label": "Voltage",
+					"value": 1
+				},
+				{
+					"label": "Current",
+					"value": 2
+				},
+				{
+					"label": "Wattage",
+					"value": 4
+				},
+				{
+					"label": "kWh",
+					"value": 8
+				},
+				{
+					"label": "All values",
+					"value": 15
+				}
+			]
+		},
+		{
+			"#": "103",
+			"label": "Values to Send to Group 3",
+			"description": "Which reports need to send in Report group 3",
+			"valueSize": 4,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Nothing",
+					"value": 0
+				},
+				{
+					"label": "Voltage",
+					"value": 1
+				},
+				{
+					"label": "Current",
+					"value": 2
+				},
+				{
+					"label": "Wattage",
+					"value": 4
+				},
+				{
+					"label": "kWh",
+					"value": 8
+				},
+				{
+					"label": "All values",
+					"value": 15
+				}
+			]
+		},
+		{
+			"#": "110",
+			"label": "Reset Parameters 111-113 to Default",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"writeOnly": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "False",
+					"value": 0
+				},
+				{
+					"label": "True",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "111",
+			"label": "Time Interval for Sending to Group 1",
+			"description": "Group 1 automatic update interval",
+			"valueSize": 4,
+			"unit": "seconds",
+			"minValue": 1,
+			"maxValue": 2147483647,
+			"defaultValue": 3
+		},
+		{
+			"#": "112",
+			"label": "Time Interval for Sending to Group 2",
+			"description": "Group 2 automatic update interval",
+			"valueSize": 4,
+			"unit": "seconds",
+			"minValue": 1,
+			"maxValue": 2147483647,
+			"defaultValue": 600
+		},
+		{
+			"#": "113",
+			"label": "Time Interval for Sending to Group 3",
+			"description": "Group 3 automatic update interval",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 2147483647,
+			"defaultValue": 600
+		},
+		{
+			"#": "252",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Lock Configuration"
+		},
+		{
+			"#": "255",
+			"label": "RESET",
+			"description": "Reset the device to defaults",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"writeOnly": true
+		},
+		{
+			"#": "83[0xff]",
+			"label": "Blue Night Light Color Value",
+			"valueSize": 3,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 221,
+			"unsigned": true
+		},
+		{
+			"#": "83[0xff00]",
+			"label": "Green Night Light Color Value",
+			"valueSize": 3,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 160,
+			"unsigned": true
+		},
+		{
+			"#": "83[0xff0000]",
+			"label": "Red Night Light Color Value",
+			"description": "Configure the RGB value when it is in Night light mode",
+			"valueSize": 3,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 221,
+			"unsigned": true
+		},
+		{
+			"#": "84[0xff]",
+			"label": "Green Brightness in Energy Mode (%)",
+			"valueSize": 3,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 50,
+			"unsigned": true
+		},
+		{
+			"#": "84[0xff00]",
+			"label": "Yellow Brightness in Energy Mode (%)",
+			"valueSize": 3,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 50,
+			"unsigned": true
+		},
+		{
+			"#": "84[0xff0000]",
+			"label": "Red Brightness in Energy Mode (%)",
+			"valueSize": 3,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 50,
+			"unsigned": true
+		}
+	]
+}

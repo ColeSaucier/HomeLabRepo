@@ -1,0 +1,62 @@
+{
+	"manufacturer": "EbV",
+	"manufacturerId": "0x017c",
+	"label": "heatapp! floor",
+	"description": "8-Channel Underfloor Heating Controller",
+	"devices": [
+		{
+			"productType": "0x0006",
+			"productId": "0x0003"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Missing Radio Link Time",
+			"valueSize": 1,
+			"unit": "minutes",
+			"minValue": 10,
+			"maxValue": 240,
+			"defaultValue": 30,
+			"unsigned": true
+		},
+		{
+			"#": "2",
+			"label": "Relay Type",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal open",
+					"value": 0
+				},
+				{
+					"label": "Normal close",
+					"value": 1
+				},
+				{
+					"label": "Switching",
+					"value": 2
+				}
+			]
+		}
+	],
+	"compat": {
+		"overrideQueries": {
+			// The device has 8 sequential endpoints, but responds with random
+			// garbage when queried for its endpoint indizes
+			"Multi Channel": [
+				{
+					"method": "findEndpoints",
+					"result": [1, 2, 3, 4, 5, 6, 7, 8]
+					// No need to persist values, this is done as part of the interview
+				}
+			]
+		}
+	}
+}

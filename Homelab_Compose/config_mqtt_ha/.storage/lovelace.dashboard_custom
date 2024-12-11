@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_custom",
+  "data": {
+    "config": {
+      "strategy": {
+        "type": "original-states",
+        "areas": {
+          "hidden": [
+            "q",
+            "kitchen",
+            "bedroom"
+          ],
+          "order": [
+            "living_room"
+          ]
+        }
+      }
+    }
+  }
+}

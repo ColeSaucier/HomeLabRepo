@@ -1,0 +1,61 @@
+{
+	"manufacturer": "Everspring",
+	"manufacturerId": "0x0060",
+	"label": "AN158",
+	"description": "Switch Meter Plugin",
+	"devices": [
+		{
+			"productType": "0x0004",
+			"productId": "0x0002",
+			"zwaveAllianceId": [213, 639, 871]
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Reports",
+			"maxNodes": 1,
+			"isLifeline": true
+		},
+		"2": {
+			"label": "Control",
+			"maxNodes": 4
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Debounce Time",
+			"description": "How long the state must be stable before sending a report",
+			"valueSize": 1,
+			"unit": "100ms",
+			"minValue": 0,
+			"maxValue": 120,
+			"defaultValue": 10,
+			"options": [
+				{
+					"value": 0,
+					"label": "Disable"
+				}
+			]
+		},
+		{
+			"#": "2",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Group 2: Send Basic Set",
+			"description": "Enable or Disable the status message function"
+		},
+		{
+			"#": "3",
+			"label": "Meter Report Interval",
+			"valueSize": 2,
+			"unit": "10 seconds",
+			"minValue": 0,
+			"maxValue": 3240,
+			"defaultValue": 3
+		}
+	]
+}

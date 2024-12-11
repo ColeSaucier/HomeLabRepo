@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_dashboards",
+  "data": {
+    "items": [
+      {
+        "id": "dashboard_zigbee2mqttt",
+        "show_in_sidebar": true,
+        "icon": "mdi:zigbee",
+        "title": "ZigbeeConfig",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-zigbee2mqttt"
+      },
+      {
+        "id": "z_wavejsui",
+        "show_in_sidebar": true,
+        "icon": "mdi:z-wave",
+        "title": "Z-waveConfig",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "z-wavejsui"
+      },
+      {
+        "id": "dashboard_agent",
+        "show_in_sidebar": true,
+        "title": "CameraView",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-agent",
+        "icon": "mdi:cctv"
+      },
+      {
+        "id": "dashboard_livefloorview",
+        "show_in_sidebar": true,
+        "icon": "mdi:floor-plan",
+        "title": "LiveFloorView",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-livefloorview"
+      },
+      {
+        "id": "dashboard_exportdata",
+        "show_in_sidebar": false,
+        "icon": "mdi:application-export",
+        "title": "TimeTestScript",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-exportdata"
+      },
+      {
+        "id": "export_api",
+        "show_in_sidebar": true,
+        "icon": "mdi:database-export-outline",
+        "title": "Export-API",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "export-api"
+      },
+      {
+        "id": "dashboard_custom",
+        "show_in_sidebar": true,
+        "icon": "mdi:blinds-vertical-closed",
+        "title": "Custom",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-custom"
+      }
+    ]
+  }
+}

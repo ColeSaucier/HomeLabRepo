@@ -1,0 +1,151 @@
+{
+	"manufacturer": "Qubino",
+	"manufacturerId": "0x0159",
+	"label": "ZMNHBA",
+	"description": "Flush 2 Relays",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x0001"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Basic on/off Q1",
+			"maxNodes": 4
+		},
+		"2": {
+			"label": "Basic on/off Q2",
+			"maxNodes": 4
+		},
+		"3": {
+			"label": "Default Reporting Group",
+			"maxNodes": 4,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Input 1 Switch Type",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Mono-Stable switch type (Push button)",
+					"value": 0
+				},
+				{
+					"label": "Bi-Stable switch type",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Input 2 Switch Type",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Mono-Stable switch type (Push button)",
+					"value": 0
+				},
+				{
+					"label": "Bi-Stable switch type",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "10",
+			"label": "Activate / Deactivate Functions ALL ON/ALL OFF",
+			"valueSize": 1,
+			"defaultValue": 255,
+			"unsigned": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "All on is not active all off is not active",
+					"value": 0
+				},
+				{
+					"label": "All on is not active all off active",
+					"value": 1
+				},
+				{
+					"label": "All on active all off is not active",
+					"value": 2
+				},
+				{
+					"label": "All on active, all off active",
+					"value": 255
+				}
+			]
+		},
+		{
+			"#": "11",
+			"label": "Automatic Turning Off Relay Q1 After Set Time",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65535,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "12",
+			"label": "Automatic Turning Off Relay Q2 After Set Time",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65535,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "30",
+			"$import": "~/templates/master_template.json#state_after_power_failure_prev_off"
+		},
+		{
+			"#": "40",
+			"label": "Power Reporting in Watts on Power Change for Q1",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "41",
+			"label": "Power Reporting in Watts on Power Change for Q2",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "42",
+			"label": "Power Reporting in Watts by Time Interval for Q1",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65535,
+			"defaultValue": 300,
+			"unsigned": true
+		},
+		{
+			"#": "43",
+			"label": "Power Reporting in Watts by Time Interval for Q2",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65535,
+			"defaultValue": 300,
+			"unsigned": true
+		}
+	]
+}

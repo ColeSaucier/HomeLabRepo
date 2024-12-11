@@ -1,0 +1,48 @@
+{
+	"manufacturer": "Vision Security",
+	"manufacturerId": "0x0109",
+	"label": "ZW4101",
+	"description": "Drapery Controller (Up/stop/down)",
+	"devices": [
+		{
+			"productType": "0x200d",
+			"productId": "0x0d03"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Up Output Time",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "2",
+			"label": "Stop Output Time",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "Down Output Time",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		}
+	]
+}

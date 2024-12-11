@@ -1,0 +1,66 @@
+{
+	"manufacturer": "Devolo",
+	"manufacturerId": "0x0175",
+	"label": "ph-pse02",
+	"description": "Multisound Indoor Siren",
+	"devices": [
+		{
+			"productType": "0x0004",
+			"productId": "0x000a"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "7[0x08]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Siren Sound"
+		},
+		{
+			"#": "7[0x10]",
+			"label": "Notification Type",
+			"description": "Notification event type to use for trigger events",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Notification Report",
+					"value": 0
+				},
+				{
+					"label": "Binary Sensor Report",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "29",
+			"label": "Disable Alarm",
+			"description": "Disables the alarm function entierly, including any tamper detection.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0
+		},
+		{
+			"#": "31",
+			"label": "Alarm Duration",
+			"valueSize": 1,
+			"unit": "30 seconds",
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 6,
+			"options": [
+				{
+					"label": "Never stop",
+					"value": 0
+				}
+			]
+		}
+	]
+}

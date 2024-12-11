@@ -1,0 +1,45 @@
+esphome:
+  name: esp32-c6-n8
+  friendly_name: esp32-c6-n8
+
+esp32:
+  # The ESP32-C6 is part of the ESP32 family but requires a specific variant
+  # The correct board for ESP32-C6 is 'esp32-c6' in ESPHome
+  board: esp32-c6-devkitc-1
+  flash_size: 8MB
+  variant: esp32c6
+  framework:
+    type: esp-idf
+    version: 5.3.1
+    platform_version: 6.8.1
+    sdkconfig_options: 
+      CONFIG_ESPTOOLPY_FLASHSIZE_8MB: y
+
+wifi:
+  ssid: "homelab"
+  password: "1aaaaaaa"
+
+
+ota:
+  - platform: esphome
+    password: "042bddd18084c904b09c0e0fdd3026c5"
+
+# Optional, for logging purposes
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "+AppceDQtXGQXPHC6JFpBPp4Gj1aqSUPYk1jllrVbQY="
+
+sensor:
+  - platform: adc
+    pin: GPIO00
+    name: "Flow Sensor Raw"
+    update_interval: 1s
+    unit_of_measurement: "ADC"
+    accuracy_decimals: 0
+    filters:
+      - multiply: 1  # No conversion, just raw ADC value
+
+# You can then process this raw ADC value in Home Assistant or another logic layer for different units of measurement if needed.

@@ -1,0 +1,343 @@
+{
+	"manufacturer": "Radio Thermostat Company of America (RTC)",
+	"manufacturerId": "0x0098",
+	"label": "CT101",
+	"description": "Z-Wave Thermostat",
+	"devices": [
+		{
+			"productType": "0x6501",
+			"productId": "0x0000",
+			"zwaveAllianceId": 1301
+		},
+		{
+			"productType": "0x6501",
+			"productId": "0x000b"
+		},
+		{
+			"productType": "0x6501",
+			"productId": "0x000c"
+		},
+		{
+			"productType": "0x6501",
+			"productId": "0x000d"
+		},
+		{
+			"productType": "0x6501",
+			"productId": "0x00fd"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Lifeline",
+			"maxNodes": 2,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Temperature Reporting Threshold",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				},
+				{
+					"label": "0.5 °F",
+					"value": 1
+				},
+				{
+					"label": "1.0 °F",
+					"value": 2
+				},
+				{
+					"label": "1.5 °F",
+					"value": 3
+				},
+				{
+					"label": "2.0 °F",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "2[0xff000000]",
+			"label": "HVAC Type",
+			"valueSize": 4,
+			"defaultValue": 1,
+			"unsigned": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal",
+					"value": 1
+				},
+				{
+					"label": "Heat pump",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2[0x0f0000]",
+			"label": "Number of Auxiliary or Heat Stages",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 15,
+			"unsigned": true,
+			"readOnly": true,
+			"allowManualEntry": false
+		},
+		{
+			"#": "2[0xf00000]",
+			"label": "Auxiliary Heat Type",
+			"valueSize": 4,
+			"unsigned": true,
+			"readOnly": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Gas",
+					"value": 1
+				},
+				{
+					"label": "Electric",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2[0xff00]",
+			"label": "Number of Heat Pump Stages",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 255,
+			"unsigned": true,
+			"readOnly": true,
+			"allowManualEntry": false
+		},
+		{
+			"#": "2[0xff]",
+			"label": "Number of Cool Stages",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 255,
+			"unsigned": true,
+			"readOnly": true,
+			"allowManualEntry": false
+		},
+		{
+			"#": "3",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Lock Setpoint Changes"
+		},
+		{
+			"#": "4",
+			"label": "Thermostat Power Type",
+			"valueSize": 1,
+			"readOnly": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "C-Wire",
+					"value": 1
+				},
+				{
+					"label": "Batteries",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "Humidity Reporting Threshold",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				},
+				{
+					"label": "3 %rH",
+					"value": 1
+				},
+				{
+					"label": "5 %rH",
+					"value": 2
+				},
+				{
+					"label": "10 %rH",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "6",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Auxiliary/Emergency Heating"
+		},
+		{
+			"#": "7",
+			"label": "Thermostat Hysteresis",
+			"description": "Variance allowed from setpoint to engage HVAC",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "0.5 °F",
+					"value": 1
+				},
+				{
+					"label": "1.0 °F",
+					"value": 2
+				},
+				{
+					"label": "1.5 °F",
+					"value": 3
+				},
+				{
+					"label": "2.0 °F",
+					"value": 4
+				},
+				{
+					"label": "2.5 °F",
+					"value": 5
+				},
+				{
+					"label": "3.0 °F",
+					"value": 6
+				},
+				{
+					"label": "3.5 °F",
+					"value": 7
+				},
+				{
+					"label": "4.0 °F",
+					"value": 8
+				}
+			]
+		},
+		{
+			"#": "8[0xff00]",
+			"label": "Heating Differential Temperature",
+			"valueSize": 2,
+			"defaultValue": 4,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "2.0 °F",
+					"value": 4
+				},
+				{
+					"label": "3.0 °F",
+					"value": 6
+				},
+				{
+					"label": "4.0 °F",
+					"value": 8
+				},
+				{
+					"label": "5.0 °F",
+					"value": 10
+				},
+				{
+					"label": "6.0 °F",
+					"value": 12
+				}
+			]
+		},
+		{
+			"#": "8[0xff]",
+			"label": "Cooling Differential Temperature",
+			"valueSize": 2,
+			"defaultValue": 4,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "2.0 °F",
+					"value": 4
+				},
+				{
+					"label": "3.0 °F",
+					"value": 6
+				},
+				{
+					"label": "4.0 °F",
+					"value": 8
+				},
+				{
+					"label": "5.0 °F",
+					"value": 10
+				},
+				{
+					"label": "6.0 °F",
+					"value": 12
+				}
+			]
+		},
+		{
+			"#": "9",
+			"label": "Thermostat Recovery Mode",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Fast",
+					"value": 1
+				},
+				{
+					"label": "Economy",
+					"value": 2
+				}
+			]
+		}
+	],
+	"compat": {
+		// https://github.com/zwave-js/node-zwave-js/issues/6017#issuecomment-1648532422
+
+		// The device has a weird endpoint setup. Most thermostat functionality is on endpoint 0, but the two additional
+		// endpoints have a thermostat device class:
+		// General Thermostat V2
+		// - "Manufacturer Specific"
+		// - "Thermostat Mode"
+		// - "Thermostat Setpoint"
+		// - "Version"
+		// plus the non-mandatory CCs
+		// - "Multilevel Sensor"
+		// - "Association"
+
+		// The additional endpoints simply mirror the root endpoint though, except the humidity sensor on endpoint 2.
+
+		// expose the application CCs on the root endpoint
+		"preserveRootApplicationCCValueIDs": true,
+
+		// Remove all Thermostat CCs from endpoints 1 and 2, as well as the sensor on endpoint 1
+		"commandClasses": {
+			"remove": {
+				"Basic": {
+					"endpoints": [1, 2]
+				},
+				"Thermostat Mode": {
+					"endpoints": [1, 2]
+				},
+				"Thermostat Setpoint": {
+					"endpoints": [1, 2]
+				},
+				"Multilevel Sensor": {
+					"endpoints": [1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"manufacturer": "Popp & Co",
+	"manufacturerId": "0x0154",
+	"label": "POPE700982",
+	"description": "POPP Door / Window Sensor",
+	"devices": [
+		{
+			"productType": "0x0004",
+			"productId": "0x0007"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Sensor Operation Mode",
+			"description": "Iinternal magnet sensor or the external terminal",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Internal magnet sensor used",
+					"value": 0
+				},
+				{
+					"label": "External terminal inputs used",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Sensor State Polarity",
+			"description": "This parameter deﬁnes the polarity of the magnet sensor",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Closed when magnet in proximity",
+					"value": 0
+				},
+				{
+					"label": "Opened when magnet in proximity",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Visual LED Indications",
+			"description": "This parameter deﬁnes when the red LED will indicate events",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 7,
+			"options": [
+				{
+					"label": "No indications",
+					"value": 0
+				},
+				{
+					"label": "Open/Close status change",
+					"value": 1
+				},
+				{
+					"label": "Wake up",
+					"value": 2
+				},
+				{
+					"label": "Device tampering",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "4",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Range Test After Double Click",
+			"description": "Allows to enable the activation of a Z-Wave range test"
+		},
+		{
+			"#": "5",
+			"label": "2nd Association Group Trigger",
+			"description": "Status of the magnet switch that causes sending command",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Switch after open and close",
+					"value": 0
+				},
+				{
+					"label": "Switch after open",
+					"value": 1
+				},
+				{
+					"label": "Switch after close",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "6",
+			"label": "Command Sent to Devices of Association Group 2",
+			"description": "which commands is sent to 2nd Association Group",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "On",
+					"value": 0
+				},
+				{
+					"label": "Off",
+					"value": 1
+				},
+				{
+					"label": "On and off",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "7",
+			"label": "Value Sent to 2nd Association Group on On Event",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true,
+			"writeOnly": true
+		},
+		{
+			"#": "8",
+			"label": "Value Sent to 2nd Association Group on Off Event",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "9",
+			"label": "Time Delay of On Command Frame",
+			"description": "sent after a delay",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32400,
+			"defaultValue": 0
+		},
+		{
+			"#": "10",
+			"label": "Time Delay of Off Command Frame",
+			"description": "sent after a delay",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32400,
+			"defaultValue": 0
+		},
+		{
+			"#": "11",
+			"label": "Delay of Tamper Alarm Cancellation",
+			"description": "Time a tamper alarm is delayed in seconds",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32400,
+			"defaultValue": 0
+		},
+		{
+			"#": "12",
+			"label": "Reporting Tamper Alarm Cancellation",
+			"description": "This parameter deﬁnes if the alarm cancellation event is reported",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Do not send report",
+					"value": 0
+				},
+				{
+					"label": "Send report",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "13",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Central Scene Event Functionality"
+		},
+		{
+			"#": "14",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Tilt Sensor Functionality",
+			"description": "enables/disables the tilt function",
+			"defaultValue": 1
+		}
+	]
+}

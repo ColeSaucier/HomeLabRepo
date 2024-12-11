@@ -1,0 +1,174 @@
+{
+	"manufacturer": "Qubino",
+	"manufacturerId": "0x0159",
+	"label": "ZMNHOD",
+	"description": "Flush Shutter DC",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0053"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "10",
+			"label": "Activate/deactivate Functions ALL ON / ALL OFF",
+			"valueSize": 2,
+			"defaultValue": 255,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "All on is not active, all off is not active",
+					"value": 0
+				},
+				{
+					"label": "All on is not active all off active",
+					"value": 1
+				},
+				{
+					"label": "All on is not active all off is not active",
+					"value": 2
+				},
+				{
+					"label": "All on active, all off active",
+					"value": 255
+				}
+			]
+		},
+		{
+			"#": "40",
+			"label": "Power Report (Watts) on Power Change for Q1 or Q2",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 1
+		},
+		{
+			"#": "42",
+			"label": "Power Report (Watts) by Time Interval for Q1 or Q2",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 300
+		},
+		{
+			"#": "71",
+			"label": "Operating Modes",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Shutter mode",
+					"value": 0
+				},
+				{
+					"label": "Venetian mode (Up/Down and slate rotation)",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "72",
+			"label": "Slats Tilting Full Turn Time",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 150
+		},
+		{
+			"#": "73",
+			"label": "Slats Position",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Return to previous position only with Z-Wave",
+					"value": 0
+				},
+				{
+					"label": "Return to previous position with Z-Wave or button",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "74",
+			"label": "Motor Moving Up/down Time",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 0
+		},
+		{
+			"#": "76",
+			"label": "Motor Operation Detection",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 6
+		},
+		{
+			"#": "78",
+			"label": "Forced Shutter DC Calibration",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Default",
+					"value": 0
+				},
+				{
+					"label": "Start calibration process",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "85",
+			"label": "Power Consumption Max Delay Time",
+			"valueSize": 1,
+			"minValue": 3,
+			"maxValue": 50,
+			"defaultValue": 8
+		},
+		{
+			"#": "86",
+			"label": "Power Consumption At Limit Switch Delay Time",
+			"valueSize": 1,
+			"minValue": 3,
+			"maxValue": 50,
+			"defaultValue": 8
+		},
+		{
+			"#": "90",
+			"label": "Time Delay for Next Motor Movement",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 30,
+			"defaultValue": 5
+		},
+		{
+			"#": "110",
+			"label": "Temperature Sensor Offset Settings",
+			"valueSize": 2,
+			"minValue": 1,
+			"maxValue": 32536,
+			"defaultValue": 32536
+		},
+		{
+			"#": "120",
+			"label": "Digital Temperature Sensor Reporting",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 5
+		}
+	]
+}

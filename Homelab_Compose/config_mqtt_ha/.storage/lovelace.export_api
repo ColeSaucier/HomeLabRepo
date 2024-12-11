@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.export_api",
+  "data": {
+    "config": {
+      "strategy": {
+        "type": "iframe",
+        "url": "http://0.0.0.0"
+      }
+    }
+  }
+}

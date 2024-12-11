@@ -1,0 +1,198 @@
+{
+	"manufacturer": "Qubino",
+	"manufacturerId": "0x0159",
+	"label": "ZMNHCD",
+	"description": "Flush Shutter",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0052"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "10",
+			"label": "ALL ON/ALL OFF",
+			"description": "Responds to commands ALL ON / ALL OFF from Main Controller",
+			"valueSize": 2,
+			"defaultValue": 255,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "All on is not active all off is not active",
+					"value": 0
+				},
+				{
+					"label": "All on is not active all off active",
+					"value": 1
+				},
+				{
+					"label": "All on is not active all off is not active",
+					"value": 2
+				},
+				{
+					"label": "All on active, all off active",
+					"value": 255
+				}
+			]
+		},
+		{
+			"#": "40",
+			"label": "Power Reporting in Watts on Power Change",
+			"description": "Power consumption change threshold for sending updates",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 1
+		},
+		{
+			"#": "42",
+			"label": "Power Reporting in Watts by Time Interval",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 300
+		},
+		{
+			"#": "71",
+			"label": "Operating Modes",
+			"description": "Operation Mode (Shutter or Venetian)",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Shutter mode",
+					"value": 0
+				},
+				{
+					"label": "Venetian mode (Up/Down and slate rotation)",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "72",
+			"label": "Slats Tilting Full Turn Time",
+			"description": "Slat full turn time in tenths of a second.",
+			"valueSize": 2,
+			"unit": "0.1 seconds",
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 150
+		},
+		{
+			"#": "73",
+			"label": "Slats Position",
+			"description": "Slats position after up/down movement.",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Ret. To previous position for Z-Wave control only",
+					"value": 0
+				},
+				{
+					"label": "Return to previous position in all cases",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "74",
+			"label": "Motor Moving Up/down Time",
+			"description": "Shutter motor moving time of complete opening or complete closing",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 0
+		},
+		{
+			"#": "76",
+			"label": "Motor Operation Detection",
+			"description": "Power threshold to be interpreted when motor reach the limit switch",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 10
+		},
+		{
+			"#": "78",
+			"label": "Forced Shutter Calibration",
+			"description": "Enters calibration mode if set to 1",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Default",
+					"value": 0
+				},
+				{
+					"label": "Start calibration process",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "80",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Reporting to Controller",
+			"description": "Defines if reporting regarding power level, etc is reported to controller.",
+			"defaultValue": 1
+		},
+		{
+			"#": "85",
+			"label": "Power Consumption Max Delay Time",
+			"description": "Time delay for detecting motor errors",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 50,
+			"defaultValue": 8
+		},
+		{
+			"#": "86",
+			"$if": "firmwareVersion >= 4.1",
+			"label": "Power Consumption At Limit Switch Delay Time",
+			"description": "Sets the time delay for detecting limit switches",
+			"valueSize": 1,
+			"minValue": 3,
+			"maxValue": 50,
+			"defaultValue": 8
+		},
+		{
+			"#": "90",
+			"label": "Relay Delay Time",
+			"description": "Defines the minimum time delay between next motor movement",
+			"valueSize": 1,
+			"unit": "ms",
+			"minValue": 1,
+			"maxValue": 30,
+			"defaultValue": 5
+		},
+		{
+			"#": "110",
+			"label": "Temperature Sensor Offset Settings",
+			"description": "Adds or removes an offset from the measured temperature.",
+			"valueSize": 2,
+			"minValue": 1,
+			"maxValue": 32536,
+			"defaultValue": 32536
+		},
+		{
+			"#": "120",
+			"label": "Digital Temperature Sensor Reporting",
+			"description": "Threshold for sending temperature change reports",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 5
+		}
+	]
+}

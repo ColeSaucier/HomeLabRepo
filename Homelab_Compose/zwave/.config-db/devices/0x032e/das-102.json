@@ -1,0 +1,296 @@
+{
+	"manufacturer": "DEFARO",
+	"manufacturerId": "0x032e",
+	"label": "DAS-102",
+	"description": "Double Relay Switch 2x1.7kW",
+	"devices": [
+		{
+			"productType": "0x0021",
+			"productId": "0x0013"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "State changes",
+			"description": "State changes -- general",
+			"maxNodes": 3,
+			"isLifeline": true
+		},
+		"2": {
+			"label": "Switch 1",
+			"description": "Switch 1 ON/OFF associations",
+			"maxNodes": 10
+		},
+		"3": {
+			"label": "Switch 2",
+			"description": "Switch 2 ON/OFF associations",
+			"maxNodes": 10
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Switch Behavior",
+			"description": "Selects ON/OFF/BLINK modes",
+			"valueSize": 1,
+			"defaultValue": 3,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal",
+					"value": 0
+				},
+				{
+					"label": "Reverse",
+					"value": 1
+				},
+				{
+					"label": "Blink mode",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Relay Closed Interval",
+			"description": "For blink mode for both S1 and S2",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 10,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "Relay Open Interval",
+			"description": "For blink mode for both S1 and S2",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 10,
+			"unsigned": true
+		},
+		{
+			"#": "4",
+			"label": "S1 Auto Off Delay",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "S1 On Delay",
+			"description": "Delay after ON command received",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "6",
+			"label": "S1 Smart Delay",
+			"description": "Smart off delay for S1",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "7",
+			"$import": "~/templates/master_template.json#state_after_power_failure_prev_off",
+			"label": "S1: State After Power Failure"
+		},
+		{
+			"#": "8",
+			"label": "All ON/OFF Behaviour",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 3,
+			"defaultValue": 0
+		},
+		{
+			"#": "10",
+			"label": "Relay S2 Mode",
+			"description": "Relay S2 mode of operation",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal",
+					"value": 0
+				},
+				{
+					"label": "Reverse",
+					"value": 1
+				},
+				{
+					"label": "Blink",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "11",
+			"label": "S2 Auto Off Time",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "12",
+			"label": "S2 Turn on Delay",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "13",
+			"label": "S2 Smart Delay",
+			"description": "Smart delay for S2",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 65000,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "14",
+			"$import": "~/templates/master_template.json#state_after_power_failure_prev_off",
+			"label": "S2: State After Power Failure"
+		},
+		{
+			"#": "15",
+			"label": "S1 Button Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Monostable (Push button)",
+					"value": 0
+				},
+				{
+					"label": "Bistable (Switch)",
+					"value": 1
+				},
+				{
+					"label": "Bistable (Fixed switch)",
+					"value": 2
+				},
+				{
+					"label": "Bistable (Reversed fixed switch)",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "16",
+			"label": "S2 Button Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Monostable (Push button)",
+					"value": 0
+				},
+				{
+					"label": "Bistable (Switch button)",
+					"value": 1
+				},
+				{
+					"label": "Bistable (Fixed switch button)",
+					"value": 2
+				},
+				{
+					"label": "Bistable (Reversed fixed switch)",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "18",
+			"label": "Smart Delay",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 2,
+			"defaultValue": 0
+		},
+		{
+			"#": "50",
+			"label": "Forced Secure Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Accept non-secure commands",
+					"value": 0
+				},
+				{
+					"label": "Accept only secure commands",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "51",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "S1: Send Secure Commands"
+		},
+		{
+			"#": "52",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "S2: Send Secure Commands"
+		}
+	]
+}

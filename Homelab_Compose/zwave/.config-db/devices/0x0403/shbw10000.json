@@ -1,0 +1,201 @@
+{
+	"manufacturer": "ABUS Security-Center GmbH & Co. KG",
+	"manufacturerId": "0x0403",
+	"label": "SHBW10000",
+	"description": "PIR Multisensor",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x0001"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "10",
+			"label": "Low Battery Alarm Level",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 10,
+			"maxValue": 50,
+			"defaultValue": 10
+		},
+		{
+			"#": "12",
+			"label": "PIR Sensitivity",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 10,
+			"defaultValue": 10,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "13",
+			"label": "Waiting Time Between Two PIR Triggers",
+			"valueSize": 2,
+			"unit": "seconda",
+			"minValue": 5,
+			"maxValue": 15300,
+			"defaultValue": 30
+		},
+		{
+			"#": "14",
+			"label": "Basic Set Command After PIR Triggering",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Enabled",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "15",
+			"label": "Exchange of Basic Set Value and PIR Status",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "PIR trip = Basic Set 256",
+					"value": 0
+				},
+				{
+					"label": "PIR trip = Basic Set 0",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "100",
+			"label": "Reset Parameters 101-104 to Factory Defaults",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Reset parametera 101 - 104",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "101",
+			"label": "Temperature Report Time",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 2678400,
+			"defaultValue": 7200,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "102",
+			"label": "Humidity Report Time",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 2678400,
+			"defaultValue": 7200,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "103",
+			"label": "Brightness Report Time",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 2678400,
+			"defaultValue": 7200
+		},
+		{
+			"#": "104",
+			"label": "Battery Report Time",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 2678400,
+			"defaultValue": 7200,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "110",
+			"label": "Enable/Disable Report 111-114",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Reports are disabled",
+					"value": 0
+				},
+				{
+					"label": "Reports are enabled",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "111",
+			"label": "Temperature Report Threshold",
+			"valueSize": 2,
+			"minValue": 1,
+			"maxValue": 500,
+			"defaultValue": 10
+		},
+		{
+			"#": "112",
+			"label": "Humidity Report Threshold",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 1,
+			"maxValue": 32,
+			"defaultValue": 5
+		},
+		{
+			"#": "113",
+			"label": "Brightness Report Threshold",
+			"valueSize": 2,
+			"unit": "Lux",
+			"minValue": 1,
+			"maxValue": 65528,
+			"defaultValue": 150,
+			"unsigned": true
+		},
+		{
+			"#": "114",
+			"label": "Battery Report Threshold",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 1,
+			"maxValue": 100,
+			"defaultValue": 10
+		}
+	]
+}

@@ -1,0 +1,54 @@
+{
+	"manufacturer": "TKB Home",
+	"manufacturerId": "0x0118",
+	"label": "TZ75",
+	"description": "Rollershutter Controller",
+	"devices": [
+		{
+			"productType": "0x0311",
+			"productId": "0x0303"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Watt Meter Report Period",
+			"valueSize": 2,
+			"unit": "5s",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 720
+		},
+		{
+			"#": "2",
+			"label": "KWH Meter Report Period",
+			"valueSize": 2,
+			"unit": "10min",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 6
+		},
+		{
+			"#": "3",
+			"label": "Threshold of Watt for Load Caution",
+			"valueSize": 2,
+			"unit": "W",
+			"minValue": 10,
+			"maxValue": 1100,
+			"defaultValue": 1100
+		},
+		{
+			"#": "4",
+			"label": "Threshold of kWh for Load Caution",
+			"valueSize": 2,
+			"unit": "kWh",
+			"minValue": 0,
+			"maxValue": 10000,
+			"defaultValue": 0
+		}
+	]
+}

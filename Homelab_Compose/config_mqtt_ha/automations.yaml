@@ -1,0 +1,20 @@
+- id: '1733759370366'
+  alias: AqaraOFF
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: zigbee2mqtt/Aqara vibration/vibration
+    payload: 'false'
+  conditions: []
+  actions: []
+  mode: single
+- id: '1733759438590'
+  alias: TuyaRecurringVibrationTRUE
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: zigbee2mqtt/Tuya_Vibe/vibration
+    payload: 'true'
+  conditions: []
+  actions: []
+  mode: single

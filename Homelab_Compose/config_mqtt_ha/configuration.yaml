@@ -1,0 +1,24 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+#logger:
+#  default: debug
+  
+logbook:
+  exclude:
+    entities:
+      - sensor.q_last_seen
+      - sensor.node_2_last_seen
+      
+      
+recorder:
+  db_url: mysql://cole:aaa1aaa@127.0.0.1/hass_db?charset=utf8mb4
+

@@ -1,0 +1,3 @@
+[submodule "Homelab_Compose/ESPHome/zigbee_esphome"]
+	path = Homelab_Compose/ESPHome/zigbee_esphome
+	url = https://github.com/luar123/zigbee_esphome/tree/master

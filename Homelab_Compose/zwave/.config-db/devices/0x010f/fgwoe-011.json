@@ -1,0 +1,189 @@
+{
+	"manufacturer": "Fibargroup",
+	"manufacturerId": "0x010f",
+	"label": "FGWOE-011",
+	"description": "Fibaro Walli Outlet Type E/F",
+	"devices": [
+		{
+			"productType": "0x1f01",
+			"productId": "0x1000"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Remember Device State",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 1
+		},
+		{
+			"#": "2",
+			"label": "Overload Safety Switch",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 36800,
+			"defaultValue": 0
+		},
+		{
+			"#": "10",
+			"label": "LED Frame - Power Limit",
+			"valueSize": 4,
+			"minValue": 500,
+			"maxValue": 36800,
+			"defaultValue": 36800
+		},
+		{
+			"#": "11",
+			"label": "LED Frame - Colour When ON",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 9,
+			"defaultValue": 8
+		},
+		{
+			"#": "12",
+			"label": "LED Frame - Colour When OFF",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0
+		},
+		{
+			"#": "13",
+			"label": "LED Frame – Brightness",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 102,
+			"defaultValue": 100
+		},
+		{
+			"#": "30",
+			"label": "Alarm Configuration - 1st Slot",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "31",
+			"label": "Alarm Configuration - 2nd Slot",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "32",
+			"label": "Alarm Configuration - 3rd Slot",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "33",
+			"label": "Alarm Configuration - 4th Slot",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "34",
+			"label": "Alarm Configuration - 5th Slot",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "35",
+			"label": "Alarm Configuration – Duration",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 32400,
+			"defaultValue": 600
+		},
+		{
+			"#": "45",
+			"label": "Associations – 2nd Group",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 3,
+			"defaultValue": 3
+		},
+		{
+			"#": "46",
+			"label": "Associations – UP Threshold",
+			"valueSize": 4,
+			"minValue": 100,
+			"maxValue": 36800,
+			"defaultValue": 500
+		},
+		{
+			"#": "47",
+			"label": "Associations – UP Threshold Frame Value",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255
+		},
+		{
+			"#": "48",
+			"label": "Associations – DOWN Threshold",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 36700,
+			"defaultValue": 300
+		},
+		{
+			"#": "60",
+			"label": "Power Reports – Include Self-Consumption",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0
+		},
+		{
+			"#": "61",
+			"label": "Power Reports – On Change",
+			"valueSize": 2,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 500,
+			"defaultValue": 0
+		},
+		{
+			"#": "62",
+			"label": "Power Reports – Periodic",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32400,
+			"defaultValue": 3600
+		},
+		{
+			"#": "65",
+			"label": "Energy Reports – On Change",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 500,
+			"defaultValue": 10
+		},
+		{
+			"#": "66",
+			"label": "Energy Reports – Periodic",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 32400,
+			"defaultValue": 3600
+		}
+	]
+}

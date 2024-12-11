@@ -1,0 +1,117 @@
+{
+	"manufacturer": "BeNext",
+	"manufacturerId": "0x008a",
+	"label": "plugInDimmer",
+	"description": "Plug-In Dimmer",
+	"devices": [
+		{
+			"productType": "0x0018",
+			"productId": "0x0100"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Group 1",
+			"description": "Receives BASIC SET commands",
+			"maxNodes": 8
+		},
+		"2": {
+			"label": "Group 2",
+			"description": "Receives METER and MULTILEVEL_SWITCH commands",
+			"maxNodes": 1,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Reset to Factory Settings",
+			"description": "Set all configuration values to default values (factory settings).",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "4",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Dimming"
+		},
+		{
+			"#": "6",
+			"label": "Maximum Powerload",
+			"valueSize": 2,
+			"minValue": 25,
+			"maxValue": 150,
+			"defaultValue": 125
+		},
+		{
+			"#": "7",
+			"label": "Dimming Speed",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 3,
+			"unsigned": true
+		},
+		{
+			"#": "8",
+			"label": "Fading Up Speed",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "11",
+			"label": "Auto Meter Report: Percentage",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		},
+		{
+			"#": "12",
+			"label": "Auto Meter Report: Watt",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 5,
+			"unsigned": true
+		},
+		{
+			"#": "13",
+			"label": "Auto Meter Report: Time",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 10,
+			"unsigned": true
+		},
+		{
+			"#": "14",
+			"label": "Last Known Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "15",
+			"label": "Fading Down Speed",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"unsigned": true
+		}
+	]
+}

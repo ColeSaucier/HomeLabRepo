@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.z_wavejsui",
+  "data": {
+    "config": {
+      "strategy": {
+        "type": "iframe",
+        "url": "http://cole-precision-tower-7810:8091/#/control-panel"
+      }
+    }
+  }
+}

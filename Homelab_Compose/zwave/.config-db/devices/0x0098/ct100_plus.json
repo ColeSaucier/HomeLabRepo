@@ -1,0 +1,207 @@
+{
+	"manufacturer": "Radio Thermostat Company of America (RTC)",
+	"manufacturerId": "0x0098",
+	"label": "CT100 Plus",
+	"description": "Z-Wave Thermostat",
+	"devices": [
+		{
+			"productType": "0x6402",
+			"productId": "0x0100"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Temperature Reporting Threshold",
+			"description": "Reporting threshold for changes in the ambient temperature",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "0.5 °F",
+					"value": 1
+				},
+				{
+					"label": "1.0 °F",
+					"value": 2
+				},
+				{
+					"label": "1.5 °F",
+					"value": 3
+				},
+				{
+					"label": "2.0 °F",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "HVAC Settings",
+			"description": "Configured HVAC settings",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"readOnly": true
+		},
+		{
+			"#": "3",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Utility Lock",
+			"description": "Prevents setpoint changes at thermostat"
+		},
+		{
+			"#": "4",
+			"label": "Power Status",
+			"description": "C-Wire / Battery Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"readOnly": true
+		},
+		{
+			"#": "5",
+			"label": "Humidity Reporting Threshold",
+			"description": "Reporting threshold for changes in the relative humidity",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "3 %rH",
+					"value": 1
+				},
+				{
+					"label": "5 %rH",
+					"value": 2
+				},
+				{
+					"label": "10 %rH",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "6",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Auxiliary/Emergency Heat",
+			"description": "Enables or disables auxiliary / emergency heating"
+		},
+		{
+			"#": "7",
+			"label": "Thermostat Swing Temperature",
+			"description": "Variance allowed from setpoint to engage HVAC",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "0.5 °F",
+					"value": 1
+				},
+				{
+					"label": "1.0 °F",
+					"value": 2
+				},
+				{
+					"label": "1.5 °F",
+					"value": 3
+				},
+				{
+					"label": "2.0 °F",
+					"value": 4
+				},
+				{
+					"label": "2.5 °F",
+					"value": 5
+				},
+				{
+					"label": "3.0 °F",
+					"value": 6
+				},
+				{
+					"label": "3.5 °F",
+					"value": 7
+				},
+				{
+					"label": "4.0 °F",
+					"value": 8
+				}
+			]
+		},
+		{
+			"#": "8",
+			"label": "Thermostat Diff Temperature",
+			"description": "Configures additional stages",
+			"valueSize": 1,
+			"defaultValue": 4,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "2.0 °F",
+					"value": 4
+				},
+				{
+					"label": "4.0 °F",
+					"value": 8
+				},
+				{
+					"label": "6.0 °F",
+					"value": 12
+				}
+			]
+		},
+		{
+			"#": "9",
+			"label": "Thermostat Recovery Mode",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Fast",
+					"value": 1
+				},
+				{
+					"label": "Economy",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "10",
+			"label": "Temperature Reporting Filter",
+			"description": "Upper/Lower bounds for thermostat temperature reporting",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 124,
+			"defaultValue": 124
+		},
+		{
+			"#": "11",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Simple UI Mode",
+			"defaultValue": 1
+		},
+		{
+			"#": "12",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Multicast"
+		}
+	]
+}

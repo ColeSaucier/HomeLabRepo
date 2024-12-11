@@ -1,0 +1,111 @@
+{
+	"manufacturer": "TKB Home",
+	"manufacturerId": "0x0118",
+	"label": "TZ79",
+	"description": "Insert Switch Module",
+	"devices": [
+		{
+			"productType": "0x0311",
+			"productId": "0x0305"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Change the State of Indicator Light",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "LED off",
+					"value": 0
+				},
+				{
+					"label": "LED on",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Memory Function",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Memory function off",
+					"value": 0
+				},
+				{
+					"label": "Memory function on",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Watt Meter Report Period",
+			"description": "5s x 720 = 3600s = 1 hour",
+			"valueSize": 2,
+			"unit": "5s",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 720
+		},
+		{
+			"#": "4",
+			"label": "kWH Meter Report Period",
+			"description": "6x10min = 1 hour",
+			"valueSize": 2,
+			"unit": "10min",
+			"minValue": 1,
+			"maxValue": 32767,
+			"defaultValue": 6
+		},
+		{
+			"#": "5",
+			"label": "Threshold of Watt for Load Caution",
+			"valueSize": 2,
+			"unit": "1Watt",
+			"minValue": 10,
+			"maxValue": 3000,
+			"defaultValue": 3000
+		},
+		{
+			"#": "6",
+			"label": "Threshold of kWh for Load Caution",
+			"valueSize": 2,
+			"unit": "kWh",
+			"minValue": 0,
+			"maxValue": 10000,
+			"defaultValue": 0
+		},
+		{
+			"#": "7",
+			"label": "Edge, Pulse, or Edge-Toggle Mode",
+			"valueSize": 1,
+			"defaultValue": 3,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Edge mode",
+					"value": 1
+				},
+				{
+					"label": "Pulse mode",
+					"value": 2
+				},
+				{
+					"label": "Edge toggle mode",
+					"value": 3
+				}
+			]
+		}
+	]
+}

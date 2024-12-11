@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_livefloorview",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "HomeLab",
+          "path": "manual_integrations",
+          "theme": "Google Dark Theme",
+          "panel": true,
+          "badges": [],
+          "cards": [
+            {
+              "config": {
+                "console_log_level": "info",
+                "defaults": {
+                  "hover_action": "hover-info",
+                  "tap_action": "more-info"
+                },
+                "image": "/local/manual_integrations/DemoLabDiffDiff.svg",
+                "rules": [
+                  {
+                    "element": "motion1-detected",
+                    "entity": "binary_sensor.q_motion_detection",
+                    "state_action": {
+                      "action": "call-service",
+                      "service": "floorplan.class_set",
+                      "service_data": "entitystate-${entity.state}"
+                    },
+                    "stylesheet": "/local/manual_integrations/MotionOn.css"
+                  },
+                  {
+                    "element": "light1-on",
+                    "entity": "light.phillips1100",
+                    "state_action": {
+                      "action": "call-service",
+                      "service": "floorplan.class_set",
+                      "service_data": "entitystate-${entity.state}"
+                    },
+                    "stylesheet": "/local/manual_integrations/LightOn.css"
+                  },
+                  {
+                    "element": "door1-closed",
+                    "entity": "binary_sensor.0x00158d008b112dea_contact",
+                    "state_action": {
+                      "action": "call-service",
+                      "service": "floorplan.class_set",
+                      "service_data": "entitystate-${entity.state}"
+                    },
+                    "stylesheet": "/local/manual_integrations/DoorClosed.css"
+                  },
+                  {
+                    "element": "vibration1-detected",
+                    "entity": "binary_sensor.aqara_vibration_vibration",
+                    "state_action": {
+                      "action": "call-service",
+                      "service": "floorplan.class_set",
+                      "service_data": "entitystate-${entity.state}"
+                    },
+                    "stylesheet": "/local/manual_integrations/Detected.css"
+                  }
+                ],
+                "stylesheet": "/local/manual_integrations/LightOn.css"
+              },
+              "full_height": true,
+              "type": "custom:floorplan-card"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

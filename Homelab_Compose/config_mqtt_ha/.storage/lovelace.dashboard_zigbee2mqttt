@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_zigbee2mqttt",
+  "data": {
+    "config": {
+      "strategy": {
+        "type": "iframe",
+        "url": "http://cole-precision-tower-7810:8080/#/dashboard"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Add this to your Home Assistant config
+
+mqtt:
+  broker: localhost
+  discovery: true
+  birth_message:
+    topic: 'hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'hass/status'
+    payload: 'offline'
+
+
+

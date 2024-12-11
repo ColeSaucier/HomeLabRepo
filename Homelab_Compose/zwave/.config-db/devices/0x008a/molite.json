@@ -1,0 +1,175 @@
+{
+	"manufacturer": "BeNext",
+	"manufacturerId": "0x008a",
+	"label": "Molite",
+	"description": "Movement Sensor with Temperature and Light Sensor",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0100",
+			"zwaveAllianceId": 76
+		},
+		{
+			"productType": "0x0003",
+			"productId": "0x0101"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Devices to be switched on when motion detected",
+			"maxNodes": 5,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Reset to Factory Settings",
+			"description": "Set all configuration values to default values (factory settings).",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "2",
+			"label": "Mode Timeout",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 900,
+			"defaultValue": 900
+		},
+		{
+			"#": "3",
+			"label": "Switch Off Time",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 2700,
+			"defaultValue": 2700
+		},
+		{
+			"#": "4",
+			"label": "Sensitivity",
+			"description": "the sensitivity of the motion circuit",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 80
+		},
+		{
+			"#": "5",
+			"label": "Operating Mode",
+			"description": "The mode that is entered after detection",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Mode 1: No detection possible. Battery save mode",
+					"value": 1
+				},
+				{
+					"label": "Mode 2: Normal operation mode",
+					"value": 2
+				},
+				{
+					"label": "Z-Wave chip is always on to request",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "6",
+			"label": "Temperature Offset",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "7",
+			"label": "Light Table 100 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 17,
+			"defaultValue": 17
+		},
+		{
+			"#": "8",
+			"label": "Light Table 90 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 38,
+			"defaultValue": 38
+		},
+		{
+			"#": "9",
+			"label": "Light Table 80 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 85,
+			"defaultValue": 85
+		},
+		{
+			"#": "10",
+			"label": "Light Table 70 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 186,
+			"defaultValue": 186
+		},
+		{
+			"#": "11",
+			"label": "Light Table 60 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 407,
+			"defaultValue": 407
+		},
+		{
+			"#": "12",
+			"label": "Light Table 50 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 891,
+			"defaultValue": 891
+		},
+		{
+			"#": "13",
+			"label": "Light Table 40 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 1949,
+			"defaultValue": 1949
+		},
+		{
+			"#": "14",
+			"label": "Light Table 30 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 4265,
+			"defaultValue": 4265
+		},
+		{
+			"#": "15",
+			"label": "Light Table 20 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 9332,
+			"defaultValue": 9332
+		},
+		{
+			"#": "16",
+			"label": "Light Table 10 %",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 20417,
+			"defaultValue": 20417
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"manufacturer": "Philio Technology Corp",
+	"manufacturerId": "0x013c",
+	"label": "PAD02",
+	"description": "Dimmer Socket",
+	"devices": [
+		{
+			"productType": "0x0005",
+			"productId": "0x0031"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Mode of Switch Off Function",
+			"description": "Switch button mode (enabled/disabled).",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Enabled",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "LED Indication Mode",
+			"description": "LED mode: 1 is show switch state. 2 is night mode (opposite).",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Show current switch state",
+					"value": 1
+				},
+				{
+					"label": "Night mode (Opposite)",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Auto Off Timer",
+			"description": "Automatic OFF after given time.",
+			"valueSize": 2,
+			"unit": "1s",
+			"minValue": 0,
+			"maxValue": 32767,
+			"defaultValue": 0
+		},
+		{
+			"#": "4",
+			"label": "RF Off Command Mode",
+			"description": "How to interpret OFF command.",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Switch off",
+					"value": 0
+				},
+				{
+					"label": "Ignore",
+					"value": 1
+				},
+				{
+					"label": "Toggle switch",
+					"value": 2
+				},
+				{
+					"label": "Switch on",
+					"value": 3
+				}
+			]
+		}
+	]
+}

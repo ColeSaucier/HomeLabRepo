@@ -1,0 +1,87 @@
+{
+	"manufacturer": "Sunricher",
+	"manufacturerId": "0x0330",
+	"label": "ZV9102FA-CCT",
+	"description": "Z-Wave CCT LED Controller",
+	"devices": [
+		{
+			"productType": "0x0200",
+			"productId": "0xd002"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "2",
+			"$import": "~/templates/master_template.json#state_after_power_failure_off_on_prev",
+			"defaultValue": 0
+		},
+		{
+			"#": "3",
+			"label": "Enable/disable Basic Report",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 1
+		},
+		{
+			"#": "4",
+			"label": "Colour Channels",
+			"description": "Set number of channels of LED load - single colour, CCT or RGBW",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 2,
+			"defaultValue": 2
+		},
+		{
+			"#": "5",
+			"label": "Stage Mode",
+			"description": "Set stage mode for lighting changes",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0
+		},
+		{
+			"#": "6",
+			"label": "Stage Mode Speed",
+			"description": "Set speed of changes in stage mode",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "7",
+			"label": "Stage Mode Execution Time",
+			"description": "Set execution time for stage mode",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "8",
+			"label": "Stage Mode Hue",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "9",
+			"label": "Set External Switch Function",
+			"description": "Enable / disable external switch for inclusion / exclusion",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0
+		}
+	]
+}

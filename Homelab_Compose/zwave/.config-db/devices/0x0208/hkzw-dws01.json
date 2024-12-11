@@ -1,0 +1,54 @@
+{
+	"manufacturer": "HANK Electronics Ltd.",
+	"manufacturerId": "0x0208",
+	"label": "HKZW-DWS01",
+	"description": "Door and Window Sensor",
+	"devices": [
+		{
+			"productType": "0x0200",
+			"productId": "0x0008"
+		},
+		{
+			"productType": "0x0201",
+			"productId": "0x0008"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "14",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Send Basic Set to Group 2"
+		},
+		{
+			"#": "15",
+			"label": "Value of Basic Set",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Send 255 when open",
+					"value": 0
+				},
+				{
+					"label": "Send 0 when open",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "32",
+			"label": "Level for Low Battery Alarm",
+			"description": "Adjust the percent of battery left before a low battery level alarm is sent",
+			"valueSize": 1,
+			"unit": "Battery %",
+			"minValue": 10,
+			"maxValue": 50,
+			"defaultValue": 20
+		}
+	]
+}

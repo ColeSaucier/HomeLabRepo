@@ -1,0 +1,110 @@
+{
+	"manufacturer": "HANK Electronics Ltd.",
+	"manufacturerId": "0x0208",
+	"label": "HKZW-RGB01",
+	"description": "RGB Bulb",
+	"devices": [
+		{
+			"productType": "0x0100",
+			"productId": "0x0004"
+		},
+		{
+			"productType": "0x0101",
+			"productId": "0x0004"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "21",
+			"$import": "~/templates/master_template.json#state_after_power_failure_prev_on_off"
+		},
+		{
+			"#": "24",
+			"label": "Notification When Load Status Change",
+			"description": "RGB BULB can send notifications to associated device",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Notifications disabled",
+					"value": 0
+				},
+				{
+					"label": "Send Basic Report",
+					"value": 1
+				},
+				{
+					"label": "Send Basic Report only without status change",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "51",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Use Wall Switch to Turn On/off RGB BULB"
+		},
+		{
+			"#": "61",
+			"label": "Advance Mode",
+			"description": "RGB BULB can blink or cyclic/random change color automatically at set intervals.",
+			"valueSize": 4,
+			"defaultValue": 3072,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Stop changing",
+					"value": 3072
+				},
+				{
+					"label": "Color gradual change randomly",
+					"value": 16826368
+				},
+				{
+					"label": "Color change randomly with a breathing blink",
+					"value": 33603584
+				},
+				{
+					"label": "Blink with random color",
+					"value": 50380800
+				},
+				{
+					"label": "Color change randomly",
+					"value": 67158016
+				},
+				{
+					"label": "Color gradual change",
+					"value": 285261824
+				},
+				{
+					"label": "Breathing blink with a specific color",
+					"value": 302039040
+				},
+				{
+					"label": "Blink with a specific color",
+					"value": 318816256
+				}
+			]
+		},
+		{
+			"#": "255",
+			"label": "Resetting to Factory Default",
+			"description": "RGB BULB will exclude from the Z-Wave network with this particular command",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 1431655765,
+			"defaultValue": 1,
+			"options": [
+				{
+					"label": "Resetting to the factory default",
+					"value": 1431655765
+				}
+			]
+		}
+	]
+}

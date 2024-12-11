@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.1733759370366": [
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "8bea358cd33bc4568348193cb716860e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:31:02.726243+00:00",
+            "finish": "2024-12-11T18:31:02.726681+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-11T18:31:02.726388+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.aqaraoff",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1733759370366",
+                      "last_triggered": "2024-12-11T18:29:54.474226+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "AqaraOFF"
+                    },
+                    "last_changed": "2024-12-11T18:13:31.967249+00:00",
+                    "last_reported": "2024-12-11T18:29:54.474364+00:00",
+                    "last_updated": "2024-12-11T18:29:54.474364+00:00",
+                    "context": {
+                      "id": "01JEVFR5NA2YCV3HTMXSSNSPRE",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                    "payload": "false",
+                    "qos": 0,
+                    "description": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+                    "payload_json": false
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1733759370366",
+            "alias": "AqaraOFF",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                "payload": "false"
+              }
+            ],
+            "conditions": [],
+            "actions": [],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JEVFT8A6S6VS2EVFQ2DYPKA8",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "8bea358cd33bc4568348193cb716860e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:31:02.726243+00:00",
+            "finish": "2024-12-11T18:31:02.726681+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "72db5adcfcea059f1f7f4f9c7c532846",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:32:04.683616+00:00",
+            "finish": "2024-12-11T18:32:04.684032+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-11T18:32:04.683730+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.aqaraoff",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1733759370366",
+                      "last_triggered": "2024-12-11T18:31:02.726474+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "AqaraOFF"
+                    },
+                    "last_changed": "2024-12-11T18:13:31.967249+00:00",
+                    "last_reported": "2024-12-11T18:31:02.726615+00:00",
+                    "last_updated": "2024-12-11T18:31:02.726615+00:00",
+                    "context": {
+                      "id": "01JEVFT8A6S6VS2EVFQ2DYPKA8",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                    "payload": "false",
+                    "qos": 0,
+                    "description": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+                    "payload_json": false
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1733759370366",
+            "alias": "AqaraOFF",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                "payload": "false"
+              }
+            ],
+            "conditions": [],
+            "actions": [],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JEVFW4TB7FHAKHG0XCHXJERH",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "72db5adcfcea059f1f7f4f9c7c532846",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:32:04.683616+00:00",
+            "finish": "2024-12-11T18:32:04.684032+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "4d3fd442bf61656e6db03d91317a7ffa",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:34:06.667906+00:00",
+            "finish": "2024-12-11T18:34:06.668628+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-11T18:34:06.668099+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.aqaraoff",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1733759370366",
+                      "last_triggered": "2024-12-11T18:32:04.683821+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "AqaraOFF"
+                    },
+                    "last_changed": "2024-12-11T18:13:31.967249+00:00",
+                    "last_reported": "2024-12-11T18:32:04.683964+00:00",
+                    "last_updated": "2024-12-11T18:32:04.683964+00:00",
+                    "context": {
+                      "id": "01JEVFW4TB7FHAKHG0XCHXJERH",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                    "payload": "false",
+                    "qos": 0,
+                    "description": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+                    "payload_json": false
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1733759370366",
+            "alias": "AqaraOFF",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                "payload": "false"
+              }
+            ],
+            "conditions": [],
+            "actions": [],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JEVFZVYBJHWEPC1NW1CPFMBQ",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "4d3fd442bf61656e6db03d91317a7ffa",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:34:06.667906+00:00",
+            "finish": "2024-12-11T18:34:06.668628+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "922c3f438e93239ee0c262393e42b44d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:34:23.851874+00:00",
+            "finish": "2024-12-11T18:34:23.852281+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-11T18:34:23.851991+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.aqaraoff",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1733759370366",
+                      "last_triggered": "2024-12-11T18:34:06.668249+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "AqaraOFF"
+                    },
+                    "last_changed": "2024-12-11T18:13:31.967249+00:00",
+                    "last_reported": "2024-12-11T18:34:06.668509+00:00",
+                    "last_updated": "2024-12-11T18:34:06.668509+00:00",
+                    "context": {
+                      "id": "01JEVFZVYBJHWEPC1NW1CPFMBQ",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                    "payload": "false",
+                    "qos": 0,
+                    "description": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+                    "payload_json": false
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1733759370366",
+            "alias": "AqaraOFF",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                "payload": "false"
+              }
+            ],
+            "conditions": [],
+            "actions": [],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JEVG0CQB3WDT0D0PXAM6FRJK",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "922c3f438e93239ee0c262393e42b44d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:34:23.851874+00:00",
+            "finish": "2024-12-11T18:34:23.852281+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "4a77cd1fc7a3386503db5fa2aa143b3d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:38:39.112908+00:00",
+            "finish": "2024-12-11T18:38:39.113336+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-11T18:38:39.113025+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.aqaraoff",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1733759370366",
+                      "last_triggered": "2024-12-11T18:34:23.852075+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "AqaraOFF"
+                    },
+                    "last_changed": "2024-12-11T18:13:31.967249+00:00",
+                    "last_reported": "2024-12-11T18:34:23.852214+00:00",
+                    "last_updated": "2024-12-11T18:34:23.852214+00:00",
+                    "context": {
+                      "id": "01JEVG0CQB3WDT0D0PXAM6FRJK",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                    "payload": "false",
+                    "qos": 0,
+                    "description": "mqtt topic zigbee2mqtt/Aqara vibration/vibration",
+                    "payload_json": false
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1733759370366",
+            "alias": "AqaraOFF",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "zigbee2mqtt/Aqara vibration/vibration",
+                "payload": "false"
+              }
+            ],
+            "conditions": [],
+            "actions": [],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JEVG86081J4642EC7ZCBZ0E4",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "4a77cd1fc7a3386503db5fa2aa143b3d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:38:39.112908+00:00",
+            "finish": "2024-12-11T18:38:39.113336+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759370366",
+          "trigger": "mqtt topic zigbee2mqtt/Aqara vibration/vibration"
+        }
+      }
+    ],
+    "automation.1733759438590": [
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "88a964de016fac4ff5867540bfb77662",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:33:35.822488+00:00",
+            "finish": "2024-12-11T18:33:35.822874+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759438590",
+          "trigger": "mqtt topic zigbee2mqtt/Tuya_Vibe/vibration",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-11T18:33:35.822542+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.tuyarecurringvibrationtrue",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1733759438590",
+                      "last_triggered": "2024-12-11T17:21:19.840338+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "TuyaRecurringVibrationTRUE"
+                    },
+                    "last_changed": "2024-12-11T18:13:31.967752+00:00",
+                    "last_reported": "2024-12-11T18:13:31.967752+00:00",
+                    "last_updated": "2024-12-11T18:13:31.967752+00:00",
+                    "context": {
+                      "id": "01JEVET65ZEWMFDVG5TKYEFD51",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "zigbee2mqtt/Tuya_Vibe/vibration",
+                    "payload": "true",
+                    "qos": 0,
+                    "description": "mqtt topic zigbee2mqtt/Tuya_Vibe/vibration",
+                    "payload_json": true
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1733759438590",
+            "alias": "TuyaRecurringVibrationTRUE",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "zigbee2mqtt/Tuya_Vibe/vibration",
+                "payload": "true"
+              }
+            ],
+            "conditions": [],
+            "actions": [],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JEVFYXTE4CWF7150767SNFR2",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "88a964de016fac4ff5867540bfb77662",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-11T18:33:35.822488+00:00",
+            "finish": "2024-12-11T18:33:35.822874+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1733759438590",
+          "trigger": "mqtt topic zigbee2mqtt/Tuya_Vibe/vibration"
+        }
+      }
+    ]
+  }
+}

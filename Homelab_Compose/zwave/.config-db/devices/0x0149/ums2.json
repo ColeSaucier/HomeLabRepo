@@ -1,0 +1,144 @@
+{
+	"manufacturer": "wiDom",
+	"manufacturerId": "0x0149",
+	"label": "UMS2",
+	"description": "WiDom Smart Roller Shutter",
+	"devices": [
+		{
+			"productType": "0x1214",
+			"productId": "0x0800"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Numbers of Clicks to Control the Local Load",
+			"valueSize": 1,
+			"defaultValue": 3,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "1 click",
+					"value": 1
+				},
+				{
+					"label": "2 clicks",
+					"value": 2
+				},
+				{
+					"label": "1 clicks and 2 clicks",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Favorite Level for ON Position",
+			"valueSize": 1,
+			"minValue": 50,
+			"maxValue": 100,
+			"defaultValue": 100
+		},
+		{
+			"#": "3",
+			"label": "Favorite Level for OFF Position",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 49,
+			"defaultValue": 0
+		},
+		{
+			"#": "4",
+			"label": "Value for Group 2 with 1 Click on UP Button",
+			"description": "Allowable range: 0-99, 255",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "5",
+			"label": "Value for Group 2 with 1 Click on DOWN Button",
+			"description": "Allowable range: 0-99, 255",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "6",
+			"label": "Value for Group 3 with 2 Clicks on UP Button",
+			"description": "Allowable range: 0-99, 255",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "7",
+			"label": "Value for Group 3 with 2 Clicks on DOWN Button",
+			"description": "Allowable range: 0-99, 255",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "8",
+			"label": "Value for Group 4 with 3 Clicks on UP Button",
+			"description": "Allowable range: 0-99, 255",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "9",
+			"label": "Value for Group 4 with 3 Clicks on DOWN Button",
+			"description": "Allowable range: 0-99, 255",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "20",
+			"label": "Calibration",
+			"description": "Defines the status of the calibration procedure",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 2,
+			"defaultValue": 0
+		},
+		{
+			"#": "21",
+			"label": "Motor Idle State Definition",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 3000,
+			"defaultValue": 1000
+		},
+		{
+			"#": "22",
+			"label": "Limit Switch Recognition",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 30
+		}
+	]
+}

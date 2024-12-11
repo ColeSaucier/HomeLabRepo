@@ -1,0 +1,104 @@
+version: '3.7'
+services:
+  zigbee2mqtt:
+    container_name: zigbee2mqtt #
+    image: koenkk/zigbee2mqtt:1.40.1 #or :latest
+    volumes:
+      - ./zigbee2mqtt/data:/app/data
+      - /run/udev:/run/udev:ro
+      - ./zigbee2mqtt/data/configuration.yaml:/app/data/configuration.yaml  # This mounts your config directly
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0 # Adjust this if zigbee breaks
+    restart: always #or unless-stopped
+    network_mode: host #
+    privileged: true #probably needed?
+    environment:
+      - TZ=America/Los_Angeles #
+    
+  mosquitto:
+    container_name: mqtt
+    image: eclipse-mosquitto:2 #
+    restart: always #unless-stopped
+    network_mode: host #
+    volumes:
+      - ./mosquitto/config:/mosquitto/config #
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+
+  zwave-js-ui:
+    container_name: zwave
+    image: zwavejs/zwave-js-ui:latest
+    restart: always
+    tty: true
+    stop_signal: SIGINT
+    environment:
+      - SESSION_SECRET=la1SUZ+vWw05LYaobPHLpEyyFOxn0MRbqg+1CadkbIU7
+      - ZWAVEJS_EXTERNAL_CONFIG=/usr/src/app/store/.config-db
+      - TZ=America/New_York
+    devices:
+      # Do not use /dev/ttyUSBX serial devices, as those mappings can change over time.
+      # Instead, use the /dev/serial/by-id/X serial device for your Z-Wave stick.
+      - '/dev/serial/by-id/usb-Zooz_800_Z-Wave_Stick_533D004242-if00:/dev/zwave'
+      #'/dev/serial/by-id/usb-Zooz_800_Z-Wave_Stick_533D004242-if00:/dev/zigbee2mqtt'
+    volumes:
+      - ./zwave:/usr/src/app/store
+    ports:
+      - '8091:8091' # port for web interface
+      - '3000:3000' # port for Z-Wave JS websocket server
+    
+  hass:
+    container_name: hass
+    image: homeassistant/home-assistant:2024.10.4 #homeassistant/home-assistant:stable
+    restart: always #unless-stopped
+    network_mode: host #
+    depends_on:
+      - zigbee2mqtt #
+    volumes:
+      - ./config_mqtt_ha:/config
+      - ./config_mqtt_ha:/scripts
+      - ./config_mqtt_ha/manual_integrations:/config/www/manual_integrations
+      - /home/cole/Homelab_Compose_Init/Exports__SensorData_Video:/exports
+
+  hass_db:
+    image: mariadb:11.5.2
+    container_name: hass_db
+    restart: always
+    network_mode: host #
+    environment:
+      MYSQL_ROOT_PASSWORD: colecar17
+      MYSQL_DATABASE: hass_db
+      MYSQL_USER: cole
+      MYSQL_PASSWORD: aaa1aaa
+    volumes:
+      - ./mariadb_data:/var/lib/mysql
+
+  esphome:
+    container_name: esphome
+    image: esphome/esphome
+    restart: always
+    privileged: true
+    network_mode: host
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./ESPHome:/config
+
+  fastapi:
+    container_name: exportapi
+    build:
+      context: ./fastapi-ExportApp
+    network_mode: host 
+    volumes:
+      - ./fastapi-ExportApp:/app
+      - ./fastapi-ExportApp/ScriptsNeeded_ForExport:/scripts
+      - ./fastapi-ExportApp/templates:/app/templates
+      - ./EXPORTS:/EXPORTS
+    environment:
+      - ENV=development
+      - MARIADB_CONFIG=/usr/bin/mariadb_config
+
+networks:
+  zwave:
+volumes:
+  mariadb_data:
+  #zwave-config:
+  #  name: zwave-config

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "repairs.issue_registry",
+  "data": {
+    "issues": [
+      {
+        "created": "2024-10-25T20:06:05.313225+00:00",
+        "dismissed_version": null,
+        "domain": "recorder",
+        "is_persistent": false,
+        "issue_id": "maria_db_range_index_regression"
+      },
+      {
+        "created": "2024-11-18T18:56:04.249409+00:00",
+        "dismissed_version": null,
+        "domain": "zwave_js",
+        "is_persistent": false,
+        "issue_id": "device_config_file_changed.baed945d6f0438adc28ff2517a240159"
+      }
+    ]
+  }
+}

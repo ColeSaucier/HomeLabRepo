@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "minor_version": 4,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "created_at": "2024-09-18T23:15:01.991869+00:00",
+        "data": {},
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "sun",
+        "entry_id": "01J83PNW75A2ABHFC29RA9BW54",
+        "minor_version": 1,
+        "modified_at": "2024-09-18T23:15:01.991874+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "title": "Sun",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-09-18T23:16:02.243344+00:00",
+        "data": {},
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "shopping_list",
+        "entry_id": "01J83PQQ23GWYEMND056P3VYKB",
+        "minor_version": 1,
+        "modified_at": "2024-09-18T23:16:02.243351+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "title": "Shopping list",
+        "unique_id": "shopping_list",
+        "version": 1
+      },
+      {
+        "created_at": "2024-09-18T23:16:02.282562+00:00",
+        "data": {
+          "track_home": true
+        },
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "met",
+        "entry_id": "01J83PQQ3ANVGG2FGTF5AVGM57",
+        "minor_version": 1,
+        "modified_at": "2024-09-18T23:16:02.282567+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "title": "Home",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-09-18T23:16:02.465134+00:00",
+        "data": {},
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "radio_browser",
+        "entry_id": "01J83PQQ91F3BDJ4C529Y50Z8K",
+        "minor_version": 1,
+        "modified_at": "2024-09-18T23:16:02.465139+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "title": "Radio Browser",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-09-18T23:16:02.468394+00:00",
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "google_translate",
+        "entry_id": "01J83PQQ94N01XESP3SFVXM1KW",
+        "minor_version": 1,
+        "modified_at": "2024-09-18T23:16:02.468398+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "title": "Google Translate text-to-speech",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-09-18T23:22:07.428951+00:00",
+        "data": {
+          "broker": "localhost",
+          "port": 1883,
+          "discovery": true,
+          "discovery_prefix": "homeassistant",
+          "birth_message": {
+            "topic": "homeassistant/status",
+            "payload": "online",
+            "qos": 0,
+            "retain": true
+          },
+          "will_message": {
+            "topic": "homeassistant/status",
+            "payload": "offline",
+            "qos": 0,
+            "retain": true
+          }
+        },
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "mqtt",
+        "entry_id": "01J83Q2VP4VWN43G6MWBRJWN6V",
+        "minor_version": 1,
+        "modified_at": "2024-09-18T23:23:12.828652+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "localhost",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-09-24T17:10:43.591080+00:00",
+        "data": {
+          "url": "ws://localhost:3000",
+          "usb_path": null,
+          "s0_legacy_key": null,
+          "s2_access_control_key": null,
+          "s2_authenticated_key": null,
+          "s2_unauthenticated_key": null,
+          "lr_s2_access_control_key": null,
+          "lr_s2_authenticated_key": null,
+          "use_addon": false,
+          "integration_created_addon": false
+        },
+        "discovery_keys": {
+          "zeroconf": [
+            {
+              "domain": "zeroconf",
+              "key": [
+                "_zwave-js-server._tcp.local.",
+                "3240051055._zwave-js-server._tcp.local."
+              ],
+              "version": 1
+            }
+          ]
+        },
+        "disabled_by": null,
+        "domain": "zwave_js",
+        "entry_id": "01J8JG7447QB7N37TPJ8R6N7M8",
+        "minor_version": 1,
+        "modified_at": "2024-10-28T22:23:16.004477+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "Z-Wave JS",
+        "unique_id": "3240051055",
+        "version": 1
+      },
+      {
+        "created_at": "2024-12-05T21:22:25.647696+00:00",
+        "data": {
+          "host": "192.168.0.39",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "+AppceDQtXGQXPHC6JFpBPp4Gj1aqSUPYk1jllrVbQY=",
+          "device_name": "esp32"
+        },
+        "discovery_keys": {},
+        "disabled_by": null,
+        "domain": "esphome",
+        "entry_id": "01JECB7R7FP9GTTEM6SH46SQ11",
+        "minor_version": 1,
+        "modified_at": "2024-12-05T21:22:25.647701+00:00",
+        "options": {
+          "allow_service_calls": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "esp32",
+        "unique_id": "40:4c:ca:57:9a:94",
+        "version": 1
+      }
+    ]
+  }
+}

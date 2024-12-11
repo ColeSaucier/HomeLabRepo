@@ -1,0 +1,46 @@
+[2024-10-24 16:12:06] info: 	z2m: Logging to console, file (filename: log.log)
+[2024-10-24 16:12:06] debug: 	z2m: Loaded state from file /app/data/state.json
+[2024-10-24 16:12:06] info: 	z2m: Starting Zigbee2MQTT version 1.40.1 (commit #403d3c0)
+[2024-10-24 16:12:06] info: 	z2m: Starting zigbee-herdsman (0.57.3)
+[2024-10-24 16:12:06] debug: 	z2m: Using zigbee-herdsman with settings: '"{\"network\":{\"panID\":7408,\"extendedPanID\":[147,117,108,179,238,76,140,47],\"channelList\":[11],\"networkKey\":\"HIDDEN\"},\"databasePath\":\"/app/data/database.db\",\"databaseBackupPath\":\"/app/data/database.db.backup\",\"backupPath\":\"/app/data/coordinator_backup.json\",\"serialPort\":{\"path\":\"/dev/ttyACM1\",\"adapter\":\"ember\"},\"adapter\":{\"concurrent\":null,\"delay\":null,\"disableLED\":false}}"'
+[2024-10-24 16:12:06] info: 	zh:ember: Using default stack config.
+[2024-10-24 16:12:06] debug: 	zh:controller: Starting with options '{"network":{"networkKeyDistribute":false,"networkKey":"HIDDEN","panID":7408,"extendedPanID":[147,117,108,179,238,76,140,47],"channelList":[11]},"serialPort":{"path":"/dev/ttyACM1","adapter":"ember"},"adapter":{"disableLED":false,"concurrent":null,"delay":null},"databasePath":"/app/data/database.db","databaseBackupPath":"/app/data/database.db.backup","backupPath":"/app/data/coordinator_backup.json"}'
+[2024-10-24 16:12:06] info: 	zh:ember: ======== Ember Adapter Starting ========
+[2024-10-24 16:12:06] info: 	zh:ember:ezsp: ======== EZSP starting ========
+[2024-10-24 16:12:06] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2024-10-24 16:12:06] info: 	zh:ember:uart:ash: RTS/CTS config is off, enabling software flow control.
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Opening serial port with {"path":"/dev/ttyACM1","baudRate":115200,"rtscts":false,"autoOpen":false,"parity":"none","stopBits":1,"xon":true,"xoff":true}
+[2024-10-24 16:12:06] info: 	zh:ember:uart:ash: Serial port opened
+[2024-10-24 16:12:06] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: ---> [FRAME type=RST]
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 0/2500
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 100/2500
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 200/2500
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 300/2500
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 400/2500
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 500/2500
+[2024-10-24 16:12:06] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 600/2500
+[2024-10-24 16:12:07] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 700/2500
+[2024-10-24 16:12:07] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 800/2500
+[2024-10-24 16:12:07] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 900/2500
+[2024-10-24 16:12:07] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1000/2500
+[2024-10-24 16:12:07] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1100/2500
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0xb0c7defffe808a84): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0xa4c138be4b4ccef8): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x00158d000af01758): default expiration timeout set to 3600000
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x0ceff6fffe6b79ff): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x286d97000114b978): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x54ef441000daded9): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0xb0c7defffedb6f4f): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x282c02bfffea934f): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x282c02bfffea4104): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x282c02bfffe6798d): default expiration timeout set to 0
+[2024-10-24 16:12:07] debug: 	zh:controller:device: Request Queue (0x00158d008b112dea): default expiration timeout set to 3600000
+[2024-10-24 16:12:07] debug: 	z2m: Saving state to file /app/data/state.json
+[2024-10-24 16:12:07] error: 	z2m: Not connected to MQTT server!
+[2024-10-24 16:12:07] error: 	z2m: Cannot send message: topic: 'zigbee2mqtt/bridge/state', payload: 'offline
+[2024-10-24 16:12:07] info: 	z2m: Disconnecting from MQTT server
+[2024-10-24 16:12:07] info: 	z2m: Stopping zigbee-herdsman...
+[2024-10-24 16:12:07] debug: 	zh:controller:database: Writing database to '/app/data/database.db'
+[2024-10-24 16:12:07] info: 	z2m: Stopped zigbee-herdsman
+[2024-10-24 16:12:07] info: 	z2m: Stopped Zigbee2MQTT

@@ -1,0 +1,51 @@
+{
+	"manufacturer": "Willis Electric Co., Ltd.",
+	"manufacturerId": "0x015d",
+	"label": "NZW96",
+	"description": "Outdoor Plug-In Module (1-Channel)",
+	"devices": [
+		{
+			"productType": "0x6000",
+			"productId": "0x6000"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "LED Indicator",
+			"description": "Change the behavior of the LED Indicator",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Plug on / LED on",
+					"value": 0
+				},
+				{
+					"label": "Plug on / LED off",
+					"value": 1
+				},
+				{
+					"label": "LED disabled",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Countdown",
+			"description": "Plug Auto Shutoff",
+			"valueSize": 2,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 36000,
+			"defaultValue": 0,
+			"unsigned": true
+		}
+	]
+}

@@ -1,0 +1,9 @@
+.entitystate-detected {
+    opacity: 1;
+    visibility: visible;
+}
+
+.entitystate-clear {
+    opacity: 0;
+    visibility: hidden;
+}

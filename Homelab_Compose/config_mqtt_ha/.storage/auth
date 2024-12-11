@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth",
+  "data": {
+    "users": [
+      {
+        "id": "ebe3d9bbddcc4b7a8181d3be2566300e",
+        "group_ids": [
+          "system-read-only"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Content",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "b46b12979d4b410abd9903216fe48ef9",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "Cole",
+        "system_generated": false,
+        "local_only": false
+      }
+    ],
+    "groups": [
+      {
+        "id": "system-admin",
+        "name": "Administrators"
+      },
+      {
+        "id": "system-users",
+        "name": "Users"
+      },
+      {
+        "id": "system-read-only",
+        "name": "Read Only"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "f0e5524e35c6457eb4e50f57fa41d937",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "cole"
+        }
+      }
+    ],
+    "refresh_tokens": [
+      {
+        "id": "ac5de112bfef49a485c515ed1cc18488",
+        "user_id": "ebe3d9bbddcc4b7a8181d3be2566300e",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2024-09-18T23:15:00.865120+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "10e039e389bdc4f1b9f029f3ba587ad002b2f164d68ba5420e3e155a4278da26fa4e91cc125e1d94a5c20099aab4d761cce4120eec79fe7a97926c818978fc1b",
+        "jwt_key": "c1c39587afc3ce70b2b124b072b5d72056f389e7921f301a6656212d47ceecfda744efaac4c914c7d2bbe3aea517fb1390ab0edb0c23f57bdb377035fa06b381",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.9.2"
+      },
+      {
+        "id": "cc12011404ab4a8a8d98325639bada95",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": "http://cole-precision-tower-7810:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-09-18T23:16:12.456779+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "8a5adbc111114d6f79a262502ec4cfc071e3eaf9ba9932ece91d1fc66f5a6680109dd6a65ae0da4f06e4dc9b29a59f1f3b6d31886d0f6aa7fb77bea967c175c0",
+        "jwt_key": "529090aa816db169e247c9370633d72008e6af127e65020792d741bb998e34e62d7450e7697800a08ce69f7b157246f635c7a8ed5de5c82c9ef67f52bb50d2f7",
+        "last_used_at": "2024-09-18T23:50:28.525187+00:00",
+        "last_used_ip": "127.0.0.1",
+        "expire_at": 1734479428.525187,
+        "credential_id": "f0e5524e35c6457eb4e50f57fa41d937",
+        "version": "2024.9.2"
+      },
+      {
+        "id": "1e92909bed03404e8493f492f21d058d",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": "http://cole-precision-tower-7810:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-09-19T14:15:29.965446+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "260c24670cef2eb775d1bc3bfe49b0fd09ba9a1a5fc328f666ecb360f75872506d5a2e4eaaa1a53450fac3aced32c136c343a44e6596a811f08cd49e9108c10e",
+        "jwt_key": "14e5a3757e8afbb666b9ad3a4227282560e078da351f4c599733febc258c0ebedccbd9d6d31f4fb9063c25be887203b94b9fb24da9ced25f3c60fbbdabb6b19f",
+        "last_used_at": "2024-10-11T19:27:16.725647+00:00",
+        "last_used_ip": "127.0.0.1",
+        "expire_at": 1736450836.725647,
+        "credential_id": "f0e5524e35c6457eb4e50f57fa41d937",
+        "version": "2024.9.2"
+      },
+      {
+        "id": "31028b3e83c84a60ae7b58caa9044393",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": "http://cole-precision-tower-7810:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-10-15T16:51:26.451365+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "c9acd94234662d2dc1e63ccbd44cbc6331206025593b45a62c84f705ec0d80fbf519b40f10995d936d4ce70fca0a5ec9e2fe5fa2994d177b9ae1d0ac5d2fae0d",
+        "jwt_key": "afa868db5e0b95cdad2cabea5bfe7089a0b8565da19a37b7d723e596a58a6b47334c9b5e9c1d65c961b9688d1c9a54b5ae456662df3914e253aef63d76e70653",
+        "last_used_at": "2024-11-26T21:20:29.269511+00:00",
+        "last_used_ip": "127.0.0.1",
+        "expire_at": 1740432029.269511,
+        "credential_id": "f0e5524e35c6457eb4e50f57fa41d937",
+        "version": "2024.9.2"
+      },
+      {
+        "id": "145e8b4dcd574a739417b132e58f600b",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": "http://cole-precision-tower-7810:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-10-16T15:48:11.223605+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "10bcaf430c6c72028c36336c0877d249ee0aac4524372aecb300a2dccbdcb4fa586d582f3c63907f067df969b1cfa77ce93421c932c80748abb994f8f40a2fb1",
+        "jwt_key": "008d84780bfa0cd6473909e873d212a0876f75f6e1943cbe34d51908ca690cd26ce76ee3cb7a4d0d3ebc964f396594aa27ef8aecef9dd651099d0f679583af00",
+        "last_used_at": "2024-12-11T18:00:53.417372+00:00",
+        "last_used_ip": "127.0.0.1",
+        "expire_at": 1741716053.417372,
+        "credential_id": "f0e5524e35c6457eb4e50f57fa41d937",
+        "version": "2024.9.2"
+      },
+      {
+        "id": "31ceedac937d4ce0859673eb6c662105",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": null,
+        "client_name": "ColeTheGod",
+        "client_icon": null,
+        "token_type": "long_lived_access_token",
+        "created_at": "2024-10-24T14:55:13.019647+00:00",
+        "access_token_expiration": 315360000.0,
+        "token": "9bd81c46a3b7d77886bd3d0d4967a8dad46f0c2a92ce8ac0f5b2d034fdb6c391b24c1a62459c3dc28ef494844066be2bf5f5442ebf5a98e4fdc06cd088cc98df",
+        "jwt_key": "a4ed5c68f6312eb8cc4266ccabd0dabe53a7a741e5997025890e6f26d35d5d42fbfd01b5fa592b3d7090b006b6e97282fbad536a74effd25d8b307b6e5979e9d",
+        "last_used_at": "2024-10-24T14:55:13.019812+00:00",
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.9.2"
+      },
+      {
+        "id": "b982cd9c3ce4463c8d631879b48dbd0e",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": null,
+        "client_name": "BOB",
+        "client_icon": null,
+        "token_type": "long_lived_access_token",
+        "created_at": "2024-10-24T15:28:41.806221+00:00",
+        "access_token_expiration": 315360000.0,
+        "token": "8799b67824a7ccee30c236d0d326cf2fe2d892e426fc1bac9c342a9056c5a60c4fc06392120938091e91cbb594b8bab01e9518779d07a30b992bdb15f2d702c1",
+        "jwt_key": "60855e3abcbd6c3493e233c0c3cf4258ab03fe489d523793ee1eb5ea6851f2500bec8a42def59e61163171d66b36fa1867fe7f699b69f2e37e3482a40479285a",
+        "last_used_at": "2024-10-24T15:28:41.806347+00:00",
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.9.2"
+      },
+      {
+        "id": "c973d8cfb332444abe9db97953b25c6c",
+        "user_id": "b46b12979d4b410abd9903216fe48ef9",
+        "client_id": "http://localhost:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-11-26T16:41:43.526145+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "be25402464b47015ced30b2f7655c8b5421c34b0bae9b0f29d5f159a607a98cc3a59658082c408f5484309d4b06713ee3117c40ae2a1acf1b38125d2fc6f94de",
+        "jwt_key": "be3ebee80ab6f1581b1362a0e4567e441a9e4479c71473c5cefdb5f566e790d252cc6ad9e6a8ab42fdd3b10eeb54a4fdd15845bcd350ba1b479eec38bec59793",
+        "last_used_at": "2024-11-26T19:59:16.637954+00:00",
+        "last_used_ip": "::1",
+        "expire_at": 1740427156.637954,
+        "credential_id": "f0e5524e35c6457eb4e50f57fa41d937",
+        "version": "2024.10.4"
+      }
+    ]
+  }
+}

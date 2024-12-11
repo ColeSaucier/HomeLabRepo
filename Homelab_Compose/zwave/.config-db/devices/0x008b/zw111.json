@@ -1,0 +1,509 @@
+{
+	"manufacturer": "Trane Corporation",
+	"manufacturerId": "0x008b",
+	"label": "ZW111",
+	"description": "Nano Dimmer",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x006f"
+		},
+		{
+			"productType": "0x0103",
+			"productId": "0x006f"
+		},
+		{
+			"productType": "0x0203",
+			"productId": "0x006f"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "3",
+			"label": "Current Overload Protection",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				},
+				{
+					"label": "Enable",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "4",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Overheat Protection"
+		},
+		{
+			"#": "20",
+			"$import": "~/templates/master_template.json#state_after_power_failure_prev_on_off"
+		},
+		{
+			"#": "80",
+			"label": "Group 1 Notification",
+			"description": "Set notification sent to associated nodes (group 1)",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Send nothing",
+					"value": 0
+				},
+				{
+					"label": "Send Hail CC",
+					"value": 1
+				},
+				{
+					"label": "Send Basic Report",
+					"value": 2
+				},
+				{
+					"label": "Send Multilevel Switch Report",
+					"value": 3
+				},
+				{
+					"label": "Send Hail CC when using the manual switch",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "81",
+			"label": "Group 3 Notification",
+			"description": "Set notification sent to associated nodes (group 3)",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Send nothing",
+					"value": 0
+				},
+				{
+					"label": "Send Basic Set",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "82",
+			"label": "Group 4 Notification",
+			"description": "Set notification sent to associated nodes (group 4)",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Send nothing",
+					"value": 0
+				},
+				{
+					"label": "Send Basic Set",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "85",
+			"label": "Set Appointment 1",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 16843197,
+			"defaultValue": 0
+		},
+		{
+			"#": "86",
+			"label": "Set Appointment 2",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 16843197,
+			"defaultValue": 0
+		},
+		{
+			"#": "90",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Enable/Disable Parameters 91 and 92"
+		},
+		{
+			"#": "91",
+			"label": "Set the Threshold Value of Wattage",
+			"description": "Threshold change in wattage (in terms of wattage) to induce an automatic report",
+			"valueSize": 2,
+			"minValue": 0,
+			"maxValue": 60000,
+			"defaultValue": 25,
+			"unsigned": true
+		},
+		{
+			"#": "92",
+			"label": "Set the Threshold Value of Percent Power",
+			"description": "Threshold change in wattage (in terms of percentage)",
+			"valueSize": 1,
+			"unit": "W",
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 5
+		},
+		{
+			"#": "100",
+			"label": "Reset 101-103 to Default",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"writeOnly": true,
+			"options": [
+				{
+					"label": "Reset the parameter 101-103",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "101",
+			"label": "Set Group 1 Reports",
+			"description": "To set which reports need to be sent in Report group 1",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "102",
+			"label": "Set Group 2 Reports",
+			"description": "To set which reports need to be sent in Report group 2",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0
+		},
+		{
+			"#": "103",
+			"label": "Set Group 3 Reports",
+			"description": "To set which reports need to be sent in Report group 3",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 15,
+			"defaultValue": 0
+		},
+		{
+			"#": "110",
+			"label": "Reset Parameters 111-113 to Default",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"writeOnly": true,
+			"options": [
+				{
+					"label": "Reset the parameter 111-113",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "111",
+			"label": "Automatic Report Interval Group 1",
+			"description": "Set the interval of automatic report for Report group 1",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 2147483647,
+			"defaultValue": 2147483647
+		},
+		{
+			"#": "112",
+			"label": "Automatic Report Interval Group 2",
+			"description": "Set the interval of automatic report for Report group 2",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 2147483647,
+			"defaultValue": 2147483647
+		},
+		{
+			"#": "113",
+			"label": "Automatic Report Interval Group 3",
+			"description": "Set the interval of automatic report for Report group 3",
+			"valueSize": 4,
+			"minValue": 0,
+			"maxValue": 2147483647,
+			"defaultValue": 2147483647
+		},
+		{
+			"#": "120",
+			"label": "Configure the External Switch Mode for S1",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"writeOnly": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Unknown mode",
+					"value": 0
+				},
+				{
+					"label": "2-State switch mode",
+					"value": 1
+				},
+				{
+					"label": "3 way switch mode",
+					"value": 2
+				},
+				{
+					"label": "Momentary push button mode",
+					"value": 3
+				},
+				{
+					"label": "Enter automatic identification mode",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "121",
+			"label": "Configure the External Switch Mode for S2",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Unknown mode",
+					"value": 0
+				},
+				{
+					"label": "2-State switch mode",
+					"value": 1
+				},
+				{
+					"label": "3 way switch mode",
+					"value": 2
+				},
+				{
+					"label": "Momentary push button mode",
+					"value": 3
+				},
+				{
+					"label": "Enter automatic identification mode",
+					"value": 4
+				}
+			]
+		},
+		{
+			"#": "122",
+			"label": "Get the State of Touch Panel Port",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "The touch panel is not connected",
+					"value": 0
+				},
+				{
+					"label": "The touch panel is connected",
+					"value": 5
+				}
+			]
+		},
+		{
+			"#": "123",
+			"label": "Destination for Switch S1",
+			"description": "Set the control destination for external switch S1",
+			"valueSize": 1,
+			"defaultValue": 3,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Control the output loads of itself",
+					"value": 1
+				},
+				{
+					"label": "Control the other nodes",
+					"value": 2
+				},
+				{
+					"label": "Control itself and other nodes",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "124",
+			"label": "Set the Control Destination for External Switch S2",
+			"valueSize": 1,
+			"defaultValue": 3,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Control the output loads of itself",
+					"value": 1
+				},
+				{
+					"label": "Control the other nodes",
+					"value": 2
+				},
+				{
+					"label": "Control itself and other nodes",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "125",
+			"label": "Set the Default Dimming Rate",
+			"description": "The value range is 1 to 255 seconds",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "128",
+			"label": "Get the Current Working Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Unknown working mode",
+					"value": 0
+				},
+				{
+					"label": "2-Wire mode",
+					"value": 1
+				},
+				{
+					"label": "3-Wire mode",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "129",
+			"label": "Set the Dimming Principle",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Trailing edge mode",
+					"value": 0
+				},
+				{
+					"label": "Leading edge mode",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "130",
+			"label": "Type of Load",
+			"description": "To get what type of load the Dimmer is connected to.",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Unknown load",
+					"value": 0
+				},
+				{
+					"label": "Resistive load",
+					"value": 1
+				},
+				{
+					"label": "Capacitive load",
+					"value": 2
+				},
+				{
+					"label": "Inductive load",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "131",
+			"label": "Set the Minimum Brightness",
+			"description": "Set the min brightness level that the load can reach to",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 99,
+			"defaultValue": 99
+		},
+		{
+			"#": "132",
+			"label": "Set the Maximum Brightness Level",
+			"description": "Set the max brightness level that the load can reach to",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 99,
+			"defaultValue": 99
+		},
+		{
+			"#": "249",
+			"label": "Set the Recognition Way of Load",
+			"valueSize": 1,
+			"defaultValue": 2,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Never recognize the load when power on",
+					"value": 0
+				},
+				{
+					"label": "Only recognize once when first power on",
+					"value": 1
+				},
+				{
+					"label": "Recognize the load once power on",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "252",
+			"label": "Lock/unlock Configuration Parameters",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Unlock",
+					"value": 0
+				},
+				{
+					"label": "Lock",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "255",
+			"label": "Reset the Nano Dimmer",
+			"valueSize": 4,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Factory default",
+					"value": 0
+				},
+				{
+					"label": "Factory default and remove",
+					"value": 1431655765
+				}
+			]
+		}
+	]
+}

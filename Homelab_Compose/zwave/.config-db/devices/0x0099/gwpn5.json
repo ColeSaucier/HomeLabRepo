@@ -1,0 +1,125 @@
+{
+	"manufacturer": "GreenWave Reality Inc.",
+	"manufacturerId": "0x0099",
+	"label": "NP210",
+	"description": "Multi-Socket PowerNode (5-Plug)",
+	"devices": [
+		{
+			"productType": "0x0003",
+			"productId": "0x0003",
+			"zwaveAllianceId": 716
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Wheel position change",
+			"maxNodes": 1
+		},
+		"2": {
+			"label": "Current leakage on relay",
+			"maxNodes": 1
+		},
+		"3": {
+			"label": "Power level change",
+			"description": "The new power reading is sent if the delta of the change is greater than the defined minimum variation",
+			"maxNodes": 1,
+			"isLifeline": true
+		},
+		"4": {
+			"label": "Over-current detection",
+			"maxNodes": 1,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "0",
+			"label": "Min. Variation of Load Current",
+			"description": "Minimum variation in load current before a message is sent.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 100,
+			"defaultValue": 10
+		},
+		{
+			"#": "1",
+			"label": "No Communication Light",
+			"description": "Minutes after which the device will flash if controller communicate is lost",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 2,
+			"unsigned": true
+		},
+		{
+			"#": "2",
+			"label": "Wheel Position",
+			"description": "Wheel position on the GreenWave device (read-only)",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"unsigned": true,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Black",
+					"value": 128
+				},
+				{
+					"label": "Green",
+					"value": 129
+				},
+				{
+					"label": "Dark blue",
+					"value": 130
+				},
+				{
+					"label": "Red",
+					"value": 131
+				},
+				{
+					"label": "Yellow",
+					"value": 132
+				},
+				{
+					"label": "Purple",
+					"value": 133
+				},
+				{
+					"label": "Orange",
+					"value": 134
+				},
+				{
+					"label": "Light blue",
+					"value": 135
+				},
+				{
+					"label": "Pink",
+					"value": 136
+				},
+				{
+					"label": "Locked",
+					"value": 137
+				}
+			]
+		},
+		{
+			"#": "3",
+			"$import": "~/templates/master_template.json#state_after_power_failure_off_prev_on",
+			"defaultValue": 2
+		},
+		{
+			"#": "4",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "LED for Network Error",
+			"defaultValue": 1
+		}
+	],
+	"compat": {
+		// This device incorrectly uses the destination endpoint to indicate which endpoint sent the command
+		"treatDestinationEndpointAsSource": true
+	}
+}

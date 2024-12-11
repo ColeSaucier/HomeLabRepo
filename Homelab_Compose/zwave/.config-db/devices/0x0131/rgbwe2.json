@@ -1,0 +1,84 @@
+{
+	"manufacturer": "Zipato",
+	"manufacturerId": "0x0131",
+	"label": "RGBWE2",
+	"description": "RGBW Bulb V2",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x0003"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Internal Bulb Temperature",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 0,
+			"defaultValue": 0,
+			"readOnly": true
+		},
+		{
+			"#": "2",
+			"label": "Strobe Light Interval",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 25,
+			"defaultValue": 0
+		},
+		{
+			"#": "3",
+			"label": "Strobe Light Pulse Count",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 0,
+			"options": [
+				{
+					"label": "Infinite flashing",
+					"value": 127
+				}
+			]
+		},
+		{
+			"#": "4",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Random Strobe Pulse Colors"
+		},
+		{
+			"#": "255",
+			"label": "Reset Bulb to Factory Settings",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 255,
+			"defaultValue": 1,
+			"writeOnly": true,
+			"options": [
+				{
+					"label": "Reset bulb to factory settings",
+					"value": 255
+				}
+			]
+		}
+	],
+	"compat": {
+		"overrideQueries": {
+			"Color Switch": [
+				// The device supports 5 color channels (Warm/Cold white, RGB)
+				// but does not advertise support for blue
+				{
+					"method": "getSupported",
+					"result": [0, 1, 2, 3, 4],
+					"persistValues": {
+						"supportedColorComponents": [0, 1, 2, 3, 4]
+					}
+				}
+			]
+		}
+	}
+}

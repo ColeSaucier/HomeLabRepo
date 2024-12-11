@@ -1,0 +1,87 @@
+homeassistant: true
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost
+  keepalive: 60
+serial:
+  port: /dev/ttyACM0
+  adapter: ember
+frontend:
+  port: 8080
+advanced:
+  network_key:
+    - 154
+    - 151
+    - 143
+    - 116
+    - 193
+    - 142
+    - 69
+    - 81
+    - 161
+    - 82
+    - 213
+    - 179
+    - 165
+    - 95
+    - 105
+    - 19
+  pan_id: 7408
+  ext_pan_id:
+    - 147
+    - 117
+    - 108
+    - 179
+    - 238
+    - 76
+    - 140
+    - 47
+  log_level: info
+  output: attribute_and_json
+devices:
+  '0x001788010dabce8f':
+    friendly_name: Phillips1100
+    state_action: true
+    transition: 0.2
+  '0xb0c7defffedb6f4f':
+    friendly_name: liptech mmwave
+  '0x00158d000af01758':
+    friendly_name: Aqara vibration
+    z_calibration: 0
+    x_calibration: 0
+    y_calibration: 0
+    vibration_timeout: 54
+  '0x286d97000114b978':
+    friendly_name: Aeotec Motion Sensor
+    temperature_calibration: -0.5
+    temperature_precision: 3
+  '0xa4c138be4b4ccef8':
+    friendly_name: Tuya_Vibe
+    vibration_timeout: 1
+  '0x282c02bfffea934f':
+    friendly_name: 3 vibration
+  '0x0ceff6fffe6b79ff':
+    friendly_name: '0x0ceff6fffe6b79ff'
+  '0x282c02bfffea4104':
+    friendly_name: Zigbee Smart Plug
+  '0x282c02bfffe6798d':
+    friendly_name: 3rdReality Door Sensor
+  '0x00158d008b112dea':
+    friendly_name: Aqara_Door
+  '0x00158d000af04862':
+    friendly_name: Aqara Door3
+  '0x00158d000af0c736':
+    friendly_name: Aqara Door2
+  '0x00158d000af0c32e':
+    friendly_name: Aqara Door4
+  '0x54ef441000c7f016':
+    friendly_name: Aqara Motion
+  '0x404ccafffe579a94':
+    friendly_name: '0x404ccafffe579a94'
+groups:
+  '1':
+    friendly_name: Vibrations
+availability: true
+external_converters:
+  - flow_sensor_converter.js

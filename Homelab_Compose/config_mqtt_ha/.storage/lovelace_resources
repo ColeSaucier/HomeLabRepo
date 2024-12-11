@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "id": "2c0c785e3d8d4d09a632c810e4f0f13f",
+        "url": "/local/manual_integrations/floorplan.js",
+        "type": "module"
+      },
+      {
+        "id": "404e5ee658ba4f65bcfa0a4cc1e7436d",
+        "url": "/local/manual_integrations/floorplantest.css",
+        "type": "css"
+      }
+    ]
+  }
+}

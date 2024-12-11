@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.01JECB7R7FP9GTTEM6SH46SQ11",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "esp32",
+      "friendly_name": "esp32",
+      "mac_address": "40:4C:CA:57:9A:94",
+      "compilation_time": "Dec  5 2024, 16:21:35",
+      "model": "esp32-c6-devkitc-1",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2024.10.2",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 0,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 10
+    },
+    "sensor": [
+      {
+        "object_id": "water_flow_rate",
+        "key": 3981248950,
+        "name": "Water Flow Rate",
+        "unique_id": "esp32sensorwater_flow_rate",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "unit_of_measurement": "L/min",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 0,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": []
+  }
+}

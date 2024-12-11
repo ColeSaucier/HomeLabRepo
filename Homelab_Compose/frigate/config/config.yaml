@@ -1,0 +1,43 @@
+mqtt:
+  enabled: false
+
+cameras:
+  amcrest:
+    ffmpeg:
+      inputs:
+        - path: rtsp://admin:1aaaaaaa@192.168.0.136:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+
+  amcrest2:
+    ffmpeg:
+      inputs:
+        - path: rtsp://admin:1aaaaaaa@192.168.0.13:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+  #hik_24fps_highres:
+    #ffmpeg:
+      #inputs:
+        #- path: rtsp://admin:!35793579@192.168.1.64:554/streaming/channels/101
+          #roles:
+            #- record
+
+  #hik_30fps_badfocus:
+    #ffmpeg:
+      #inputs:
+        #- path: rtsp://admin:!35793579@192.168.1.65:554/streaming/channels/103
+          #roles:
+            #- record
+record:
+  enabled: true
+  retain:
+    days: 7
+    mode: all
+
+snapshots:
+  enabled: false
+
+detect:
+  enabled: false
+
+version: 0.14

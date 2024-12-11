@@ -1,0 +1,35 @@
+homeassistant: false
+frontend: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost
+serial:
+  port: /dev/ttyACM0
+advanced:
+  network_key:
+    - 138
+    - 103
+    - 45
+    - 24
+    - 9
+    - 55
+    - 166
+    - 30
+    - 179
+    - 99
+    - 201
+    - 37
+    - 188
+    - 181
+    - 137
+    - 149
+  pan_id: 24289
+  ext_pan_id:
+    - 232
+    - 16
+    - 253
+    - 234
+    - 26
+    - 50
+    - 95
+    - 22

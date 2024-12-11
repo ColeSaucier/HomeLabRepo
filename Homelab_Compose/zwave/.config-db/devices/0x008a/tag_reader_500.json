@@ -1,0 +1,102 @@
+{
+	"manufacturer": "BeNext",
+	"manufacturerId": "0x008a",
+	"label": "Tag Reader 500",
+	"description": "WTRFID Mini Keypad",
+	"devices": [
+		{
+			"productType": "0x0007",
+			"productId": "0x0200"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Set to Default",
+			"description": "Set all configuration values to default values (factory settings)",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": [
+				{
+					"label": "Reset to factory defaults",
+					"value": 255
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Feedback Time",
+			"description": "the time the beep goes to off",
+			"valueSize": 1,
+			"unit": "seconds",
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 15,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "Feedback Time-Out",
+			"description": "waiting for the wake-up-no-more command",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"unsigned": true
+		},
+		{
+			"#": "4",
+			"label": "Feedback Beeps Per Second",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 5,
+			"defaultValue": 2
+		},
+		{
+			"#": "5",
+			"label": "Always Awake Mode",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal operating mode",
+					"value": 1
+				},
+				{
+					"label": "Always awake mode",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "7",
+			"label": "Operation Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Gateway mode",
+					"value": 0
+				},
+				{
+					"label": "Local mode",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "8",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Gateway Confirmation"
+		}
+	]
+}

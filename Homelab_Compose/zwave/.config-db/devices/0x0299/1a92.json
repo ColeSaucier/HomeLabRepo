@@ -1,0 +1,117 @@
+{
+	"manufacturer": "TechniSat",
+	"manufacturerId": "0x0299",
+	"label": "Dimmer Switch",
+	"description": "Flush Dimmer Switch",
+	"devices": [
+		{
+			"productType": "0x0004",
+			"productId": "0x1a92"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Send Central Scene Notifications",
+			"description": "Enable/disable central scene notifications for 2x-5x button presses.",
+			"defaultValue": 1
+		},
+		{
+			"#": "2",
+			"label": "Report Interval",
+			"description": "Allowable range: 3-8640 (30 seconds to 1 day)",
+			"valueSize": 2,
+			"unit": "10s",
+			"minValue": 0,
+			"maxValue": 8640,
+			"defaultValue": 3,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Energy Meter Report Interval",
+			"description": "Allowable range: 10-30240 (10 minutes to 3 weeks)",
+			"valueSize": 2,
+			"unit": "minutes",
+			"minValue": 0,
+			"maxValue": 30240,
+			"defaultValue": 60,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "4",
+			"label": "Button Operation Mode",
+			"description": "Operations mode for push buttons controlling the output. - Normal Switch: In this mode the top button will turn the output on, while the bottom button will turn the output off. - Toggle Switch: In this mode any button press will toggle the output - when on it will be turned off, when off it will be turned on.",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal switch",
+					"value": 0
+				},
+				{
+					"label": "External push button",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "External Switch Type",
+			"description": "Configuration of switch type connected to extension input S. - External Normal Switch: Use this value if a toggle switch is connected to extension input S. - External Push Button: Use this value if a push button switch is connected to extension input S.",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "External normal switch",
+					"value": 0
+				},
+				{
+					"label": "External push button",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "6",
+			"label": "External Switch Mapping",
+			"description": "Central Scene mapping of extension input S.",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			/* eslint-disable @zwave-js/consistent-config-string-case */
+			"options": [
+				{
+					"label": "Map extension input S. On the Central Scene of T1.",
+					"value": 1
+				},
+				{
+					"label": "Map extension input S. On the Central Scene of T2.",
+					"value": 2
+				},
+				{
+					"label": "Map extension input S. On a custom Central Scene.",
+					"value": 3
+				}
+			]
+			/* eslint-enable @zwave-js/consistent-config-string-case */
+		}
+	]
+}

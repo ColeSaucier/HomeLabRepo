@@ -1,0 +1,63 @@
+{
+	"manufacturer": "HANK Electronics Ltd.",
+	"manufacturerId": "0x0208",
+	"label": "HKZW-ACC01",
+	"description": "IR Transceiver",
+	"devices": [
+		{
+			"productType": "0x0100",
+			"productId": "0x0007"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "93",
+			"label": "Clear IR Information",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 1431655765,
+			"defaultValue": 1,
+			"options": [
+				{
+					"label": "Clear IR information",
+					"value": 1431655765
+				}
+			]
+		},
+		{
+			"#": "254",
+			"label": "Enable/Disable Configuration",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Unlock",
+					"value": 0
+				},
+				{
+					"label": "Lock",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "255",
+			"label": "Reset & Remove From Z-Wave Network",
+			"valueSize": 4,
+			"minValue": 1,
+			"maxValue": 1431655765,
+			"defaultValue": 1,
+			"options": [
+				{
+					"label": "Reset & remove from network",
+					"value": 1431655765
+				}
+			]
+		}
+	]
+}

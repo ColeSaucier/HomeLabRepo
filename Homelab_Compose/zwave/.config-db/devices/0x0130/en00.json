@@ -1,0 +1,101 @@
+{
+	"manufacturer": "Quby",
+	"manufacturerId": "0x0130",
+	"label": "EN00",
+	"description": "Engie Meter Adapter",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x0001"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Analog Gas/heat Port Mode",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Gas enabled",
+					"value": 1
+				},
+				{
+					"label": "Heat enabled",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Analog Gas/heat Port Resolution",
+			"valueSize": 4,
+			"minValue": 120,
+			"maxValue": 40000,
+			"defaultValue": 400
+		},
+		{
+			"#": "3",
+			"label": "Analog Electricity Port Mode",
+			"valueSize": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Electricity import enabled",
+					"value": 1
+				},
+				{
+					"label": "Electricity export enabled",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "4",
+			"label": "Analog Electricity Port Resolution",
+			"valueSize": 4,
+			"minValue": 120,
+			"maxValue": 40000,
+			"defaultValue": 400
+		},
+		{
+			"#": "5",
+			"label": "Digital Port Mode",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 2,
+			"defaultValue": 2
+		},
+		{
+			"#": "255",
+			"label": "Restart Device",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Restart entire device",
+					"value": 1
+				},
+				{
+					"label": "Restart metering chip",
+					"value": 2
+				}
+			]
+		}
+	]
+}

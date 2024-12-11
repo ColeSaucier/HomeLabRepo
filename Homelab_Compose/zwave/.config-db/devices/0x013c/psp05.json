@@ -1,0 +1,138 @@
+{
+	"manufacturer": "Philio Technology Corp",
+	"manufacturerId": "0x013c",
+	"label": "PSP05",
+	"description": "Motion Sensor",
+	"devices": [
+		{
+			"productType": "0x0002",
+			"productId": "0x0050"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "2",
+			"label": "Basic Set Level",
+			"description": "Setting the BASIC command value to turn on the light.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 255,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "PIR Sensitivity",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 99,
+			"defaultValue": 80
+		},
+		{
+			"#": "6",
+			"label": "Multi-Sensor Function Switch",
+			"description": "Parameter to set the sensor functions.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 5,
+			"unsigned": true
+		},
+		{
+			"#": "8",
+			"label": "Re-Detection Interval",
+			"description": "Multiples of 8 seconds to wait before re-detection",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 127,
+			"defaultValue": 3
+		},
+		{
+			"#": "9",
+			"label": "Turn Off Light Time",
+			"description": "Time to wait after lighting has been turned on before turning off again",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 4
+		},
+		{
+			"#": "10",
+			"label": "Battery Level Reporting Interval",
+			"description": "How frequently battery status should be reported",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 12
+		},
+		{
+			"#": "20",
+			"label": "Tick Interval",
+			"description": "Interval time for sending reports",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 30,
+			"unsigned": true
+		},
+		{
+			"#": "7[0x02]",
+			"label": "Bit 1: Motion OFF Reporting",
+			"description": "Sends notification when motion has completed.",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Don't send report",
+					"value": 0
+				},
+				{
+					"label": "Send report",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "7[0x04]",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "PIR Super Sensitivity Mode",
+			"defaultValue": 1
+		},
+		{
+			"#": "7[0x10]",
+			"label": "Bit 4: Notification Type",
+			"description": "Method used to send notifications on motion",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Notification Report",
+					"value": 0
+				},
+				{
+					"label": "Binary Sensor",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "7[0x20]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Send Multi CC in Auto Report",
+			"defaultValue": 0
+		},
+		{
+			"#": "7[0x40]",
+			"$import": "~/templates/master_template.json#base_enable_disable_inverted",
+			"label": "Send Battery Report When Triggered",
+			"description": "Whether or not a battery status report should be sent when triggered",
+			"defaultValue": 0
+		}
+	]
+}
