@@ -8,10 +8,11 @@ services:
       - /run/udev:/run/udev:ro
       - ./zigbee2mqtt/data/configuration.yaml:/app/data/configuration.yaml
     devices:
-      - /dev/ttyACM0:/dev/ttyACM0 # Adjust this if zigbee breaks, will likely require adjustment on start
+      - /dev/ttyACM0:/dev/ttyACM0 # Adjust this if zigbee breaks, 
+#will likely require adjustment on start
     restart: always #or unless-stopped
     network_mode: host
-    privileged: true #probably needed?
+    privileged: true
     environment:
       - TZ=America/Los_Angeles
     
@@ -49,9 +50,9 @@ services:
     container_name: hass
     image: homeassistant/home-assistant:2024.10.4 #or homeassistant/home-assistant:stable
     restart: always #unless-stopped
-    network_mode: host #
+    network_mode: host
     depends_on:
-      - zigbee2mqtt #
+      - zigbee2mqtt
     volumes:
       - ./config_mqtt_ha:/config
       - ./config_mqtt_ha:/scripts
@@ -98,5 +99,3 @@ networks:
   zwave:
 volumes:
   mariadb_data:
-  #zwave-config:
-  #  name: zwave-config
