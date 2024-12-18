@@ -8,6 +8,7 @@ frontend:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+users: !include users.yaml
 
 #logger:
 #  default: debug
@@ -15,10 +16,12 @@ scene: !include scenes.yaml
 logbook:
   exclude:
     entities:
-      - sensor.q_last_seen
-      - sensor.node_2_last_seen
+      - automation.zigbeeavailability
       
       
 recorder:
   db_url: mysql://cole:aaa1aaa@127.0.0.1/hass_db?charset=utf8mb4
+  purge_keep_days: 50
+  auto_purge: false
+  commit_interval: 5
 

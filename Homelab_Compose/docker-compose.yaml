@@ -57,6 +57,7 @@ services:
       - ./config_mqtt_ha:/config
       - ./config_mqtt_ha:/scripts
       - ./config_mqtt_ha/manual_integrations:/config/www/manual_integrations
+      - /etc/localtime:/etc/localtime:ro
 
   hass_db:
     image: mariadb:11.5.2
@@ -66,7 +67,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: aaa1aaa
       MYSQL_DATABASE: hass_db
-      MYSQL_USER: user
+      MYSQL_USER: cole
       MYSQL_PASSWORD: aaa1aaa
     volumes:
       - ./mariadb_data:/var/lib/mysql
@@ -90,7 +91,9 @@ services:
       - ./fastapi-ExportApp:/app
       - ./fastapi-ExportApp/ScriptsNeeded_ForExport:/scripts
       - ./fastapi-ExportApp/templates:/app/templates
+      - ./fastapi-ExportApp/logs:/app/logs
       - ./EXPORTS:/EXPORTS
+      - /etc/localtime:/etc/localtime:ro
     environment:
       - ENV=development
       - MARIADB_CONFIG=/usr/bin/mariadb_config

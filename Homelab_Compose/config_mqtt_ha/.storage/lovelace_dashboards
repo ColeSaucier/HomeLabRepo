@@ -41,15 +41,6 @@
         "url_path": "dashboard-livefloorview"
       },
       {
-        "id": "dashboard_exportdata",
-        "show_in_sidebar": false,
-        "icon": "mdi:application-export",
-        "title": "TimeTestScript",
-        "require_admin": false,
-        "mode": "storage",
-        "url_path": "dashboard-exportdata"
-      },
-      {
         "id": "export_api",
         "show_in_sidebar": true,
         "icon": "mdi:database-export-outline",
@@ -59,13 +50,13 @@
         "url_path": "export-api"
       },
       {
-        "id": "dashboard_custom",
+        "id": "dashboard_deviceavailabilitycheck",
         "show_in_sidebar": true,
-        "icon": "mdi:blinds-vertical-closed",
-        "title": "Custom",
+        "icon": "mdi:battery-10",
+        "title": "DeviceAvailabilityCheck ",
         "require_admin": false,
         "mode": "storage",
-        "url_path": "dashboard-custom"
+        "url_path": "dashboard-deviceavailabilitycheck"
       }
     ]
   }

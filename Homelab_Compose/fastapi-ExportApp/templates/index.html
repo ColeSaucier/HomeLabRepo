@@ -6,11 +6,11 @@
 <body>
     <h1>Data Export</h1>
     <form id="exportForm">
-        <label for="time_begin">Start Time:</label>
-        <input type="number" id="time_begin" name="time_begin" step="0.000001" required>
+        <label for="time_begin">Start Date:</label>
+        <input type="date" id="time_begin" name="time_begin" value="{{ default_time_begin }}" required>
         <br>
-        <label for="time_end">End Time:</label>
-        <input type="number" id="time_end" name="time_end" step="0.000001" required>
+        <label for="time_end">End Date:</label>
+        <input type="date" id="time_end" name="time_end" value="{{ default_time_end }}" required>
         <br><br>
         <button type="submit">Run Export</button>
     </form>
@@ -25,6 +25,7 @@
         function runExport() {
             const formData = new FormData(document.getElementById('exportForm'));
             const data = Object.fromEntries(formData.entries());
+
 
             fetch('/run-export-script', {
                 method: 'POST',

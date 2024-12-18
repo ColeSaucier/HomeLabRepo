@@ -3,8 +3,14 @@ from fastapi.templating import Jinja2Templates
 import subprocess
 import os
 import logging
+from datetime import date, datetime, timedelta
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    filename='/app/logs/app.log',
+    filemode='a'
+)
 logger = logging.getLogger(__name__)
 from typing import Union
 from pydantic import BaseModel
@@ -14,12 +20,25 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 class ExportRequest(BaseModel):
-    time_begin: float
-    time_end: float
+    time_begin: date
+    time_end: date
+
+    class Config:
+        json_encoders = {
+            date: lambda v: v.isoformat()  # Serialize date to ISO format
+        }
 
 @app.get("/")
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    # Use date.today() instead of datetime.now()
+    default_time_begin = (date.today() - timedelta(days=14)).isoformat()
+    default_time_end = date.today().isoformat()
+    
+    return templates.TemplateResponse("index.html", {
+        "request": request,
+        "default_time_begin": default_time_begin,
+        "default_time_end": default_time_end
+    })
 
 @app.post("/run-export-script")
 async def run_export_script(request_data: ExportRequest):
@@ -29,8 +48,9 @@ async def run_export_script(request_data: ExportRequest):
     
     # Prepare environment variables for the script
     env = os.environ.copy()
-    env['TIME_BEGIN'] = str(request_data.time_begin)
-    env['TIME_END'] = str(request_data.time_end)
+    # Convert date to datetime with min/max time for timestamps
+    env['TIME_BEGIN'] = str(int(datetime.combine(request_data.time_begin, datetime.min.time()).timestamp()))
+    env['TIME_END'] = str(int(datetime.combine(request_data.time_end, datetime.max.time()).timestamp()))
 
     try:
         # Run the script with environment variables, capturing both stdout and stderr

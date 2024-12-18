@@ -18,3 +18,17 @@
   conditions: []
   actions: []
   mode: single
+- id: '1733759438591'
+  alias: ZigbeeAvailability
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: zigbee2mqtt/+/availability
+    payload: 'offline'
+  conditions: []
+  actions:
+  - service: logbook.log
+    data:
+      name: ""
+      message: "{{ trigger.topic.split('/')[1] }} is {{ trigger.payload }}  |"
+  mode: single
