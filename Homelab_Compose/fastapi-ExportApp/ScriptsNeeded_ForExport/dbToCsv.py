@@ -13,8 +13,8 @@ config = {
 }
 
 # Retrieve time parameters from environment variables
-time_begin = float(os.getenv('TIME_BEGIN', '1730913621.7557971'))
-time_end = float(os.getenv('TIME_END', '1830931761.8867447'))
+time_begin = float(os.getenv('TIME_BEGIN'))
+time_end = float(os.getenv('TIME_END'))
 
 # Connect to MariaDB Platform
 try:
@@ -23,10 +23,6 @@ try:
 except mariadb.Error as e:
     print(f"Error connecting to MariaDB Platform: {e}")
     sys.exit(1)
-
-# Process the variables
-time_begin = int(time_begin)
-time_end = int(time_end + 1) if time_end % 1 != 0 else int(time_end)
 
 # SQL query with parameters
 sql = """
