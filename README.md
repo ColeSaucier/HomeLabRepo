@@ -1,7 +1,7 @@
 Research designated, data collection software designed for IoT Technology Lab for Northeastern's "HomeLab". This software will generate a server and GUI to manage a cutting edge set of IoT sensors. Our platform also supports cameras, live data viewing, sensor data storage, data export, and live sensor map.
 
 Containers include Zigbee2Mqtt, Z-waveJSUI, Fast-API, MariaDB, Frigate, HomeAssistant, MQTT, ESPHome.
-HomeLab Software Documentation Here: https://docs.google.com/document/d/18Yx7UeD4_WpNmbq7Nc6DwJqMMfXya9Zz113vEpatAVk/edit?usp=sharing
+HomeLab Report: https://docs.google.com/document/d/18Yx7UeD4_WpNmbq7Nc6DwJqMMfXya9Zz113vEpatAVk/edit?usp=sharing
 HomeLab FAQS: https://docs.google.com/document/d/18Yx7UeD4_WpNmbq7Nc6DwJqMMfXya9Zz113vEpatAVk/edit?tab=t.ux6u23mv5h61
 
 ------------------------------------------------------------------------------------------------------------------------------------
