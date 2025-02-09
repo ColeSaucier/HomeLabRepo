@@ -13,7 +13,7 @@ For setup: (Linux Ubuntu machine required)
 3. In HomeLab_Compose -----> "docker-compose up"
 
 Common Issue:
-Zigbee requires specifiying the usb port of the cordinator, so this will need to be manually adjusted. -----> ls -l /dev/serial/by-id
+Zigbee requires specifiying the usb port of the cordinator, so this will need to be manually adjusted -----> "ls -l /dev/serial/by-id".
 Z-wave will adjust automatically.
 
 HomeAssistant is a fantastic IoT integration platform and will provide the majority of functionality. Access is available through localhost:8123 
