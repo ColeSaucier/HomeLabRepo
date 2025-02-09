@@ -18,7 +18,7 @@ Z-wave will adjust automatically.
 HomeAssistant is a fantastic IoT integration platform and will provide the majority of functionality. Access is available through localhost:8123 
 User: "Cole" 
 Password: "aaa$aaa"
-The server will run this docker compose and computers on the same network can connect to access all technology tools and data access. 
+A designated linux server will run this. Computers on the same network can access all technology tools and data access. 
 
 The containers start via dockercompose.yaml, which is where all the container setting can be adjusted. These containers are already preset to be viewable (ported) as a tab in HomeAssistant. These tabs include Sensor Configuring (Zigbee2Mqtt & Z-waveJSUI), Cameras (Frigate), and Database Export (Fast-API).
 
