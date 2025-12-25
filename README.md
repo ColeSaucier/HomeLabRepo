@@ -3,6 +3,7 @@ Research designated, data collection software designed for IoT Technology Lab fo
 Containers include Zigbee2Mqtt, Z-waveJSUI, Fast-API, MariaDB, Frigate, HomeAssistant, MQTT, ESPHome.
 
 HomeLab Overview: https://docs.google.com/document/d/13IuyRFTdW-EyIRP5xNv8JORTLVhsAy9Ka1wV4jXucXA/edit?tab=t.0#heading=h.470teqy468d5
+
 HomeLab Setup: [https://docs.google.com/document/d/18Yx7UeD4_WpNmbq7Nc6DwJqMMfXya9Zz113vEpatAVk/edit?tab=t.ux6u23mv5h61](https://docs.google.com/document/d/1mlbqHqM2TP02o8jBq01RAaHnyHpiazYRYw4xqtsNV-M/edit?usp=sharing)
 
 ------------------------------------------------------------------------------------------------------------------------------------
